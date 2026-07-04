@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "title": "Hello World",
+    "difficulty": "Beginner",
+    "category": "Basics",
+    "xp": 10,
+    "estimatedTime": "2 min",
+    "description": "Scrivi il tuo primo programma JavaScript.",
+    "objectives": [
+      "Utilizza console.log()",
+      "Visualizza il testo Hello World"
+    ],
+    "starterCode": "// Scrivi il codice qui\n",
+    "solution": "console.log('Hello World');",
+    "validator": "console_output",
+    "expectedOutput": "Hello World",
+    "hints": [
+      "Usa console.log()",
+      "Il testo deve essere racchiuso tra virgolette."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Variabili",
+    "difficulty": "Beginner",
+    "category": "Variables",
+    "xp": 10,
+    "estimatedTime": "3 min",
+    "description": "Crea una variabile chiamata nome contenente il tuo nome.",
+    "objectives": [
+      "Usa let",
+      "Assegna una stringa"
+    ],
+    "starterCode": "",
+    "solution": "let nome='Mario';",
+    "validator": "variable_exists",
+    "expectedVariable": "nome",
+    "hints": [
+      "Usa let nome = ...",
+      "Il valore deve essere una stringa."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Const",
+    "difficulty": "Beginner",
+    "category": "Variables",
+    "xp": 10,
+    "estimatedTime": "3 min",
+    "description": "Dichiara una costante PI con valore 3.14.",
+    "objectives": [
+      "Usa const",
+      "Assegna 3.14"
+    ],
+    "starterCode": "",
+    "solution": "const PI=3.14;",
+    "validator": "variable_value",
+    "expectedVariable": "PI",
+    "expectedValue": 3.14,
+    "hints": [
+      "Usa const.",
+      "Ricorda il punto decimale."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Tipi di dato",
+    "difficulty": "Beginner",
+    "category": "Data Types",
+    "xp": 15,
+    "estimatedTime": "4 min",
+    "description": "Crea una stringa, un numero e un boolean.",
+    "objectives": [
+      "Crea tre variabili",
+      "Usa tipi diversi"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "types",
+    "hints": [
+      "Stringa, Number e Boolean."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Stringhe",
+    "difficulty": "Beginner",
+    "category": "Strings",
+    "xp": 15,
+    "estimatedTime": "4 min",
+    "description": "Concatena nome e cognome.",
+    "objectives": [
+      "Usa l'operatore +"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "string_concat",
+    "hints": [
+      "Puoi usare anche template literal."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Numeri",
+    "difficulty": "Beginner",
+    "category": "Numbers",
+    "xp": 15,
+    "estimatedTime": "4 min",
+    "description": "Calcola la somma di due numeri.",
+    "objectives": [
+      "Usa l'operatore +"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "math_sum",
+    "hints": [
+      "Salva il risultato in una variabile."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Boolean",
+    "difficulty": "Beginner",
+    "category": "Boolean",
+    "xp": 15,
+    "estimatedTime": "3 min",
+    "description": "Crea una variabile booleana.",
+    "objectives": [
+      "Usa true oppure false"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "boolean",
+    "hints": [
+      "I valori booleani sono true e false."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Template Literal",
+    "difficulty": "Beginner",
+    "category": "Strings",
+    "xp": 20,
+    "estimatedTime": "5 min",
+    "description": "Utilizza i template literal.",
+    "objectives": [
+      "Usa i backtick (`)"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "template_literal",
+    "hints": [
+      "Usa ${variabile}."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Commenti",
+    "difficulty": "Beginner",
+    "category": "Syntax",
+    "xp": 10,
+    "estimatedTime": "2 min",
+    "description": "Inserisci un commento nel codice.",
+    "objectives": [
+      "Usa // oppure /* */"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "comment",
+    "hints": [
+      "I commenti non vengono eseguiti."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Operatori",
+    "difficulty": "Beginner",
+    "category": "Operators",
+    "xp": 20,
+    "estimatedTime": "5 min",
+    "description": "Usa gli operatori aritmetici.",
+    "objectives": [
+      "Somma",
+      "Sottrazione",
+      "Moltiplicazione",
+      "Divisione"
+    ],
+    "starterCode": "",
+    "solution": "",
+    "validator": "operators",
+    "hints": [
+      "Usa + - * /"
+    ]
+  }
+]
+,
+{
+  "id": 11,
+  "title": "If Statement",
+  "difficulty": "Beginner",
+  "category": "Conditions",
+  "xp": 20,
+  "estimatedTime": "5 min",
+  "description": "Verifica se una variabile è maggiore di 10 e stampa 'Maggiore'.",
+  "objectives": [
+    "Usa un'istruzione if",
+    "Utilizza console.log()"
+  ],
+  "starterCode": "let numero = 15;\n",
+  "validator": "if_statement",
+  "hints": [
+    "Controlla numero > 10.",
+    "Stampa 'Maggiore'."
+  ]
+},
+{
+  "id": 12,
+  "title": "If / Else",
+  "difficulty": "Beginner",
+  "category": "Conditions",
+  "xp": 20,
+  "estimatedTime": "5 min",
+  "description": "Controlla se un numero è pari o dispari.",
+  "objectives": [
+    "Usa if/else",
+    "Utilizza l'operatore %"
+  ],
+  "starterCode": "let numero = 8;\n",
+  "validator": "if_else",
+  "hints": [
+    "numero % 2 === 0"
+  ]
+},
+{
+  "id": 13,
+  "title": "Else If",
+  "difficulty": "Beginner",
+  "category": "Conditions",
+  "xp": 25,
+  "estimatedTime": "6 min",
+  "description": "Classifica un voto come insufficiente, sufficiente o ottimo.",
+  "objectives": [
+    "Usa if, else if ed else"
+  ],
+  "starterCode": "let voto = 27;\n",
+  "validator": "else_if",
+  "hints": [
+    "Controlla più condizioni."
+  ]
+},
+{
+  "id": 14,
+  "title": "Switch",
+  "difficulty": "Beginner",
+  "category": "Conditions",
+  "xp": 25,
+  "estimatedTime": "6 min",
+  "description": "Usa switch per visualizzare il giorno della settimana.",
+  "objectives": [
+    "Utilizza switch",
+    "Gestisci il caso default"
+  ],
+  "starterCode": "let giorno = 3;\n",
+  "validator": "switch_statement",
+  "hints": [
+    "Ogni case termina con break."
+  ]
+},
+{
+  "id": 15,
+  "title": "For Loop",
+  "difficulty": "Beginner",
+  "category": "Loops",
+  "xp": 25,
+  "estimatedTime": "6 min",
+  "description": "Stampa i numeri da 1 a 10.",
+  "objectives": [
+    "Usa un ciclo for"
+  ],
+  "starterCode": "",
+  "validator": "for_loop",
+  "hints": [
+    "Inizializza il contatore a 1."
+  ]
+},
+{
+  "id": 16,
+  "title": "While Loop",
+  "difficulty": "Beginner",
+  "category": "Loops",
+  "xp": 25,
+  "estimatedTime": "6 min",
+  "description": "Stampa i numeri da 1 a 5 usando while.",
+  "objectives": [
+    "Usa while"
+  ],
+  "starterCode": "",
+  "validator": "while_loop",
+  "hints": [
+    "Ricorda di incrementare il contatore."
+  ]
+},
+{
+  "id": 17,
+  "title": "Do While",
+  "difficulty": "Beginner",
+  "category": "Loops",
+  "xp": 25,
+  "estimatedTime": "6 min",
+  "description": "Esegui un ciclo do...while almeno una volta.",
+  "objectives": [
+    "Usa do...while"
+  ],
+  "starterCode": "",
+  "validator": "do_while",
+  "hints": [
+    "La condizione viene controllata alla fine."
+  ]
+},
+{
+  "id": 18,
+  "title": "Array Base",
+  "difficulty": "Beginner",
+  "category": "Arrays",
+  "xp": 30,
+  "estimatedTime": "7 min",
+  "description": "Crea un array con cinque colori.",
+  "objectives": [
+    "Dichiara un array",
+    "Inserisci 5 elementi"
+  ],
+  "starterCode": "",
+  "validator": "array_create",
+  "hints": [
+    "Usa le parentesi quadre []."
+  ]
+},
+{
+  "id": 19,
+  "title": "Accesso Array",
+  "difficulty": "Beginner",
+  "category": "Arrays",
+  "xp": 30,
+  "estimatedTime": "7 min",
+  "description": "Visualizza il primo elemento di un array.",
+  "objectives": [
+    "Accedi tramite indice",
+    "Usa console.log()"
+  ],
+  "starterCode": "const numeri = [10,20,30,40];\n",
+  "validator": "array_index",
+  "hints": [
+    "Il primo elemento ha indice 0."
+  ]
+},
+{
+  "id": 20,
+  "title": "Oggetti Base",
+  "difficulty": "Beginner",
+  "category": "Objects",
+  "xp": 30,
+  "estimatedTime": "8 min",
+  "description": "Crea un oggetto persona con nome ed età.",
+  "objectives": [
+    "Usa la sintassi degli oggetti",
+    "Definisci due proprietà"
+  ],
+  "starterCode": "",
+  "validator": "object_create",
+  "hints": [
+    "Usa { chiave: valore }."
+  ]
+}
+,
+{
+  "id": 21,
+  "title": "Function Base",
+  "difficulty": "Beginner",
+  "category": "Functions",
+  "xp": 30,
+  "estimatedTime": "8 min",
+  "description": "Crea una funzione che visualizzi un messaggio di benvenuto.",
+  "objectives": [
+    "Dichiara una funzione",
+    "Usa console.log()"
+  ],
+  "starterCode": "",
+  "validator": "function_exists",
+  "hints": [
+    "Usa la parola chiave function.",
+    "Richiama la funzione dopo averla dichiarata."
+  ]
+},
+{
+  "id": 22,
+  "title": "Function Parameters",
+  "difficulty": "Beginner",
+  "category": "Functions",
+  "xp": 35,
+  "estimatedTime": "8 min",
+  "description": "Crea una funzione che riceva un nome come parametro e lo visualizzi nella console.",
+  "objectives": [
+    "Usa un parametro",
+    "Richiama la funzione con un valore"
+  ],
+  "starterCode": "",
+  "validator": "function_parameter",
+  "hints": [
+    "Definisci un parametro tra parentesi."
+  ]
+},
+{
+  "id": 23,
+  "title": "Return",
+  "difficulty": "Beginner",
+  "category": "Functions",
+  "xp": 35,
+  "estimatedTime": "8 min",
+  "description": "Crea una funzione che restituisca la somma di due numeri.",
+  "objectives": [
+    "Usa return",
+    "Restituisci il risultato"
+  ],
+  "starterCode": "",
+  "validator": "function_return",
+  "hints": [
+    "Non usare console.log() all'interno della funzione."
+  ]
+},
+{
+  "id": 24,
+  "title": "Arrow Function",
+  "difficulty": "Beginner",
+  "category": "Functions",
+  "xp": 35,
+  "estimatedTime": "8 min",
+  "description": "Riscrivi una funzione utilizzando la sintassi arrow.",
+  "objectives": [
+    "Usa =>",
+    "Restituisci un valore"
+  ],
+  "starterCode": "",
+  "validator": "arrow_function",
+  "hints": [
+    "Le arrow function usano l'operatore =>."
+  ]
+},
+{
+  "id": 25,
+  "title": "Variable Scope",
+  "difficulty": "Beginner",
+  "category": "Functions",
+  "xp": 40,
+  "estimatedTime": "10 min",
+  "description": "Comprendi la differenza tra variabili globali e locali.",
+  "objectives": [
+    "Crea una variabile globale",
+    "Crea una variabile locale",
+    "Osserva lo scope"
+  ],
+  "starterCode": "",
+  "validator": "scope",
+  "hints": [
+    "Le variabili dichiarate all'interno di una funzione non sono accessibili all'esterno."
+  ]
+}
+,
+{
+  "id": 31,
+  "title": "classList.add()",
+  "difficulty": "Beginner",
+  "category": "DOM",
+  "xp": 45,
+  "estimatedTime": "10 min",
+  "description": "Aggiungi una classe CSS a un elemento tramite JavaScript.",
+  "objectives": [
+    "Seleziona un elemento",
+    "Usa classList.add()"
+  ],
+  "starterCode": "const box = document.querySelector('.box');\n",
+  "validator": "classlist_add",
+  "hints": [
+    "Usa box.classList.add('active')."
+  ]
+},
+{
+  "id": 32,
+  "title": "classList.remove()",
+  "difficulty": "Beginner",
+  "category": "DOM",
+  "xp": 45,
+  "estimatedTime": "10 min",
+  "description": "Rimuovi una classe CSS da un elemento.",
+  "objectives": [
+    "Usa classList.remove()"
+  ],
+  "starterCode": "const box = document.querySelector('.box');\n",
+  "validator": "classlist_remove",
+  "hints": [
+    "Specifica il nome della classe da rimuovere."
+  ]
+},
+{
+  "id": 33,
+  "title": "textContent",
+  "difficulty": "Beginner",
+  "category": "DOM",
+  "xp": 45,
+  "estimatedTime": "10 min",
+  "description": "Modifica il testo di un elemento HTML.",
+  "objectives": [
+    "Seleziona un elemento",
+    "Aggiorna textContent"
+  ],
+  "starterCode": "const titolo = document.querySelector('h1');\n",
+  "validator": "textcontent",
+  "hints": [
+    "Usa titolo.textContent = 'Nuovo titolo';"
+  ]
+},
+{
+  "id": 34,
+  "title": "innerHTML",
+  "difficulty": "Beginner",
+  "category": "DOM",
+  "xp": 50,
+  "estimatedTime": "12 min",
+  "description": "Inserisci un paragrafo HTML all'interno di un contenitore.",
+  "objectives": [
+    "Usa innerHTML",
+    "Inserisci un elemento <p>"
+  ],
+  "starterCode": "const container = document.querySelector('#container');\n",
+  "validator": "innerhtml",
+  "hints": [
+    "container.innerHTML = '<p>...</p>';"
+  ]
+},
+{
+  "id": 35,
+  "title": "createElement()",
+  "difficulty": "Beginner",
+  "category": "DOM",
+  "xp": 50,
+  "estimatedTime": "12 min",
+  "description": "Crea dinamicamente un nuovo elemento HTML.",
+  "objectives": [
+    "Usa document.createElement()",
+    "Imposta il testo",
+    "Aggiungi l'elemento alla pagina"
+  ],
+  "starterCode": "",
+  "validator": "create_element",
+  "hints": [
+    "Crea un elemento, imposta textContent e aggiungilo al DOM."
+  ]
+}
+,
+{
+  "id": 41,
+  "title": "Math.random()",
+  "difficulty": "Beginner",
+  "category": "Math",
+  "xp": 55,
+  "estimatedTime": "10 min",
+  "description": "Genera un numero casuale compreso tra 1 e 10.",
+  "objectives": [
+    "Usa Math.random()",
+    "Usa Math.floor()",
+    "Ottieni un numero tra 1 e 10"
+  ],
+  "starterCode": "",
+  "validator": "math_random",
+  "hints": [
+    "Moltiplica Math.random() per 10.",
+    "Aggiungi 1 dopo Math.floor()."
+  ]
+},
+{
+  "id": 42,
+  "title": "setTimeout()",
+  "difficulty": "Beginner",
+  "category": "Timers",
+  "xp": 55,
+  "estimatedTime": "10 min",
+  "description": "Visualizza un messaggio dopo 2 secondi.",
+  "objectives": [
+    "Usa setTimeout()",
+    "Esegui console.log() dopo il ritardo"
+  ],
+  "starterCode": "",
+  "validator": "set_timeout",
+  "hints": [
+    "Il tempo è espresso in millisecondi."
+  ]
+},
+{
+  "id": 43,
+  "title": "setInterval()",
+  "difficulty": "Beginner",
+  "category": "Timers",
+  "xp": 60,
+  "estimatedTime": "12 min",
+  "description": "Visualizza un messaggio ogni secondo.",
+  "objectives": [
+    "Usa setInterval()",
+    "Richiama console.log()"
+  ],
+  "starterCode": "",
+  "validator": "set_interval",
+  "hints": [
+    "1000 millisecondi corrispondono a un secondo."
+  ]
+},
+{
+  "id": 44,
+  "title": "try...catch",
+  "difficulty": "Beginner",
+  "category": "Error Handling",
+  "xp": 60,
+  "estimatedTime": "12 min",
+  "description": "Gestisci un errore utilizzando try...catch.",
+  "objectives": [
+    "Usa try",
+    "Gestisci l'errore con catch"
+  ],
+  "starterCode": "",
+  "validator": "try_catch",
+  "hints": [
+    "Inserisci nel blocco try un'istruzione che può generare un errore."
+  ]
+},
+{
+  "id": 45,
+  "title": "fetch() Base",
+  "difficulty": "Beginner",
+  "category": "HTTP",
+  "xp": 65,
+  "estimatedTime": "15 min",
+  "description": "Effettua una richiesta HTTP utilizzando fetch().",
+  "objectives": [
+    "Usa fetch()",
+    "Gestisci la Promise",
+    "Visualizza i dati ricevuti"
+  ],
+  "starterCode": "",
+  "validator": "fetch_base",
+  "hints": [
+    "Ricorda di usare .then() oppure async/await."
+  ]
+}
