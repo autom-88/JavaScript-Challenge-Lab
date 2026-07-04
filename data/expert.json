@@ -1,0 +1,2405 @@
+[
+  {
+    "id": 301,
+    "title": "JavaScript Execution Engine",
+    "difficulty": "Expert",
+    "category": "Engine",
+    "xp": 350,
+    "estimatedTime": "60 min",
+    "description": "Analizza il ciclo completo di esecuzione del motore JavaScript dalla compilazione Just-In-Time all'esecuzione.",
+    "objectives": [
+      "Comprendere il parsing del codice",
+      "Analizzare compilazione ed esecuzione",
+      "Spiegare il ruolo del runtime"
+    ],
+    "starterCode": "",
+    "validator": "execution_engine",
+    "hints": [
+      "Considera parser, compilatore JIT e runtime."
+    ]
+  },
+  {
+    "id": 302,
+    "title": "Hidden Classes",
+    "difficulty": "Expert",
+    "category": "V8",
+    "xp": 360,
+    "estimatedTime": "70 min",
+    "description": "Comprendi come V8 utilizza le Hidden Classes per ottimizzare l'accesso alle proprietà.",
+    "objectives": [
+      "Creare oggetti con struttura coerente",
+      "Analizzare l'impatto sulle prestazioni"
+    ],
+    "starterCode": "",
+    "validator": "hidden_classes",
+    "hints": [
+      "Evita di aggiungere proprietà in ordine diverso."
+    ]
+  },
+  {
+    "id": 303,
+    "title": "Inline Cache",
+    "difficulty": "Expert",
+    "category": "V8",
+    "xp": 365,
+    "estimatedTime": "70 min",
+    "description": "Studia il funzionamento delle Inline Cache e il loro effetto sulle performance.",
+    "objectives": [
+      "Comprendere il caching degli accessi",
+      "Identificare casi monomorfici e polimorfici"
+    ],
+    "starterCode": "",
+    "validator": "inline_cache",
+    "hints": [
+      "La stabilità della forma degli oggetti favorisce l'ottimizzazione."
+    ]
+  },
+  {
+    "id": 304,
+    "title": "Garbage Collector",
+    "difficulty": "Expert",
+    "category": "Memory",
+    "xp": 370,
+    "estimatedTime": "75 min",
+    "description": "Analizza il funzionamento del Garbage Collector e individua possibili memory leak.",
+    "objectives": [
+      "Comprendere il ciclo mark-and-sweep",
+      "Individuare riferimenti inutili",
+      "Ridurre il consumo di memoria"
+    ],
+    "starterCode": "",
+    "validator": "garbage_collector",
+    "hints": [
+      "Una reference ancora attiva impedisce il rilascio della memoria."
+    ]
+  },
+  {
+    "id": 305,
+    "title": "Memory Leak Investigation",
+    "difficulty": "Expert",
+    "category": "Memory",
+    "xp": 380,
+    "estimatedTime": "90 min",
+    "description": "Analizza un'applicazione che presenta un memory leak e individua la causa.",
+    "objectives": [
+      "Analizzare heap e oggetti",
+      "Individuare il leak",
+      "Correggere il problema"
+    ],
+    "starterCode": "",
+    "validator": "memory_leak",
+    "hints": [
+      "Controlla listener non rimossi, timer persistenti e riferimenti globali."
+    ]
+  }
+  ,
+{
+  "id": 306,
+  "title": "WeakMap Fundamentals",
+  "difficulty": "Expert",
+  "category": "Memory",
+  "xp": 385,
+  "estimatedTime": "60 min",
+  "description": "Utilizza una WeakMap per associare dati privati a oggetti senza impedirne la garbage collection.",
+  "objectives": [
+    "Crea una WeakMap",
+    "Associa dati a un oggetto",
+    "Recupera il valore tramite get()"
+  ],
+  "starterCode": "",
+  "validator": "weakmap_basic",
+  "hints": [
+    "Le chiavi di una WeakMap devono essere oggetti."
+  ]
+},
+{
+  "id": 307,
+  "title": "WeakSet Usage",
+  "difficulty": "Expert",
+  "category": "Memory",
+  "xp": 390,
+  "estimatedTime": "60 min",
+  "description": "Utilizza un WeakSet per memorizzare riferimenti a oggetti senza mantenerli in memoria inutilmente.",
+  "objectives": [
+    "Crea un WeakSet",
+    "Aggiungi oggetti",
+    "Verifica la presenza con has()"
+  ],
+  "starterCode": "",
+  "validator": "weakset_usage",
+  "hints": [
+    "WeakSet accetta esclusivamente oggetti."
+  ]
+},
+{
+  "id": 308,
+  "title": "Private Data Pattern",
+  "difficulty": "Expert",
+  "category": "Patterns",
+  "xp": 395,
+  "estimatedTime": "75 min",
+  "description": "Implementa un pattern per dati privati utilizzando WeakMap.",
+  "objectives": [
+    "Nascondi lo stato interno",
+    "Esporri solo metodi pubblici",
+    "Evita l'accesso diretto ai dati"
+  ],
+  "starterCode": "",
+  "validator": "private_data_pattern",
+  "hints": [
+    "WeakMap è spesso usata per simulare campi privati."
+  ]
+},
+{
+  "id": 309,
+  "title": "Memory Profiling",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 400,
+  "estimatedTime": "90 min",
+  "description": "Analizza il consumo di memoria di un'applicazione individuando oggetti persistenti e allocazioni anomale.",
+  "objectives": [
+    "Osserva l'heap",
+    "Identifica oggetti non rilasciati",
+    "Proponi una correzione"
+  ],
+  "starterCode": "",
+  "validator": "memory_profiling",
+  "hints": [
+    "Confronta più snapshot della memoria."
+  ]
+},
+{
+  "id": 310,
+  "title": "Memory Optimization",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 410,
+  "estimatedTime": "90 min",
+  "description": "Ottimizza un'applicazione riducendo allocazioni inutili e riferimenti persistenti.",
+  "objectives": [
+    "Riduci le allocazioni",
+    "Elimina riferimenti inutilizzati",
+    "Verifica il miglioramento delle prestazioni"
+  ],
+  "starterCode": "",
+  "validator": "memory_optimization",
+  "hints": [
+    "Riutilizza gli oggetti quando possibile ed evita di mantenere riferimenti globali non necessari."
+  ]
+}
+,
+{
+  "id": 311,
+  "title": "Singleton Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 420,
+  "estimatedTime": "60 min",
+  "description": "Implementa il pattern Singleton garantendo una sola istanza della classe.",
+  "objectives": [
+    "Crea una classe Singleton",
+    "Impedisci istanze multiple",
+    "Verifica il comportamento"
+  ],
+  "starterCode": "",
+  "validator": "singleton_pattern",
+  "hints": [
+    "Conserva internamente l'unica istanza disponibile."
+  ]
+},
+{
+  "id": 312,
+  "title": "Factory Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 425,
+  "estimatedTime": "70 min",
+  "description": "Realizza una Factory capace di creare oggetti diversi in base al tipo richiesto.",
+  "objectives": [
+    "Implementa una Factory",
+    "Gestisci più tipi di oggetto",
+    "Riduci il codice duplicato"
+  ],
+  "starterCode": "",
+  "validator": "factory_pattern",
+  "hints": [
+    "Centralizza la logica di creazione degli oggetti."
+  ]
+},
+{
+  "id": 313,
+  "title": "Builder Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 430,
+  "estimatedTime": "75 min",
+  "description": "Costruisci oggetti complessi utilizzando il Builder Pattern.",
+  "objectives": [
+    "Implementa un Builder",
+    "Configura l'oggetto passo dopo passo",
+    "Restituisci l'istanza finale"
+  ],
+  "starterCode": "",
+  "validator": "builder_pattern",
+  "hints": [
+    "Ogni metodo può restituire this per consentire il method chaining."
+  ]
+},
+{
+  "id": 314,
+  "title": "Strategy Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 440,
+  "estimatedTime": "80 min",
+  "description": "Permetti di cambiare dinamicamente l'algoritmo utilizzato dall'applicazione.",
+  "objectives": [
+    "Definisci più strategie",
+    "Seleziona la strategia a runtime",
+    "Mantieni il codice estensibile"
+  ],
+  "starterCode": "",
+  "validator": "strategy_pattern",
+  "hints": [
+    "Ogni strategia deve implementare la stessa interfaccia."
+  ]
+},
+{
+  "id": 315,
+  "title": "Observer Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 450,
+  "estimatedTime": "90 min",
+  "description": "Implementa un sistema publish/subscribe utilizzando l'Observer Pattern.",
+  "objectives": [
+    "Registra gli observer",
+    "Invia notifiche agli iscritti",
+    "Gestisci subscribe e unsubscribe"
+  ],
+  "starterCode": "",
+  "validator": "observer_pattern",
+  "hints": [
+    "Mantieni un elenco degli observer e notificane tutti quando cambia lo stato."
+  ]
+}
+,
+{
+  "id": 316,
+  "title": "Dependency Injection",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 460,
+  "estimatedTime": "90 min",
+  "description": "Progetta un'applicazione che utilizzi la Dependency Injection per ridurre l'accoppiamento tra i componenti.",
+  "objectives": [
+    "Separare dipendenze e logica",
+    "Iniettare i servizi tramite costruttore",
+    "Favorire il testing"
+  ],
+  "starterCode": "",
+  "validator": "dependency_injection",
+  "hints": [
+    "Non creare direttamente le dipendenze all'interno della classe."
+  ]
+},
+{
+  "id": 317,
+  "title": "Module Pattern",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 470,
+  "estimatedTime": "75 min",
+  "description": "Implementa il Module Pattern per incapsulare stato e metodi pubblici.",
+  "objectives": [
+    "Nascondere i dati privati",
+    "Esporre una API pubblica",
+    "Ridurre l'inquinamento del namespace globale"
+  ],
+  "starterCode": "",
+  "validator": "module_pattern",
+  "hints": [
+    "Puoi utilizzare una IIFE oppure i moduli ES."
+  ]
+},
+{
+  "id": 318,
+  "title": "Facade Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 480,
+  "estimatedTime": "80 min",
+  "description": "Realizza una Facade che semplifichi l'accesso a un sottosistema composto da più moduli.",
+  "objectives": [
+    "Creare un'interfaccia semplificata",
+    "Ridurre la complessità del codice client",
+    "Delegare le operazioni ai moduli interni"
+  ],
+  "starterCode": "",
+  "validator": "facade_pattern",
+  "hints": [
+    "La Facade non sostituisce i moduli, ma li coordina."
+  ]
+},
+{
+  "id": 319,
+  "title": "Proxy Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 490,
+  "estimatedTime": "90 min",
+  "description": "Implementa un Proxy che controlli l'accesso a un oggetto e registri le operazioni eseguite.",
+  "objectives": [
+    "Creare un Proxy",
+    "Intercettare letture e scritture",
+    "Registrare le operazioni"
+  ],
+  "starterCode": "",
+  "validator": "proxy_pattern",
+  "hints": [
+    "Usa l'oggetto Proxy con i trap get e set."
+  ]
+},
+{
+  "id": 320,
+  "title": "Decorator Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 500,
+  "estimatedTime": "90 min",
+  "description": "Estendi dinamicamente il comportamento di un oggetto senza modificarne l'implementazione originale.",
+  "objectives": [
+    "Applicare un Decorator",
+    "Aggiungere nuove funzionalità",
+    "Mantenere il comportamento originale"
+  ],
+  "starterCode": "",
+  "validator": "decorator_pattern",
+  "hints": [
+    "Componi il comportamento invece di modificare direttamente la classe."
+  ]
+}
+,
+{
+  "id": 321,
+  "title": "Middleware Pattern",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 510,
+  "estimatedTime": "90 min",
+  "description": "Realizza una pipeline di middleware che elabori una richiesta in sequenza.",
+  "objectives": [
+    "Implementa una catena di middleware",
+    "Passa il controllo con next()",
+    "Interrompi la pipeline quando necessario"
+  ],
+  "starterCode": "",
+  "validator": "middleware_pattern",
+  "hints": [
+    "Ogni middleware riceve request, response e next."
+  ]
+},
+{
+  "id": 322,
+  "title": "Chain of Responsibility",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 520,
+  "estimatedTime": "90 min",
+  "description": "Instrada una richiesta attraverso una catena di gestori fino a trovare quello appropriato.",
+  "objectives": [
+    "Implementa più handler",
+    "Collega gli handler tra loro",
+    "Propaga la richiesta"
+  ],
+  "starterCode": "",
+  "validator": "chain_of_responsibility",
+  "hints": [
+    "Ogni handler decide se elaborare la richiesta o passarla al successivo."
+  ]
+},
+{
+  "id": 323,
+  "title": "Command Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 530,
+  "estimatedTime": "100 min",
+  "description": "Incapsula operazioni in oggetti comando supportando esecuzione e annullamento.",
+  "objectives": [
+    "Definisci un'interfaccia Command",
+    "Implementa execute()",
+    "Implementa undo()"
+  ],
+  "starterCode": "",
+  "validator": "command_pattern",
+  "hints": [
+    "Ogni comando deve essere indipendente dal chiamante."
+  ]
+},
+{
+  "id": 324,
+  "title": "Mediator Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 540,
+  "estimatedTime": "100 min",
+  "description": "Coordina la comunicazione tra più componenti tramite un mediatore centrale.",
+  "objectives": [
+    "Implementa il Mediatore",
+    "Riduci l'accoppiamento tra componenti",
+    "Instrada gli eventi"
+  ],
+  "starterCode": "",
+  "validator": "mediator_pattern",
+  "hints": [
+    "I componenti non dovrebbero comunicare direttamente tra loro."
+  ]
+},
+{
+  "id": 325,
+  "title": "State Pattern",
+  "difficulty": "Expert",
+  "category": "Design Patterns",
+  "xp": 550,
+  "estimatedTime": "110 min",
+  "description": "Implementa un oggetto il cui comportamento cambia in base allo stato interno.",
+  "objectives": [
+    "Definisci gli stati",
+    "Permetti le transizioni",
+    "Modifica dinamicamente il comportamento"
+  ],
+  "starterCode": "",
+  "validator": "state_pattern",
+  "hints": [
+    "Ogni stato può essere rappresentato da una classe dedicata."
+  ]
+}
+,
+{
+  "id": 326,
+  "title": "Event Bus",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 560,
+  "estimatedTime": "90 min",
+  "description": "Implementa un Event Bus per permettere ai componenti di comunicare senza dipendenze dirette.",
+  "objectives": [
+    "Implementa subscribe()",
+    "Implementa publish()",
+    "Implementa unsubscribe()"
+  ],
+  "starterCode": "",
+  "validator": "event_bus",
+  "hints": [
+    "Utilizza una mappa di eventi con i relativi listener."
+  ]
+},
+{
+  "id": 327,
+  "title": "CQRS Introduction",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 570,
+  "estimatedTime": "100 min",
+  "description": "Separa le operazioni di lettura da quelle di scrittura seguendo il principio CQRS.",
+  "objectives": [
+    "Separare Query e Command",
+    "Definire due servizi distinti",
+    "Verificare la separazione delle responsabilità"
+  ],
+  "starterCode": "",
+  "validator": "cqrs_basic",
+  "hints": [
+    "Le query non devono modificare lo stato dell'applicazione."
+  ]
+},
+{
+  "id": 328,
+  "title": "Dependency Container",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 580,
+  "estimatedTime": "100 min",
+  "description": "Realizza un semplice contenitore per la gestione delle dipendenze.",
+  "objectives": [
+    "Registrare servizi",
+    "Risolvere dipendenze",
+    "Gestire singleton e transient"
+  ],
+  "starterCode": "",
+  "validator": "dependency_container",
+  "hints": [
+    "Mantieni un registro interno dei servizi disponibili."
+  ]
+},
+{
+  "id": 329,
+  "title": "Plugin Architecture",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 590,
+  "estimatedTime": "110 min",
+  "description": "Progetta un sistema estendibile tramite plugin caricati dinamicamente.",
+  "objectives": [
+    "Definire un'interfaccia comune",
+    "Registrare plugin",
+    "Caricare ed eseguire i plugin"
+  ],
+  "starterCode": "",
+  "validator": "plugin_architecture",
+  "hints": [
+    "Ogni plugin dovrebbe implementare la stessa API pubblica."
+  ]
+},
+{
+  "id": 330,
+  "title": "Event Sourcing Basics",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 600,
+  "estimatedTime": "120 min",
+  "description": "Ricostruisci lo stato di un'applicazione partendo dalla sequenza degli eventi registrati.",
+  "objectives": [
+    "Registrare gli eventi",
+    "Ricostruire lo stato corrente",
+    "Separare eventi e modello dati"
+  ],
+  "starterCode": "",
+  "validator": "event_sourcing",
+  "hints": [
+    "Lo stato deriva dalla riproduzione cronologica degli eventi."
+  ]
+}
+,
+{
+  "id": 331,
+  "title": "Micro Frontend Architecture",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 610,
+  "estimatedTime": "120 min",
+  "description": "Progetta un'applicazione suddivisa in micro frontend indipendenti che possano essere sviluppati e distribuiti separatamente.",
+  "objectives": [
+    "Separare le responsabilità",
+    "Definire un punto di integrazione",
+    "Ridurre l'accoppiamento tra moduli"
+  ],
+  "starterCode": "",
+  "validator": "micro_frontend",
+  "hints": [
+    "Ogni micro frontend dovrebbe poter essere sviluppato e distribuito autonomamente."
+  ]
+},
+{
+  "id": 332,
+  "title": "Module Federation",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 620,
+  "estimatedTime": "120 min",
+  "description": "Condividi moduli tra applicazioni differenti utilizzando il concetto di Module Federation.",
+  "objectives": [
+    "Esponi un modulo",
+    "Importa un modulo remoto",
+    "Gestisci le dipendenze condivise"
+  ],
+  "starterCode": "",
+  "validator": "module_federation",
+  "hints": [
+    "Progetta i moduli in modo che siano riutilizzabili."
+  ]
+},
+{
+  "id": 333,
+  "title": "Dynamic Module Loading",
+  "difficulty": "Expert",
+  "category": "Modules",
+  "xp": 630,
+  "estimatedTime": "110 min",
+  "description": "Carica dinamicamente un modulo JavaScript soltanto quando necessario.",
+  "objectives": [
+    "Usa import() dinamico",
+    "Riduci il bundle iniziale",
+    "Gestisci eventuali errori di caricamento"
+  ],
+  "starterCode": "",
+  "validator": "dynamic_import",
+  "hints": [
+    "import() restituisce una Promise."
+  ]
+},
+{
+  "id": 334,
+  "title": "Custom Elements",
+  "difficulty": "Expert",
+  "category": "Web Components",
+  "xp": 640,
+  "estimatedTime": "120 min",
+  "description": "Crea un Web Component personalizzato utilizzando la classe HTMLElement.",
+  "objectives": [
+    "Estendi HTMLElement",
+    "Registra il componente",
+    "Utilizza il nuovo tag HTML"
+  ],
+  "starterCode": "",
+  "validator": "custom_elements",
+  "hints": [
+    "Usa customElements.define()."
+  ]
+},
+{
+  "id": 335,
+  "title": "Shadow DOM",
+  "difficulty": "Expert",
+  "category": "Web Components",
+  "xp": 650,
+  "estimatedTime": "120 min",
+  "description": "Implementa uno Shadow DOM per isolare markup e stili di un componente.",
+  "objectives": [
+    "Crea uno Shadow Root",
+    "Inserisci template e stili",
+    "Verifica l'isolamento del componente"
+  ],
+  "starterCode": "",
+  "validator": "shadow_dom",
+  "hints": [
+    "Usa element.attachShadow({ mode: 'open' })."
+  ]
+}
+,
+{
+  "id": 336,
+  "title": "HTML Template",
+  "difficulty": "Expert",
+  "category": "Web Components",
+  "xp": 660,
+  "estimatedTime": "90 min",
+  "description": "Utilizza l'elemento <template> per creare componenti riutilizzabili senza renderizzarli immediatamente.",
+  "objectives": [
+    "Crea un template HTML",
+    "Clona il contenuto",
+    "Inseriscilo dinamicamente nel DOM"
+  ],
+  "starterCode": "",
+  "validator": "html_template",
+  "hints": [
+    "Usa template.content.cloneNode(true)."
+  ]
+},
+{
+  "id": 337,
+  "title": "Custom Events",
+  "difficulty": "Expert",
+  "category": "DOM",
+  "xp": 670,
+  "estimatedTime": "90 min",
+  "description": "Genera e intercetta eventi personalizzati tra componenti.",
+  "objectives": [
+    "Crea un CustomEvent",
+    "Passa dati tramite detail",
+    "Gestisci l'evento con addEventListener()"
+  ],
+  "starterCode": "",
+  "validator": "custom_event",
+  "hints": [
+    "Usa new CustomEvent(nome, { detail })."
+  ]
+},
+{
+  "id": 338,
+  "title": "MutationObserver",
+  "difficulty": "Expert",
+  "category": "DOM",
+  "xp": 680,
+  "estimatedTime": "100 min",
+  "description": "Monitora le modifiche del DOM utilizzando MutationObserver.",
+  "objectives": [
+    "Osserva un nodo",
+    "Rileva aggiunte e rimozioni",
+    "Analizza le mutazioni ricevute"
+  ],
+  "starterCode": "",
+  "validator": "mutation_observer",
+  "hints": [
+    "Configura observe() con childList e subtree."
+  ]
+},
+{
+  "id": 339,
+  "title": "ResizeObserver",
+  "difficulty": "Expert",
+  "category": "DOM",
+  "xp": 690,
+  "estimatedTime": "100 min",
+  "description": "Rileva automaticamente il ridimensionamento di un elemento HTML.",
+  "objectives": [
+    "Crea un ResizeObserver",
+    "Osserva un elemento",
+    "Aggiorna l'interfaccia in base alle nuove dimensioni"
+  ],
+  "starterCode": "",
+  "validator": "resize_observer",
+  "hints": [
+    "Il callback riceve uno o più ResizeObserverEntry."
+  ]
+},
+{
+  "id": 340,
+  "title": "IntersectionObserver Advanced",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 700,
+  "estimatedTime": "110 min",
+  "description": "Implementa il caricamento lazy di immagini e contenuti utilizzando IntersectionObserver.",
+  "objectives": [
+    "Osserva più elementi",
+    "Carica il contenuto solo quando è visibile",
+    "Disattiva l'osservazione dopo il caricamento"
+  ],
+  "starterCode": "",
+  "validator": "intersection_observer_advanced",
+  "hints": [
+    "Usa observer.unobserve() dopo il caricamento."
+  ]
+}
+,
+{
+  "id": 341,
+  "title": "Input Sanitization",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 710,
+  "estimatedTime": "90 min",
+  "description": "Implementa una funzione che sanitizzi l'input dell'utente prima di inserirlo nel DOM.",
+  "objectives": [
+    "Rimuovere caratteri potenzialmente pericolosi",
+    "Evitare l'inserimento diretto di HTML",
+    "Restituire una stringa sicura"
+  ],
+  "starterCode": "",
+  "validator": "input_sanitization",
+  "hints": [
+    "Preferisci textContent invece di innerHTML quando possibile."
+  ]
+},
+{
+  "id": 342,
+  "title": "Prevent XSS",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 720,
+  "estimatedTime": "100 min",
+  "description": "Proteggi un'applicazione da attacchi Cross-Site Scripting (XSS).",
+  "objectives": [
+    "Individuare punti vulnerabili",
+    "Sanitizzare l'input",
+    "Renderizzare il contenuto in modo sicuro"
+  ],
+  "starterCode": "",
+  "validator": "prevent_xss",
+  "hints": [
+    "Non fidarti mai dei dati provenienti dall'utente."
+  ]
+},
+{
+  "id": 343,
+  "title": "Content Security Policy",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 730,
+  "estimatedTime": "110 min",
+  "description": "Configura una Content Security Policy per limitare l'esecuzione di script non autorizzati.",
+  "objectives": [
+    "Comprendere le direttive CSP",
+    "Consentire solo sorgenti attendibili",
+    "Bloccare script inline"
+  ],
+  "starterCode": "",
+  "validator": "content_security_policy",
+  "hints": [
+    "Analizza direttive come default-src, script-src e style-src."
+  ]
+},
+{
+  "id": 344,
+  "title": "CSRF Protection",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 740,
+  "estimatedTime": "120 min",
+  "description": "Implementa una protezione di base contro gli attacchi Cross-Site Request Forgery.",
+  "objectives": [
+    "Comprendere il funzionamento dei CSRF Token",
+    "Inviare il token nelle richieste",
+    "Verificare il token lato server"
+  ],
+  "starterCode": "",
+  "validator": "csrf_protection",
+  "hints": [
+    "Ogni richiesta sensibile dovrebbe includere un token anti-CSRF."
+  ]
+},
+{
+  "id": 345,
+  "title": "Secure Authentication Flow",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 750,
+  "estimatedTime": "120 min",
+  "description": "Progetta un flusso di autenticazione sicuro gestendo token, sessione e logout.",
+  "objectives": [
+    "Gestire il login",
+    "Proteggere il token di autenticazione",
+    "Implementare un logout sicuro"
+  ],
+  "starterCode": "",
+  "validator": "secure_authentication",
+  "hints": [
+    "Valuta dove memorizzare i token e come invalidarli correttamente."
+  ]
+}
+,
+{
+  "id": 346,
+  "title": "REST API Security",
+  "difficulty": "Expert",
+  "category": "API Security",
+  "xp": 760,
+  "estimatedTime": "120 min",
+  "description": "Progetta una strategia di sicurezza per un'API REST proteggendo endpoint, dati e credenziali.",
+  "objectives": [
+    "Proteggere gli endpoint sensibili",
+    "Applicare il principio del minimo privilegio",
+    "Gestire correttamente gli errori HTTP"
+  ],
+  "starterCode": "",
+  "validator": "rest_api_security",
+  "hints": [
+    "Evita di esporre informazioni sensibili nei messaggi di errore."
+  ]
+},
+{
+  "id": 347,
+  "title": "JWT Authentication",
+  "difficulty": "Expert",
+  "category": "Authentication",
+  "xp": 770,
+  "estimatedTime": "120 min",
+  "description": "Implementa un sistema di autenticazione basato su JSON Web Token.",
+  "objectives": [
+    "Generare un JWT",
+    "Verificare il token",
+    "Gestire la scadenza"
+  ],
+  "starterCode": "",
+  "validator": "jwt_authentication",
+  "hints": [
+    "Comprendi la struttura Header.Payload.Signature."
+  ]
+},
+{
+  "id": 348,
+  "title": "Refresh Token Flow",
+  "difficulty": "Expert",
+  "category": "Authentication",
+  "xp": 780,
+  "estimatedTime": "130 min",
+  "description": "Progetta un sistema di rinnovo automatico dell'access token tramite refresh token.",
+  "objectives": [
+    "Separare access token e refresh token",
+    "Rinnovare il token in sicurezza",
+    "Gestire la revoca"
+  ],
+  "starterCode": "",
+  "validator": "refresh_token",
+  "hints": [
+    "Il refresh token dovrebbe avere una durata diversa dall'access token."
+  ]
+},
+{
+  "id": 349,
+  "title": "OAuth 2.0 Flow",
+  "difficulty": "Expert",
+  "category": "Authentication",
+  "xp": 790,
+  "estimatedTime": "140 min",
+  "description": "Comprendi e implementa un Authorization Code Flow basato su OAuth 2.0.",
+  "objectives": [
+    "Identificare gli attori del protocollo",
+    "Ottenere un authorization code",
+    "Scambiarlo con un access token"
+  ],
+  "starterCode": "",
+  "validator": "oauth2_flow",
+  "hints": [
+    "Studia il flusso Authorization Code con PKCE."
+  ]
+},
+{
+  "id": 350,
+  "title": "OpenID Connect",
+  "difficulty": "Expert",
+  "category": "Authentication",
+  "xp": 800,
+  "estimatedTime": "150 min",
+  "description": "Integra l'autenticazione dell'utente tramite OpenID Connect sopra OAuth 2.0.",
+  "objectives": [
+    "Comprendere il ruolo dell'ID Token",
+    "Recuperare le informazioni del profilo",
+    "Validare il token ricevuto"
+  ],
+  "starterCode": "",
+  "validator": "openid_connect",
+  "hints": [
+    "OpenID Connect aggiunge l'autenticazione al protocollo OAuth 2.0."
+  ]
+}
+,
+{
+  "id": 351,
+  "title": "Code Splitting",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 810,
+  "estimatedTime": "120 min",
+  "description": "Suddividi un'applicazione in bundle separati caricati solo quando necessario.",
+  "objectives": [
+    "Ridurre il bundle iniziale",
+    "Caricare moduli on-demand",
+    "Verificare il miglioramento dei tempi di caricamento"
+  ],
+  "starterCode": "",
+  "validator": "code_splitting",
+  "hints": [
+    "Usa import() dinamico per caricare i moduli."
+  ]
+},
+{
+  "id": 352,
+  "title": "Lazy Loading",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 820,
+  "estimatedTime": "120 min",
+  "description": "Implementa il caricamento differito di componenti e risorse per migliorare la velocità iniziale.",
+  "objectives": [
+    "Caricare contenuti solo quando necessari",
+    "Ridurre il tempo di rendering iniziale",
+    "Misurare il beneficio ottenuto"
+  ],
+  "starterCode": "",
+  "validator": "lazy_loading",
+  "hints": [
+    "Combina import() dinamico e IntersectionObserver."
+  ]
+},
+{
+  "id": 353,
+  "title": "Tree Shaking",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 830,
+  "estimatedTime": "130 min",
+  "description": "Configura il progetto affinché il bundler elimini automaticamente il codice inutilizzato.",
+  "objectives": [
+    "Comprendere il funzionamento del tree shaking",
+    "Utilizzare moduli ES",
+    "Ridurre la dimensione del bundle finale"
+  ],
+  "starterCode": "",
+  "validator": "tree_shaking",
+  "hints": [
+    "Il tree shaking funziona al meglio con import/export ES Modules."
+  ]
+},
+{
+  "id": 354,
+  "title": "Bundle Analysis",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 840,
+  "estimatedTime": "130 min",
+  "description": "Analizza la composizione del bundle per individuare librerie e moduli che incidono maggiormente sulle dimensioni finali.",
+  "objectives": [
+    "Individuare i moduli più pesanti",
+    "Ridurre dipendenze inutili",
+    "Ottimizzare il bundle"
+  ],
+  "starterCode": "",
+  "validator": "bundle_analysis",
+  "hints": [
+    "Confronta la dimensione dei moduli prima e dopo l'ottimizzazione."
+  ]
+},
+{
+  "id": 355,
+  "title": "Performance Profiling",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 850,
+  "estimatedTime": "150 min",
+  "description": "Analizza un'applicazione con gli strumenti di profiling del browser per individuare colli di bottiglia e ottimizzarne l'esecuzione.",
+  "objectives": [
+    "Registrare un profilo di esecuzione",
+    "Individuare funzioni lente",
+    "Proporre e verificare un'ottimizzazione"
+  ],
+  "starterCode": "",
+  "validator": "performance_profiling",
+  "hints": [
+    "Confronta i risultati prima e dopo le ottimizzazioni applicate."
+  ]
+}
+,
+{
+  "id": 356,
+  "title": "Rendering Pipeline",
+  "difficulty": "Expert",
+  "category": "Rendering",
+  "xp": 860,
+  "estimatedTime": "120 min",
+  "description": "Analizza le fasi della pipeline di rendering del browser e individua i punti in cui è possibile ottimizzare le prestazioni.",
+  "objectives": [
+    "Comprendere Layout, Paint e Composite",
+    "Identificare le operazioni costose",
+    "Proporre ottimizzazioni"
+  ],
+  "starterCode": "",
+  "validator": "rendering_pipeline",
+  "hints": [
+    "Ogni modifica al DOM non ha lo stesso costo."
+  ]
+},
+{
+  "id": 357,
+  "title": "Reflow vs Repaint",
+  "difficulty": "Expert",
+  "category": "Rendering",
+  "xp": 870,
+  "estimatedTime": "120 min",
+  "description": "Confronta Reflow e Repaint e riduci il numero di aggiornamenti del layout.",
+  "objectives": [
+    "Distinguere Reflow e Repaint",
+    "Ridurre le modifiche al layout",
+    "Misurare il miglioramento"
+  ],
+  "starterCode": "",
+  "validator": "reflow_repaint",
+  "hints": [
+    "Raggruppa le modifiche al DOM quando possibile."
+  ]
+},
+{
+  "id": 358,
+  "title": "DOM Optimization",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 880,
+  "estimatedTime": "130 min",
+  "description": "Ottimizza operazioni ripetitive sul DOM riducendo query e manipolazioni inutili.",
+  "objectives": [
+    "Ridurre le query al DOM",
+    "Riutilizzare i riferimenti",
+    "Aggiornare il DOM in modo efficiente"
+  ],
+  "starterCode": "",
+  "validator": "dom_optimization",
+  "hints": [
+    "Memorizza i riferimenti agli elementi frequentemente utilizzati."
+  ]
+},
+{
+  "id": 359,
+  "title": "Virtual DOM Concepts",
+  "difficulty": "Expert",
+  "category": "Architecture",
+  "xp": 890,
+  "estimatedTime": "140 min",
+  "description": "Comprendi il funzionamento del Virtual DOM e confrontalo con la manipolazione diretta del DOM.",
+  "objectives": [
+    "Comprendere il processo di diffing",
+    "Identificare i vantaggi",
+    "Valutare i casi d'uso"
+  ],
+  "starterCode": "",
+  "validator": "virtual_dom",
+  "hints": [
+    "Il Virtual DOM riduce gli aggiornamenti diretti del DOM reale."
+  ]
+},
+{
+  "id": 360,
+  "title": "Render Scheduling",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 900,
+  "estimatedTime": "150 min",
+  "description": "Pianifica aggiornamenti grafici utilizzando requestAnimationFrame() per ottenere animazioni fluide e ridurre il lavoro del browser.",
+  "objectives": [
+    "Usare requestAnimationFrame()",
+    "Sincronizzare gli aggiornamenti con il rendering",
+    "Ridurre gli scatti nelle animazioni"
+  ],
+  "starterCode": "",
+  "validator": "render_scheduling",
+  "hints": [
+    "Evita di usare setInterval() per animazioni complesse quando requestAnimationFrame() è più adatto."
+  ]
+}
+,
+{
+  "id": 361,
+  "title": "Advanced Caching",
+  "difficulty": "Expert",
+  "category": "PWA",
+  "xp": 910,
+  "estimatedTime": "120 min",
+  "description": "Progetta una strategia di caching che distingua risorse statiche, dinamiche e dati API.",
+  "objectives": [
+    "Identificare le tipologie di risorse",
+    "Applicare strategie di caching differenti",
+    "Ridurre il traffico di rete"
+  ],
+  "starterCode": "",
+  "validator": "advanced_caching",
+  "hints": [
+    "Non tutte le risorse dovrebbero utilizzare la stessa strategia di cache."
+  ]
+},
+{
+  "id": 362,
+  "title": "Cache API",
+  "difficulty": "Expert",
+  "category": "PWA",
+  "xp": 920,
+  "estimatedTime": "130 min",
+  "description": "Utilizza la Cache API per memorizzare e recuperare risorse in modo programmabile.",
+  "objectives": [
+    "Aprire una cache",
+    "Salvare risorse",
+    "Recuperare dati dalla cache"
+  ],
+  "starterCode": "",
+  "validator": "cache_api",
+  "hints": [
+    "Usa caches.open() e cache.put()."
+  ]
+},
+{
+  "id": 363,
+  "title": "IndexedDB Advanced",
+  "difficulty": "Expert",
+  "category": "Storage",
+  "xp": 930,
+  "estimatedTime": "150 min",
+  "description": "Realizza un database locale con più object store e query avanzate.",
+  "objectives": [
+    "Creare più object store",
+    "Utilizzare indici",
+    "Eseguire ricerche efficienti"
+  ],
+  "starterCode": "",
+  "validator": "indexeddb_advanced",
+  "hints": [
+    "Definisci gli indici durante l'evento onupgradeneeded."
+  ]
+},
+{
+  "id": 364,
+  "title": "Offline Synchronization",
+  "difficulty": "Expert",
+  "category": "PWA",
+  "xp": 940,
+  "estimatedTime": "150 min",
+  "description": "Implementa un meccanismo che sincronizzi automaticamente i dati quando la connessione viene ripristinata.",
+  "objectives": [
+    "Memorizzare le modifiche offline",
+    "Rilevare il ritorno della connessione",
+    "Sincronizzare le modifiche con il server"
+  ],
+  "starterCode": "",
+  "validator": "offline_sync",
+  "hints": [
+    "Conserva le operazioni in una coda persistente."
+  ]
+},
+{
+  "id": 365,
+  "title": "Advanced Progressive Web App",
+  "difficulty": "Expert",
+  "category": "PWA",
+  "xp": 950,
+  "estimatedTime": "180 min",
+  "description": "Progetta una Progressive Web App completa con supporto offline, caching, aggiornamenti e installazione.",
+  "objectives": [
+    "Configurare il manifest",
+    "Registrare il Service Worker",
+    "Supportare l'utilizzo offline",
+    "Consentire l'installazione della PWA"
+  ],
+  "starterCode": "",
+  "validator": "advanced_pwa",
+  "hints": [
+    "Integra Manifest, Service Worker e Cache API in un'unica soluzione."
+  ]
+}
+,
+{
+  "id": 366,
+  "title": "WebAssembly Integration",
+  "difficulty": "Expert",
+  "category": "WebAssembly",
+  "xp": 960,
+  "estimatedTime": "180 min",
+  "description": "Integra un modulo WebAssembly in un'applicazione JavaScript e invocane le funzioni.",
+  "objectives": [
+    "Caricare un modulo WASM",
+    "Istanziare il modulo",
+    "Richiamare una funzione esportata"
+  ],
+  "starterCode": "",
+  "validator": "webassembly_basic",
+  "hints": [
+    "Usa WebAssembly.instantiate() oppure instantiateStreaming()."
+  ]
+},
+{
+  "id": 367,
+  "title": "WebCrypto API",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 970,
+  "estimatedTime": "180 min",
+  "description": "Utilizza la WebCrypto API per generare chiavi e calcolare un hash crittografico.",
+  "objectives": [
+    "Generare una chiave",
+    "Calcolare un digest",
+    "Comprendere le operazioni asincrone della Crypto API"
+  ],
+  "starterCode": "",
+  "validator": "webcrypto_api",
+  "hints": [
+    "Esplora crypto.subtle.digest() e crypto.subtle.generateKey()."
+  ]
+},
+{
+  "id": 368,
+  "title": "WebRTC Data Channel",
+  "difficulty": "Expert",
+  "category": "Networking",
+  "xp": 980,
+  "estimatedTime": "210 min",
+  "description": "Stabilisci una comunicazione peer-to-peer tramite WebRTC DataChannel.",
+  "objectives": [
+    "Creare una RTCPeerConnection",
+    "Aprire un DataChannel",
+    "Inviare e ricevere messaggi"
+  ],
+  "starterCode": "",
+  "validator": "webrtc_datachannel",
+  "hints": [
+    "Comprendi il ruolo di ICE Candidate e SDP."
+  ]
+},
+{
+  "id": 369,
+  "title": "Compression Streams API",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 990,
+  "estimatedTime": "180 min",
+  "description": "Comprimi e decomprimi dati utilizzando la Compression Streams API.",
+  "objectives": [
+    "Creare uno stream di compressione",
+    "Elaborare dati binari",
+    "Verificare il risultato"
+  ],
+  "starterCode": "",
+  "validator": "compression_streams",
+  "hints": [
+    "Esamina CompressionStream e DecompressionStream."
+  ]
+},
+{
+  "id": 370,
+  "title": "WebGPU Introduction",
+  "difficulty": "Expert",
+  "category": "Graphics",
+  "xp": 1000,
+  "estimatedTime": "240 min",
+  "description": "Inizializza una pipeline grafica di base utilizzando la WebGPU API.",
+  "objectives": [
+    "Richiedere un GPUAdapter",
+    "Creare un GPUDevice",
+    "Preparare una semplice pipeline di rendering"
+  ],
+  "starterCode": "",
+  "validator": "webgpu_intro",
+  "hints": [
+    "La disponibilità di WebGPU dipende dal browser e dall'hardware."
+  ]
+}
+,
+{
+  "id": 371,
+  "title": "Web Serial API",
+  "difficulty": "Expert",
+  "category": "Hardware",
+  "xp": 1010,
+  "estimatedTime": "180 min",
+  "description": "Realizza un'applicazione che comunichi con un dispositivo tramite la Web Serial API.",
+  "objectives": [
+    "Richiedere l'accesso a una porta seriale",
+    "Aprire la connessione",
+    "Inviare e ricevere dati"
+  ],
+  "starterCode": "",
+  "validator": "web_serial_api",
+  "hints": [
+    "Usa navigator.serial.requestPort() e gestisci lettura e scrittura tramite stream."
+  ]
+},
+{
+  "id": 372,
+  "title": "Web USB API",
+  "difficulty": "Expert",
+  "category": "Hardware",
+  "xp": 1020,
+  "estimatedTime": "180 min",
+  "description": "Interagisci con un dispositivo USB direttamente dal browser.",
+  "objectives": [
+    "Richiedere il dispositivo USB",
+    "Stabilire la connessione",
+    "Trasferire dati"
+  ],
+  "starterCode": "",
+  "validator": "web_usb_api",
+  "hints": [
+    "Utilizza navigator.usb.requestDevice() e gestisci le autorizzazioni dell'utente."
+  ]
+},
+{
+  "id": 373,
+  "title": "Web Bluetooth API",
+  "difficulty": "Expert",
+  "category": "Hardware",
+  "xp": 1030,
+  "estimatedTime": "190 min",
+  "description": "Connettiti a un dispositivo Bluetooth Low Energy e leggi una caratteristica GATT.",
+  "objectives": [
+    "Richiedere un dispositivo BLE",
+    "Connettersi al server GATT",
+    "Leggere una caratteristica"
+  ],
+  "starterCode": "",
+  "validator": "web_bluetooth_api",
+  "hints": [
+    "Usa navigator.bluetooth.requestDevice() specificando i servizi richiesti."
+  ]
+},
+{
+  "id": 374,
+  "title": "File System Access API",
+  "difficulty": "Expert",
+  "category": "File System",
+  "xp": 1040,
+  "estimatedTime": "180 min",
+  "description": "Apri, modifica e salva un file locale utilizzando la File System Access API.",
+  "objectives": [
+    "Aprire un file",
+    "Modificare il contenuto",
+    "Salvare le modifiche"
+  ],
+  "starterCode": "",
+  "validator": "file_system_access",
+  "hints": [
+    "Usa showOpenFilePicker() e createWritable() per scrivere sul file."
+  ]
+},
+{
+  "id": 375,
+  "title": "Background Sync",
+  "difficulty": "Expert",
+  "category": "PWA",
+  "xp": 1050,
+  "estimatedTime": "210 min",
+  "description": "Implementa una sincronizzazione differita che invii automaticamente i dati quando la connessione Internet torna disponibile.",
+  "objectives": [
+    "Registrare un task di sincronizzazione",
+    "Memorizzare le richieste offline",
+    "Inviare automaticamente i dati al ripristino della connessione"
+  ],
+  "starterCode": "",
+  "validator": "background_sync",
+  "hints": [
+    "Integra Background Sync con un Service Worker e una coda persistente."
+  ]
+}
+,
+{
+  "id": 376,
+  "title": "Performance Timeline API",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 1060,
+  "estimatedTime": "180 min",
+  "description": "Analizza gli eventi registrati nella Performance Timeline per individuare operazioni costose.",
+  "objectives": [
+    "Accedere alla Performance Timeline",
+    "Filtrare le entry disponibili",
+    "Interpretare i tempi registrati"
+  ],
+  "starterCode": "",
+  "validator": "performance_timeline",
+  "hints": [
+    "Usa performance.getEntries() e performance.getEntriesByType()."
+  ]
+},
+{
+  "id": 377,
+  "title": "PerformanceObserver",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 1070,
+  "estimatedTime": "180 min",
+  "description": "Monitora in tempo reale gli eventi di performance utilizzando PerformanceObserver.",
+  "objectives": [
+    "Creare un PerformanceObserver",
+    "Osservare diversi tipi di entry",
+    "Analizzare i dati raccolti"
+  ],
+  "starterCode": "",
+  "validator": "performance_observer",
+  "hints": [
+    "Configura observe() specificando entryTypes."
+  ]
+},
+{
+  "id": 378,
+  "title": "Long Tasks API",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 1080,
+  "estimatedTime": "190 min",
+  "description": "Individua le operazioni che bloccano il thread principale e valuta possibili ottimizzazioni.",
+  "objectives": [
+    "Rilevare Long Task",
+    "Misurare la durata",
+    "Ridurre il lavoro sul main thread"
+  ],
+  "starterCode": "",
+  "validator": "long_tasks",
+  "hints": [
+    "Le Long Task superiori a 50 ms possono compromettere la reattività."
+  ]
+},
+{
+  "id": 379,
+  "title": "User Timing API",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 1090,
+  "estimatedTime": "180 min",
+  "description": "Misura le prestazioni di sezioni specifiche dell'applicazione tramite marker personalizzati.",
+  "objectives": [
+    "Creare performance.mark()",
+    "Calcolare una misura",
+    "Analizzare il risultato"
+  ],
+  "starterCode": "",
+  "validator": "user_timing_api",
+  "hints": [
+    "Usa performance.mark() e performance.measure()."
+  ]
+},
+{
+  "id": 380,
+  "title": "Memory Measurement",
+  "difficulty": "Expert",
+  "category": "Performance",
+  "xp": 1100,
+  "estimatedTime": "210 min",
+  "description": "Analizza il consumo di memoria dell'applicazione e individua possibili anomalie o perdite.",
+  "objectives": [
+    "Raccogliere metriche di memoria",
+    "Confrontare più misurazioni",
+    "Individuare pattern anomali"
+  ],
+  "starterCode": "",
+  "validator": "memory_measurement",
+  "hints": [
+    "Verifica il supporto dell'API nel browser e confronta i dati con gli strumenti di sviluppo."
+  ]
+}
+,
+{
+  "id": 381,
+  "title": "Unit Testing",
+  "difficulty": "Expert",
+  "category": "Testing",
+  "xp": 1110,
+  "estimatedTime": "180 min",
+  "description": "Scrivi una suite di test unitari per verificare il comportamento di una libreria JavaScript.",
+  "objectives": [
+    "Creare casi di test",
+    "Verificare valori attesi",
+    "Organizzare i test in modo leggibile"
+  ],
+  "starterCode": "",
+  "validator": "unit_testing",
+  "hints": [
+    "Ogni test dovrebbe verificare un singolo comportamento."
+  ]
+},
+{
+  "id": 382,
+  "title": "Mock Objects",
+  "difficulty": "Expert",
+  "category": "Testing",
+  "xp": 1120,
+  "estimatedTime": "180 min",
+  "description": "Isola le dipendenze esterne utilizzando mock e stub durante i test.",
+  "objectives": [
+    "Creare un mock",
+    "Simulare servizi esterni",
+    "Verificare le chiamate effettuate"
+  ],
+  "starterCode": "",
+  "validator": "mock_objects",
+  "hints": [
+    "I mock consentono di testare il codice senza dipendere da servizi reali."
+  ]
+},
+{
+  "id": 383,
+  "title": "Integration Testing",
+  "difficulty": "Expert",
+  "category": "Testing",
+  "xp": 1130,
+  "estimatedTime": "200 min",
+  "description": "Verifica l'interazione tra più moduli dell'applicazione attraverso test di integrazione.",
+  "objectives": [
+    "Integra più componenti",
+    "Verifica il flusso completo",
+    "Gestisci dati condivisi"
+  ],
+  "starterCode": "",
+  "validator": "integration_testing",
+  "hints": [
+    "Concentrati sulle interazioni tra i moduli."
+  ]
+},
+{
+  "id": 384,
+  "title": "End-to-End Testing",
+  "difficulty": "Expert",
+  "category": "Testing",
+  "xp": 1140,
+  "estimatedTime": "220 min",
+  "description": "Automatizza uno scenario completo simulando il comportamento dell'utente dall'inizio alla fine.",
+  "objectives": [
+    "Definire uno scenario realistico",
+    "Automatizzare le azioni dell'utente",
+    "Verificare il risultato finale"
+  ],
+  "starterCode": "",
+  "validator": "e2e_testing",
+  "hints": [
+    "I test end-to-end validano il comportamento dell'intera applicazione."
+  ]
+},
+{
+  "id": 385,
+  "title": "Code Coverage",
+  "difficulty": "Expert",
+  "category": "Testing",
+  "xp": 1150,
+  "estimatedTime": "180 min",
+  "description": "Analizza la copertura dei test e identifica le aree del codice che richiedono ulteriori verifiche.",
+  "objectives": [
+    "Misurare la code coverage",
+    "Identificare codice non testato",
+    "Aumentare la copertura dei test"
+  ],
+  "starterCode": "",
+  "validator": "code_coverage",
+  "hints": [
+    "Una copertura elevata non garantisce da sola la qualità dei test."
+  ]
+}
+,
+{
+  "id": 386,
+  "title": "Continuous Integration",
+  "difficulty": "Expert",
+  "category": "DevOps",
+  "xp": 1160,
+  "estimatedTime": "180 min",
+  "description": "Configura una pipeline di Continuous Integration che esegua automaticamente build, test e controlli di qualità.",
+  "objectives": [
+    "Automatizzare la build",
+    "Eseguire i test ad ogni commit",
+    "Bloccare merge con test falliti"
+  ],
+  "starterCode": "",
+  "validator": "continuous_integration",
+  "hints": [
+    "La pipeline dovrebbe essere eseguita automaticamente ad ogni modifica."
+  ]
+},
+{
+  "id": 387,
+  "title": "Continuous Delivery",
+  "difficulty": "Expert",
+  "category": "DevOps",
+  "xp": 1170,
+  "estimatedTime": "190 min",
+  "description": "Realizza una pipeline di Continuous Delivery che prepari automaticamente un rilascio distribuibile.",
+  "objectives": [
+    "Generare gli artefatti",
+    "Versionare il rilascio",
+    "Preparare il deploy"
+  ],
+  "starterCode": "",
+  "validator": "continuous_delivery",
+  "hints": [
+    "Separa chiaramente build, test e rilascio."
+  ]
+},
+{
+  "id": 388,
+  "title": "Static Code Analysis",
+  "difficulty": "Expert",
+  "category": "Code Quality",
+  "xp": 1180,
+  "estimatedTime": "180 min",
+  "description": "Analizza un progetto individuando errori, vulnerabilità e code smell tramite strumenti di analisi statica.",
+  "objectives": [
+    "Eseguire un'analisi statica",
+    "Interpretare i risultati",
+    "Correggere le criticità individuate"
+  ],
+  "starterCode": "",
+  "validator": "static_analysis",
+  "hints": [
+    "Non limitarti agli errori di sintassi: valuta anche manutenibilità e complessità."
+  ]
+},
+{
+  "id": 389,
+  "title": "Linting & Formatting",
+  "difficulty": "Expert",
+  "category": "Code Quality",
+  "xp": 1190,
+  "estimatedTime": "170 min",
+  "description": "Configura regole automatiche per uniformare lo stile del codice e prevenire errori comuni.",
+  "objectives": [
+    "Applicare regole di linting",
+    "Configurare la formattazione automatica",
+    "Integrare i controlli nel flusso di sviluppo"
+  ],
+  "starterCode": "",
+  "validator": "linting_formatting",
+  "hints": [
+    "Mantieni uno stile coerente in tutto il progetto."
+  ]
+},
+{
+  "id": 390,
+  "title": "Advanced Refactoring",
+  "difficulty": "Expert",
+  "category": "Code Quality",
+  "xp": 1200,
+  "estimatedTime": "210 min",
+  "description": "Rifattorizza un'applicazione complessa migliorandone leggibilità, modularità e manutenibilità senza modificarne il comportamento.",
+  "objectives": [
+    "Ridurre la duplicazione",
+    "Migliorare la struttura del codice",
+    "Conservare il comportamento originale"
+  ],
+  "starterCode": "",
+  "validator": "advanced_refactoring",
+  "hints": [
+    "Procedi con piccoli cambiamenti verificati dai test."
+  ]
+}
+,
+{
+  "id": 391,
+  "title": "Graph Traversal",
+  "difficulty": "Expert",
+  "category": "Algorithms",
+  "xp": 1210,
+  "estimatedTime": "180 min",
+  "description": "Implementa gli algoritmi Breadth-First Search (BFS) e Depth-First Search (DFS) per attraversare un grafo.",
+  "objectives": [
+    "Rappresentare un grafo",
+    "Implementare BFS",
+    "Implementare DFS"
+  ],
+  "starterCode": "",
+  "validator": "graph_traversal",
+  "hints": [
+    "Per BFS usa una coda, per DFS uno stack o la ricorsione."
+  ]
+},
+{
+  "id": 392,
+  "title": "Dijkstra Algorithm",
+  "difficulty": "Expert",
+  "category": "Algorithms",
+  "xp": 1225,
+  "estimatedTime": "210 min",
+  "description": "Trova il percorso minimo tra due nodi utilizzando l'algoritmo di Dijkstra.",
+  "objectives": [
+    "Gestire pesi positivi",
+    "Calcolare le distanze minime",
+    "Ricostruire il percorso"
+  ],
+  "starterCode": "",
+  "validator": "dijkstra_algorithm",
+  "hints": [
+    "Utilizza una priority queue per migliorare l'efficienza."
+  ]
+},
+{
+  "id": 393,
+  "title": "Trie Data Structure",
+  "difficulty": "Expert",
+  "category": "Data Structures",
+  "xp": 1240,
+  "estimatedTime": "200 min",
+  "description": "Implementa una struttura Trie per la ricerca efficiente di parole e prefissi.",
+  "objectives": [
+    "Inserire parole",
+    "Ricercare parole complete",
+    "Ricercare prefissi"
+  ],
+  "starterCode": "",
+  "validator": "trie_structure",
+  "hints": [
+    "Ogni nodo rappresenta un carattere della parola."
+  ]
+},
+{
+  "id": 394,
+  "title": "Union-Find",
+  "difficulty": "Expert",
+  "category": "Data Structures",
+  "xp": 1250,
+  "estimatedTime": "210 min",
+  "description": "Realizza una struttura Union-Find (Disjoint Set Union) con path compression e union by rank.",
+  "objectives": [
+    "Implementare find()",
+    "Implementare union()",
+    "Ottimizzare le prestazioni"
+  ],
+  "starterCode": "",
+  "validator": "union_find",
+  "hints": [
+    "La path compression riduce significativamente il costo delle operazioni."
+  ]
+},
+{
+  "id": 395,
+  "title": "Dynamic Programming",
+  "difficulty": "Expert",
+  "category": "Algorithms",
+  "xp": 1275,
+  "estimatedTime": "240 min",
+  "description": "Risolvi un problema utilizzando la programmazione dinamica confrontando approccio top-down e bottom-up.",
+  "objectives": [
+    "Identificare i sottoproblemi",
+    "Memorizzare i risultati",
+    "Confrontare complessità temporale e spaziale"
+  ],
+  "starterCode": "",
+  "validator": "dynamic_programming",
+  "hints": [
+    "Evita di ricalcolare gli stessi sottoproblemi più volte."
+  ]
+}
+,
+{
+  "id": 396,
+  "title": "Template Engine",
+  "difficulty": "Expert",
+  "category": "Projects",
+  "xp": 1290,
+  "estimatedTime": "240 min",
+  "description": "Realizza un semplice motore di template capace di sostituire segnaposto con valori dinamici.",
+  "objectives": [
+    "Analizzare il template",
+    "Sostituire le variabili",
+    "Restituire il risultato finale"
+  ],
+  "starterCode": "",
+  "validator": "template_engine",
+  "hints": [
+    "Puoi utilizzare espressioni regolari per individuare i placeholder."
+  ]
+},
+{
+  "id": 397,
+  "title": "Expression Parser",
+  "difficulty": "Expert",
+  "category": "Compiler",
+  "xp": 1300,
+  "estimatedTime": "270 min",
+  "description": "Costruisci un parser che analizzi semplici espressioni matematiche e ne produca un albero sintattico.",
+  "objectives": [
+    "Tokenizzare l'input",
+    "Costruire un AST",
+    "Gestire operatori e precedenze"
+  ],
+  "starterCode": "",
+  "validator": "expression_parser",
+  "hints": [
+    "Separare tokenizer e parser rende il progetto più estensibile."
+  ]
+},
+{
+  "id": 398,
+  "title": "Expression Evaluator",
+  "difficulty": "Expert",
+  "category": "Compiler",
+  "xp": 1310,
+  "estimatedTime": "270 min",
+  "description": "Valuta un Abstract Syntax Tree calcolando il risultato dell'espressione rappresentata.",
+  "objectives": [
+    "Visitare ricorsivamente l'AST",
+    "Gestire operatori matematici",
+    "Restituire il risultato corretto"
+  ],
+  "starterCode": "",
+  "validator": "expression_evaluator",
+  "hints": [
+    "Ogni tipo di nodo deve avere una logica di valutazione dedicata."
+  ]
+},
+{
+  "id": 399,
+  "title": "Mini JavaScript Interpreter",
+  "difficulty": "Expert",
+  "category": "Compiler",
+  "xp": 1330,
+  "estimatedTime": "300 min",
+  "description": "Implementa un interprete semplificato capace di eseguire variabili, assegnazioni ed espressioni.",
+  "objectives": [
+    "Gestire un ambiente di esecuzione",
+    "Interpretare istruzioni",
+    "Aggiornare lo stato del programma"
+  ],
+  "starterCode": "",
+  "validator": "mini_interpreter",
+  "hints": [
+    "Mantieni una tabella dei simboli separata dalla logica di parsing."
+  ]
+},
+{
+  "id": 400,
+  "title": "Mini Runtime Engine",
+  "difficulty": "Expert",
+  "category": "Projects",
+  "xp": 1350,
+  "estimatedTime": "360 min",
+  "description": "Progetta un piccolo runtime capace di eseguire un sottoinsieme del linguaggio, gestendo scope, funzioni e chiamate.",
+  "objectives": [
+    "Gestire gli scope",
+    "Supportare le chiamate di funzione",
+    "Eseguire programmi completi"
+  ],
+  "starterCode": "",
+  "validator": "mini_runtime",
+  "hints": [
+    "Progetta separatamente parser, AST ed esecutore per mantenere il codice modulare."
+  ]
+}
+,
+{
+  "id": 401,
+  "title": "Virtual DOM Engine",
+  "difficulty": "Expert",
+  "category": "Framework Development",
+  "xp": 1375,
+  "estimatedTime": "300 min",
+  "description": "Realizza un Virtual DOM minimale capace di rappresentare l'interfaccia come un albero di nodi virtuali.",
+  "objectives": [
+    "Creare Virtual Node",
+    "Costruire un albero virtuale",
+    "Renderizzare il DOM iniziale"
+  ],
+  "starterCode": "",
+  "validator": "virtual_dom_engine",
+  "hints": [
+    "Ogni nodo virtuale dovrebbe rappresentare tag, attributi e figli."
+  ]
+},
+{
+  "id": 402,
+  "title": "DOM Diff Algorithm",
+  "difficulty": "Expert",
+  "category": "Framework Development",
+  "xp": 1400,
+  "estimatedTime": "330 min",
+  "description": "Implementa un algoritmo di confronto tra due alberi Virtual DOM per aggiornare solo i nodi modificati.",
+  "objectives": [
+    "Confrontare due alberi",
+    "Individuare differenze",
+    "Applicare aggiornamenti minimi"
+  ],
+  "starterCode": "",
+  "validator": "dom_diff_algorithm",
+  "hints": [
+    "Ridurre il numero di modifiche al DOM migliora le prestazioni."
+  ]
+},
+{
+  "id": 403,
+  "title": "Component System",
+  "difficulty": "Expert",
+  "category": "Framework Development",
+  "xp": 1425,
+  "estimatedTime": "330 min",
+  "description": "Progetta un sistema di componenti riutilizzabili con proprietà e ciclo di rendering.",
+  "objectives": [
+    "Definire componenti",
+    "Passare proprietà",
+    "Gestire il rendering"
+  ],
+  "starterCode": "",
+  "validator": "component_system",
+  "hints": [
+    "Ogni componente dovrebbe essere indipendente e riutilizzabile."
+  ]
+},
+{
+  "id": 404,
+  "title": "Reactive State Management",
+  "difficulty": "Expert",
+  "category": "Framework Development",
+  "xp": 1450,
+  "estimatedTime": "360 min",
+  "description": "Implementa uno store reattivo che aggiorni automaticamente l'interfaccia quando cambia lo stato.",
+  "objectives": [
+    "Creare uno store",
+    "Gestire subscribe()",
+    "Notificare automaticamente i componenti"
+  ],
+  "starterCode": "",
+  "validator": "reactive_state",
+  "hints": [
+    "Usa il pattern Observer per notificare i cambiamenti."
+  ]
+},
+{
+  "id": 405,
+  "title": "Client-side Router",
+  "difficulty": "Expert",
+  "category": "Framework Development",
+  "xp": 1500,
+  "estimatedTime": "360 min",
+  "description": "Realizza un router SPA che gestisca navigazione, parametri e cronologia del browser.",
+  "objectives": [
+    "Gestire le route",
+    "Supportare History API",
+    "Caricare dinamicamente le viste"
+  ],
+  "starterCode": "",
+  "validator": "spa_router",
+  "hints": [
+    "Usa history.pushState() e l'evento popstate."
+  ]
+}
+,
+{
+  "id": 406,
+  "title": "Enterprise Authentication",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 1525,
+  "estimatedTime": "300 min",
+  "description": "Progetta un sistema di autenticazione enterprise con controllo degli accessi basato sui ruoli.",
+  "objectives": [
+    "Definire utenti e ruoli",
+    "Implementare l'autorizzazione",
+    "Proteggere le risorse riservate"
+  ],
+  "starterCode": "",
+  "validator": "enterprise_authentication",
+  "hints": [
+    "Separa autenticazione e autorizzazione."
+  ]
+},
+{
+  "id": 407,
+  "title": "Role-Based Access Control",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 1550,
+  "estimatedTime": "300 min",
+  "description": "Implementa un sistema RBAC (Role-Based Access Control) per limitare l'accesso alle funzionalità.",
+  "objectives": [
+    "Definire ruoli",
+    "Assegnare permessi",
+    "Verificare le autorizzazioni"
+  ],
+  "starterCode": "",
+  "validator": "rbac",
+  "hints": [
+    "I permessi dovrebbero essere associati ai ruoli e non direttamente agli utenti."
+  ]
+},
+{
+  "id": 408,
+  "title": "Multi-Factor Authentication",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 1575,
+  "estimatedTime": "330 min",
+  "description": "Progetta un flusso di autenticazione a più fattori integrando un secondo metodo di verifica.",
+  "objectives": [
+    "Implementare il secondo fattore",
+    "Gestire la verifica",
+    "Proteggere il flusso di login"
+  ],
+  "starterCode": "",
+  "validator": "multi_factor_authentication",
+  "hints": [
+    "Mantieni separati il primo e il secondo fattore di autenticazione."
+  ]
+},
+{
+  "id": 409,
+  "title": "Secure Session Management",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 1600,
+  "estimatedTime": "330 min",
+  "description": "Gestisci in modo sicuro il ciclo di vita delle sessioni utente, prevenendo hijacking e fixation.",
+  "objectives": [
+    "Rigenerare gli identificativi di sessione",
+    "Gestire timeout e logout",
+    "Ridurre i rischi di compromissione"
+  ],
+  "starterCode": "",
+  "validator": "secure_session_management",
+  "hints": [
+    "Una sessione dovrebbe essere rigenerata dopo l'autenticazione."
+  ]
+},
+{
+  "id": 410,
+  "title": "Secure Application Audit",
+  "difficulty": "Expert",
+  "category": "Security",
+  "xp": 1650,
+  "estimatedTime": "360 min",
+  "description": "Esegui una revisione completa della sicurezza di un'applicazione identificando vulnerabilità e proponendo interventi correttivi.",
+  "objectives": [
+    "Analizzare l'applicazione",
+    "Individuare vulnerabilità",
+    "Produrre un piano di mitigazione"
+  ],
+  "starterCode": "",
+  "validator": "security_audit",
+  "hints": [
+    "Considera autenticazione, autorizzazione, gestione dei dati e configurazioni."
+  ]
+}
+,
+{
+  "id": 411,
+  "title": "Real-Time Dashboard",
+  "difficulty": "Expert",
+  "category": "Real-Time Systems",
+  "xp": 1675,
+  "estimatedTime": "360 min",
+  "description": "Realizza una dashboard che aggiorni automaticamente grafici e indicatori utilizzando dati ricevuti in tempo reale.",
+  "objectives": [
+    "Aggiornare i widget dinamicamente",
+    "Gestire flussi continui di dati",
+    "Ridurre i ridisegni del DOM"
+  ],
+  "starterCode": "",
+  "validator": "realtime_dashboard",
+  "hints": [
+    "Separa il livello dati dalla visualizzazione."
+  ]
+},
+{
+  "id": 412,
+  "title": "WebSocket Broadcast",
+  "difficulty": "Expert",
+  "category": "Networking",
+  "xp": 1700,
+  "estimatedTime": "360 min",
+  "description": "Implementa un sistema di broadcast che distribuisca messaggi a più client connessi tramite WebSocket.",
+  "objectives": [
+    "Gestire più connessioni",
+    "Inviare messaggi simultaneamente",
+    "Gestire disconnessioni e riconnessioni"
+  ],
+  "starterCode": "",
+  "validator": "websocket_broadcast",
+  "hints": [
+    "Mantieni una collezione dei client attivi."
+  ]
+},
+{
+  "id": 413,
+  "title": "Conflict Resolution",
+  "difficulty": "Expert",
+  "category": "Distributed Systems",
+  "xp": 1725,
+  "estimatedTime": "390 min",
+  "description": "Progetta una strategia per risolvere conflitti durante la sincronizzazione di dati modificati da utenti differenti.",
+  "objectives": [
+    "Individuare i conflitti",
+    "Applicare una strategia di risoluzione",
+    "Garantire la coerenza dei dati"
+  ],
+  "starterCode": "",
+  "validator": "conflict_resolution",
+  "hints": [
+    "Valuta strategie come Last Write Wins o merge controllato."
+  ]
+},
+{
+  "id": 414,
+  "title": "Offline Data Queue",
+  "difficulty": "Expert",
+  "category": "Distributed Systems",
+  "xp": 1750,
+  "estimatedTime": "390 min",
+  "description": "Implementa una coda persistente che memorizzi le operazioni effettuate offline e le sincronizzi successivamente.",
+  "objectives": [
+    "Accodare operazioni",
+    "Persistire la coda",
+    "Riprodurre le operazioni in ordine"
+  ],
+  "starterCode": "",
+  "validator": "offline_queue",
+  "hints": [
+    "Conserva l'ordine cronologico delle operazioni."
+  ]
+},
+{
+  "id": 415,
+  "title": "Distributed Sync Engine",
+  "difficulty": "Expert",
+  "category": "Distributed Systems",
+  "xp": 1800,
+  "estimatedTime": "420 min",
+  "description": "Realizza un motore di sincronizzazione che coordini dati locali e remoti garantendo consistenza e recupero dagli errori.",
+  "objectives": [
+    "Sincronizzare dati",
+    "Gestire errori di rete",
+    "Ripristinare automaticamente la consistenza"
+  ],
+  "starterCode": "",
+  "validator": "distributed_sync_engine",
+  "hints": [
+    "Progetta il sistema affinché possa riprendere una sincronizzazione interrotta."
+  ]
+}
+,
+{
+  "id": 416,
+  "title": "Browser Code Editor",
+  "difficulty": "Expert",
+  "category": "Developer Tools",
+  "xp": 1825,
+  "estimatedTime": "360 min",
+  "description": "Realizza un editor di codice JavaScript nel browser con evidenziazione della sintassi e numerazione delle righe.",
+  "objectives": [
+    "Gestire l'editing del codice",
+    "Visualizzare i numeri di riga",
+    "Implementare la syntax highlighting"
+  ],
+  "starterCode": "",
+  "validator": "browser_code_editor",
+  "hints": [
+    "Separa la logica dell'editor dalla rappresentazione grafica."
+  ]
+},
+{
+  "id": 417,
+  "title": "JavaScript Linter",
+  "difficulty": "Expert",
+  "category": "Developer Tools",
+  "xp": 1850,
+  "estimatedTime": "390 min",
+  "description": "Implementa un linter che analizzi il codice segnalando errori sintattici e possibili problemi di qualità.",
+  "objectives": [
+    "Analizzare il codice",
+    "Segnalare errori",
+    "Fornire messaggi descrittivi"
+  ],
+  "starterCode": "",
+  "validator": "javascript_linter",
+  "hints": [
+    "Distingui errori di sintassi da suggerimenti di qualità."
+  ]
+},
+{
+  "id": 418,
+  "title": "Code Formatter",
+  "difficulty": "Expert",
+  "category": "Developer Tools",
+  "xp": 1875,
+  "estimatedTime": "390 min",
+  "description": "Realizza un formatter che renda uniforme lo stile del codice JavaScript.",
+  "objectives": [
+    "Normalizzare l'indentazione",
+    "Uniformare la spaziatura",
+    "Produrre un codice leggibile"
+  ],
+  "starterCode": "",
+  "validator": "code_formatter",
+  "hints": [
+    "Il formatter non deve modificare il comportamento del programma."
+  ]
+},
+{
+  "id": 419,
+  "title": "JavaScript Debugger",
+  "difficulty": "Expert",
+  "category": "Developer Tools",
+  "xp": 1900,
+  "estimatedTime": "420 min",
+  "description": "Progetta un debugger minimale che consenta di eseguire il codice passo dopo passo e ispezionare le variabili.",
+  "objectives": [
+    "Gestire breakpoint",
+    "Visualizzare lo stato delle variabili",
+    "Consentire l'esecuzione step-by-step"
+  ],
+  "starterCode": "",
+  "validator": "javascript_debugger",
+  "hints": [
+    "Mantieni separata la logica di esecuzione dall'interfaccia del debugger."
+  ]
+},
+{
+  "id": 420,
+  "title": "Browser IDE",
+  "difficulty": "Expert",
+  "category": "Capstone",
+  "xp": 1950,
+  "estimatedTime": "480 min",
+  "description": "Integra editor, console, formatter, linter e debugger in un unico ambiente di sviluppo funzionante nel browser.",
+  "objectives": [
+    "Integrare tutti gli strumenti",
+    "Gestire un workspace completo",
+    "Fornire un'esperienza di sviluppo unificata"
+  ],
+  "starterCode": "",
+  "validator": "browser_ide",
+  "hints": [
+    "Progetta l'applicazione in moduli indipendenti per facilitarne l'estensione."
+  ]
+}
+,
+{
+  "id": 421,
+  "title": "JavaScript Learning Platform",
+  "difficulty": "Expert",
+  "category": "Capstone",
+  "xp": 2000,
+  "estimatedTime": "600 min",
+  "description": "Progetta una piattaforma didattica completa per l'apprendimento di JavaScript con utenti, progressi e sistema di challenge.",
+  "objectives": [
+    "Gestire utenti e profili",
+    "Implementare il catalogo delle challenge",
+    "Salvare i progressi"
+  ],
+  "starterCode": "",
+  "validator": "learning_platform",
+  "hints": [
+    "Suddividi il progetto in moduli indipendenti e riutilizzabili."
+  ]
+},
+{
+  "id": 422,
+  "title": "Online Code Runner",
+  "difficulty": "Expert",
+  "category": "Capstone",
+  "xp": 2050,
+  "estimatedTime": "600 min",
+  "description": "Realizza un ambiente capace di eseguire codice JavaScript, catturare l'output della console e mostrare gli errori in tempo reale.",
+  "objectives": [
+    "Eseguire codice in sicurezza",
+    "Catturare console.log()",
+    "Gestire errori di esecuzione"
+  ],
+  "starterCode": "",
+  "validator": "online_code_runner",
+  "hints": [
+    "Isola l'ambiente di esecuzione dal resto dell'applicazione."
+  ]
+},
+{
+  "id": 423,
+  "title": "Automatic Challenge Validator",
+  "difficulty": "Expert",
+  "category": "Capstone",
+  "xp": 2100,
+  "estimatedTime": "660 min",
+  "description": "Costruisci un sistema di validazione automatica che esegua test sul codice dell'utente e assegni il punteggio.",
+  "objectives": [
+    "Eseguire test automatici",
+    "Generare un report dei risultati",
+    "Attribuire XP e stato della challenge"
+  ],
+  "starterCode": "",
+  "validator": "automatic_validator",
+  "hints": [
+    "Mantieni separata la logica dei test dal codice dell'utente."
+  ]
+},
+{
+  "id": 424,
+  "title": "Gamification Engine",
+  "difficulty": "Expert",
+  "category": "Capstone",
+  "xp": 2150,
+  "estimatedTime": "720 min",
+  "description": "Implementa un motore di gamification con livelli, badge, obiettivi, statistiche e classifiche.",
+  "objectives": [
+    "Gestire XP e livelli",
+    "Sbloccare badge",
+    "Aggiornare la leaderboard",
+    "Calcolare gli obiettivi raggiunti"
+  ],
+  "starterCode": "",
+  "validator": "gamification_engine",
+  "hints": [
+    "Centralizza tutta la logica della progressione in un unico modulo."
+  ]
+},
+{
+  "id": 425,
+  "title": "JavaScript Challenge Platform",
+  "difficulty": "Expert",
+  "category": "Final Project",
+  "xp": 2500,
+  "estimatedTime": "900 min",
+  "description": "Realizza una piattaforma completa che integri editor di codice, esecuzione JavaScript, validazione automatica, progressione, profili utente, leaderboard, statistiche, badge, salvataggio locale e dashboard amministrativa.",
+  "objectives": [
+    "Integrare tutti i moduli sviluppati",
+    "Gestire utenti e progressi",
+    "Implementare editor, runner e validator",
+    "Visualizzare statistiche e classifiche",
+    "Realizzare un'applicazione completa e modulare"
+  ],
+  "starterCode": "",
+  "validator": "final_capstone_project",
+  "hints": [
+    "Progetta l'architettura prima di iniziare lo sviluppo.",
+    "Mantieni ogni modulo indipendente e facilmente testabile.",
+    "Applica i principi SOLID e una struttura a componenti."
+  ]
+}
+]

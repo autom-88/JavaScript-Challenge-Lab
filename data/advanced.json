@@ -1,0 +1,3075 @@
+[
+  {
+    "id": 201,
+    "title": "Prototype Base",
+    "difficulty": "Advanced",
+    "category": "Prototype",
+    "xp": 150,
+    "estimatedTime": "20 min",
+    "description": "Comprendi come funziona il prototype di un oggetto in JavaScript.",
+    "objectives": [
+      "Crea un oggetto",
+      "Accedi al suo prototype",
+      "Visualizza il risultato"
+    ],
+    "starterCode": "const user = { name: 'Mario' };",
+    "validator": "prototype_base",
+    "hints": [
+      "Usa Object.getPrototypeOf().",
+      "Ogni oggetto possiede un prototype."
+    ]
+  },
+  {
+    "id": 202,
+    "title": "Prototype Methods",
+    "difficulty": "Advanced",
+    "category": "Prototype",
+    "xp": 155,
+    "estimatedTime": "22 min",
+    "description": "Aggiungi un metodo condiviso al prototype di un costruttore.",
+    "objectives": [
+      "Definisci una funzione costruttrice",
+      "Aggiungi un metodo al prototype",
+      "Richiama il metodo"
+    ],
+    "starterCode": "function Person(name){ this.name = name; }",
+    "validator": "prototype_method",
+    "hints": [
+      "Usa Person.prototype.nomeMetodo = function() { ... }."
+    ]
+  },
+  {
+    "id": 203,
+    "title": "Prototype Chain",
+    "difficulty": "Advanced",
+    "category": "Prototype",
+    "xp": 160,
+    "estimatedTime": "25 min",
+    "description": "Analizza la catena dei prototype di un oggetto.",
+    "objectives": [
+      "Utilizza Object.getPrototypeOf()",
+      "Verifica la catena dei prototype"
+    ],
+    "starterCode": "const array = [];",
+    "validator": "prototype_chain",
+    "hints": [
+      "Controlla più livelli della catena dei prototype."
+    ]
+  },
+  {
+    "id": 204,
+    "title": "Object.create()",
+    "difficulty": "Advanced",
+    "category": "Prototype",
+    "xp": 160,
+    "estimatedTime": "25 min",
+    "description": "Crea un nuovo oggetto utilizzando Object.create().",
+    "objectives": [
+      "Definisci un prototype",
+      "Crea un oggetto derivato",
+      "Accedi ai metodi ereditati"
+    ],
+    "starterCode": "const animal = { speak(){ return '...'; } };",
+    "validator": "object_create",
+    "hints": [
+      "Object.create() crea un oggetto con il prototype specificato."
+    ]
+  },
+  {
+    "id": 205,
+    "title": "Prototype Inheritance",
+    "difficulty": "Advanced",
+    "category": "Prototype",
+    "xp": 170,
+    "estimatedTime": "30 min",
+    "description": "Implementa l'ereditarietà basata sui prototype senza usare class.",
+    "objectives": [
+      "Definisci due costruttori",
+      "Collega i prototype",
+      "Verifica l'ereditarietà"
+    ],
+    "starterCode": "",
+    "validator": "prototype_inheritance",
+    "hints": [
+      "Usa Object.create() per collegare i prototype.",
+      "Reimposta correttamente constructor."
+    ]
+  }
+  ,
+{
+  "id": 206,
+  "title": "Lexical Scope",
+  "difficulty": "Advanced",
+  "category": "Functions",
+  "xp": 170,
+  "estimatedTime": "25 min",
+  "description": "Analizza il comportamento dello scope lessicale in JavaScript.",
+  "objectives": [
+    "Crea funzioni annidate",
+    "Accedi alle variabili dello scope esterno",
+    "Verifica il risultato"
+  ],
+  "starterCode": "",
+  "validator": "lexical_scope",
+  "hints": [
+    "Le funzioni possono accedere alle variabili definite nello scope esterno."
+  ]
+},
+{
+  "id": 207,
+  "title": "Closure Base",
+  "difficulty": "Advanced",
+  "category": "Functions",
+  "xp": 175,
+  "estimatedTime": "30 min",
+  "description": "Crea una closure che mantenga lo stato di una variabile privata.",
+  "objectives": [
+    "Restituisci una funzione",
+    "Mantieni una variabile privata",
+    "Incrementa il valore a ogni chiamata"
+  ],
+  "starterCode": "",
+  "validator": "closure_counter",
+  "hints": [
+    "La funzione interna continua ad avere accesso alle variabili esterne."
+  ]
+},
+{
+  "id": 208,
+  "title": "Function Factory",
+  "difficulty": "Advanced",
+  "category": "Functions",
+  "xp": 180,
+  "estimatedTime": "30 min",
+  "description": "Realizza una funzione che restituisca altre funzioni personalizzate.",
+  "objectives": [
+    "Crea una factory function",
+    "Personalizza il comportamento tramite parametri"
+  ],
+  "starterCode": "",
+  "validator": "function_factory",
+  "hints": [
+    "Ogni funzione restituita deve mantenere il proprio stato."
+  ]
+},
+{
+  "id": 209,
+  "title": "Currying",
+  "difficulty": "Advanced",
+  "category": "Functions",
+  "xp": 185,
+  "estimatedTime": "35 min",
+  "description": "Trasforma una funzione con più parametri in una sequenza di funzioni.",
+  "objectives": [
+    "Implementa il currying",
+    "Richiama la funzione in più passaggi"
+  ],
+  "starterCode": "",
+  "validator": "currying",
+  "hints": [
+    "Ogni funzione restituisce la successiva fino al risultato finale."
+  ]
+},
+{
+  "id": 210,
+  "title": "Higher-Order Functions",
+  "difficulty": "Advanced",
+  "category": "Functions",
+  "xp": 190,
+  "estimatedTime": "35 min",
+  "description": "Crea una funzione che riceva un'altra funzione come argomento e ne utilizzi il valore restituito.",
+  "objectives": [
+    "Passa una callback",
+    "Invoca la callback",
+    "Restituisci il risultato elaborato"
+  ],
+  "starterCode": "",
+  "validator": "higher_order_function",
+  "hints": [
+    "Una Higher-Order Function riceve o restituisce almeno una funzione."
+  ]
+}
+,
+{
+  "id": 211,
+  "title": "Call Stack",
+  "difficulty": "Advanced",
+  "category": "Runtime",
+  "xp": 195,
+  "estimatedTime": "30 min",
+  "description": "Analizza il funzionamento del Call Stack durante l'esecuzione di funzioni annidate.",
+  "objectives": [
+    "Crea più funzioni annidate",
+    "Osserva l'ordine di esecuzione",
+    "Comprendi il comportamento dello stack"
+  ],
+  "starterCode": "",
+  "validator": "call_stack",
+  "hints": [
+    "Le funzioni vengono inserite nello stack e rimosse in ordine LIFO."
+  ]
+},
+{
+  "id": 212,
+  "title": "Execution Context",
+  "difficulty": "Advanced",
+  "category": "Runtime",
+  "xp": 200,
+  "estimatedTime": "35 min",
+  "description": "Comprendi come vengono creati e gestiti gli Execution Context.",
+  "objectives": [
+    "Analizza Global Execution Context",
+    "Analizza Function Execution Context",
+    "Comprendi il ciclo di vita"
+  ],
+  "starterCode": "",
+  "validator": "execution_context",
+  "hints": [
+    "Ogni chiamata di funzione crea un nuovo Execution Context."
+  ]
+},
+{
+  "id": 213,
+  "title": "Event Loop",
+  "difficulty": "Advanced",
+  "category": "Asynchronous",
+  "xp": 205,
+  "estimatedTime": "35 min",
+  "description": "Comprendi come l'Event Loop coordina Call Stack e code di esecuzione.",
+  "objectives": [
+    "Usa setTimeout()",
+    "Usa Promise.resolve()",
+    "Analizza l'ordine dell'output"
+  ],
+  "starterCode": "",
+  "validator": "event_loop",
+  "hints": [
+    "Le Promise vengono elaborate prima dei timer."
+  ]
+},
+{
+  "id": 214,
+  "title": "Microtask Queue",
+  "difficulty": "Advanced",
+  "category": "Asynchronous",
+  "xp": 210,
+  "estimatedTime": "40 min",
+  "description": "Studia il comportamento della Microtask Queue utilizzando Promise e queueMicrotask().",
+  "objectives": [
+    "Crea una Promise",
+    "Usa queueMicrotask()",
+    "Confronta l'ordine di esecuzione"
+  ],
+  "starterCode": "",
+  "validator": "microtask_queue",
+  "hints": [
+    "Le microtask vengono eseguite prima della successiva macrotask."
+  ]
+},
+{
+  "id": 215,
+  "title": "Macrotask Queue",
+  "difficulty": "Advanced",
+  "category": "Asynchronous",
+  "xp": 215,
+  "estimatedTime": "40 min",
+  "description": "Analizza il comportamento della Macrotask Queue utilizzando setTimeout() e setInterval().",
+  "objectives": [
+    "Usa setTimeout()",
+    "Usa setInterval()",
+    "Confronta l'ordine con Promise"
+  ],
+  "starterCode": "",
+  "validator": "macrotask_queue",
+  "hints": [
+    "Le callback di setTimeout() vengono inserite nella Macrotask Queue."
+  ]
+}
+,
+{
+  "id": 216,
+  "title": "Promise.all()",
+  "difficulty": "Advanced",
+  "category": "Promises",
+  "xp": 220,
+  "estimatedTime": "35 min",
+  "description": "Esegui più Promise in parallelo e attendi che siano tutte completate.",
+  "objectives": [
+    "Usa Promise.all()",
+    "Gestisci il risultato come array",
+    "Intercetta gli errori"
+  ],
+  "starterCode": "",
+  "validator": "promise_all",
+  "hints": [
+    "Promise.all() fallisce se una Promise viene rifiutata."
+  ]
+},
+{
+  "id": 217,
+  "title": "Promise.race()",
+  "difficulty": "Advanced",
+  "category": "Promises",
+  "xp": 225,
+  "estimatedTime": "35 min",
+  "description": "Ottieni il risultato della Promise che termina per prima.",
+  "objectives": [
+    "Usa Promise.race()",
+    "Confronta Promise con tempi diversi"
+  ],
+  "starterCode": "",
+  "validator": "promise_race",
+  "hints": [
+    "Viene restituita la prima Promise completata o rifiutata."
+  ]
+},
+{
+  "id": 218,
+  "title": "Promise.allSettled()",
+  "difficulty": "Advanced",
+  "category": "Promises",
+  "xp": 230,
+  "estimatedTime": "40 min",
+  "description": "Gestisci un gruppo di Promise senza interrompere l'esecuzione in caso di errore.",
+  "objectives": [
+    "Usa Promise.allSettled()",
+    "Analizza gli stati fulfilled e rejected"
+  ],
+  "starterCode": "",
+  "validator": "promise_allsettled",
+  "hints": [
+    "Ogni risultato contiene status e value oppure reason."
+  ]
+},
+{
+  "id": 219,
+  "title": "Promise.any()",
+  "difficulty": "Advanced",
+  "category": "Promises",
+  "xp": 235,
+  "estimatedTime": "40 min",
+  "description": "Restituisci il primo risultato valido ignorando le Promise rifiutate.",
+  "objectives": [
+    "Usa Promise.any()",
+    "Gestisci AggregateError"
+  ],
+  "starterCode": "",
+  "validator": "promise_any",
+  "hints": [
+    "Promise.any() viene rifiutata solo se tutte le Promise falliscono."
+  ]
+},
+{
+  "id": 220,
+  "title": "Promise Chaining",
+  "difficulty": "Advanced",
+  "category": "Promises",
+  "xp": 240,
+  "estimatedTime": "45 min",
+  "description": "Costruisci una catena di Promise che trasformi progressivamente un dato.",
+  "objectives": [
+    "Concatena più then()",
+    "Gestisci catch()",
+    "Restituisci il risultato finale"
+  ],
+  "starterCode": "",
+  "validator": "promise_chain",
+  "hints": [
+    "Ogni then() restituisce una nuova Promise."
+  ]
+}
+,
+{
+  "id": 221,
+  "title": "Async/Await Avanzato",
+  "difficulty": "Advanced",
+  "category": "Async",
+  "xp": 245,
+  "estimatedTime": "45 min",
+  "description": "Rifattorizza una catena di Promise utilizzando async/await.",
+  "objectives": [
+    "Dichiara una funzione async",
+    "Usa await",
+    "Gestisci gli errori con try...catch"
+  ],
+  "starterCode": "",
+  "validator": "async_advanced",
+  "hints": [
+    "Ogni await sospende l'esecuzione della funzione async."
+  ]
+},
+{
+  "id": 222,
+  "title": "Parallel Async Tasks",
+  "difficulty": "Advanced",
+  "category": "Async",
+  "xp": 250,
+  "estimatedTime": "45 min",
+  "description": "Esegui più operazioni asincrone contemporaneamente migliorando le prestazioni.",
+  "objectives": [
+    "Usa Promise.all()",
+    "Evita await sequenziali non necessari",
+    "Confronta i tempi di esecuzione"
+  ],
+  "starterCode": "",
+  "validator": "parallel_async",
+  "hints": [
+    "Avvia tutte le Promise prima di usare await."
+  ]
+},
+{
+  "id": 223,
+  "title": "Retry Pattern",
+  "difficulty": "Advanced",
+  "category": "Async",
+  "xp": 255,
+  "estimatedTime": "50 min",
+  "description": "Implementa un meccanismo di retry automatico per una richiesta che può fallire.",
+  "objectives": [
+    "Conta i tentativi",
+    "Ripeti l'operazione fino al limite massimo",
+    "Restituisci l'errore finale se tutti i tentativi falliscono"
+  ],
+  "starterCode": "",
+  "validator": "retry_pattern",
+  "hints": [
+    "Usa un ciclo oppure una funzione ricorsiva."
+  ]
+},
+{
+  "id": 224,
+  "title": "Async Timeout",
+  "difficulty": "Advanced",
+  "category": "Async",
+  "xp": 260,
+  "estimatedTime": "50 min",
+  "description": "Interrompi un'operazione asincrona se supera il tempo massimo consentito.",
+  "objectives": [
+    "Crea una Promise di timeout",
+    "Usa Promise.race()",
+    "Gestisci il caso di timeout"
+  ],
+  "starterCode": "",
+  "validator": "async_timeout",
+  "hints": [
+    "Promise.race() è ideale per implementare un timeout."
+  ]
+},
+{
+  "id": 225,
+  "title": "AbortController",
+  "difficulty": "Advanced",
+  "category": "HTTP",
+  "xp": 270,
+  "estimatedTime": "55 min",
+  "description": "Annulla una richiesta fetch() utilizzando AbortController.",
+  "objectives": [
+    "Crea un AbortController",
+    "Passa il signal a fetch()",
+    "Gestisci l'annullamento della richiesta"
+  ],
+  "starterCode": "",
+  "validator": "abort_controller",
+  "hints": [
+    "Usa controller.abort() per interrompere la richiesta."
+  ]
+}
+,
+{
+  "id": 226,
+  "title": "Fetch con Header Personalizzati",
+  "difficulty": "Advanced",
+  "category": "HTTP",
+  "xp": 275,
+  "estimatedTime": "40 min",
+  "description": "Invia una richiesta HTTP includendo header personalizzati.",
+  "objectives": [
+    "Usa fetch()",
+    "Configura gli header",
+    "Leggi la risposta JSON"
+  ],
+  "starterCode": "",
+  "validator": "fetch_headers",
+  "hints": [
+    "Usa l'opzione headers nella configurazione di fetch()."
+  ]
+},
+{
+  "id": 227,
+  "title": "FormData Upload",
+  "difficulty": "Advanced",
+  "category": "HTTP",
+  "xp": 280,
+  "estimatedTime": "45 min",
+  "description": "Invia dati di un modulo utilizzando FormData.",
+  "objectives": [
+    "Crea un oggetto FormData",
+    "Aggiungi campi",
+    "Invia i dati tramite fetch()"
+  ],
+  "starterCode": "",
+  "validator": "formdata_upload",
+  "hints": [
+    "Usa formData.append(nome, valore)."
+  ]
+},
+{
+  "id": 228,
+  "title": "Response Streaming",
+  "difficulty": "Advanced",
+  "category": "HTTP",
+  "xp": 285,
+  "estimatedTime": "50 min",
+  "description": "Leggi una risposta HTTP come stream utilizzando ReadableStream.",
+  "objectives": [
+    "Ottieni il reader dello stream",
+    "Leggi i chunk ricevuti",
+    "Ricostruisci il contenuto finale"
+  ],
+  "starterCode": "",
+  "validator": "response_stream",
+  "hints": [
+    "Usa response.body.getReader()."
+  ]
+},
+{
+  "id": 229,
+  "title": "Bearer Authentication",
+  "difficulty": "Advanced",
+  "category": "HTTP",
+  "xp": 290,
+  "estimatedTime": "45 min",
+  "description": "Invia una richiesta autenticata tramite Bearer Token.",
+  "objectives": [
+    "Aggiungi Authorization negli header",
+    "Usa il formato Bearer <token>",
+    "Gestisci gli errori HTTP"
+  ],
+  "starterCode": "",
+  "validator": "bearer_auth",
+  "hints": [
+    "Authorization: Bearer TOKEN"
+  ]
+},
+{
+  "id": 230,
+  "title": "REST Client",
+  "difficulty": "Advanced",
+  "category": "Architecture",
+  "xp": 300,
+  "estimatedTime": "60 min",
+  "description": "Realizza un client REST riutilizzabile con metodi GET, POST, PUT e DELETE.",
+  "objectives": [
+    "Crea una classe RESTClient",
+    "Implementa i principali metodi HTTP",
+    "Gestisci automaticamente errori e risposta JSON"
+  ],
+  "starterCode": "",
+  "validator": "rest_client",
+  "hints": [
+    "Centralizza la logica comune in un metodo privato o helper."
+  ]
+}
+,
+{
+  "id": 231,
+  "title": "WebSocket Client",
+  "difficulty": "Advanced",
+  "category": "Networking",
+  "xp": 305,
+  "estimatedTime": "60 min",
+  "description": "Realizza un client WebSocket che si connetta a un server e gestisca messaggi in ingresso e uscita.",
+  "objectives": [
+    "Apri una connessione WebSocket",
+    "Invia un messaggio",
+    "Gestisci gli eventi open, message, close ed error"
+  ],
+  "starterCode": "",
+  "validator": "websocket_client",
+  "hints": [
+    "Usa new WebSocket(url).",
+    "Ascolta gli eventi con addEventListener()."
+  ]
+},
+{
+  "id": 232,
+  "title": "Server-Sent Events",
+  "difficulty": "Advanced",
+  "category": "Networking",
+  "xp": 310,
+  "estimatedTime": "50 min",
+  "description": "Ricevi aggiornamenti in tempo reale utilizzando EventSource.",
+  "objectives": [
+    "Crea un EventSource",
+    "Gestisci gli eventi message",
+    "Chiudi correttamente la connessione"
+  ],
+  "starterCode": "",
+  "validator": "server_sent_events",
+  "hints": [
+    "Usa new EventSource(url)."
+  ]
+},
+{
+  "id": 233,
+  "title": "Web Workers",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 320,
+  "estimatedTime": "70 min",
+  "description": "Sposta un'elaborazione pesante in un Web Worker per mantenere reattiva l'interfaccia.",
+  "objectives": [
+    "Crea un Worker",
+    "Scambia messaggi con postMessage()",
+    "Ricevi il risultato nel thread principale"
+  ],
+  "starterCode": "",
+  "validator": "web_worker",
+  "hints": [
+    "Usa worker.postMessage() e l'evento message."
+  ]
+},
+{
+  "id": 234,
+  "title": "Shared Worker",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 325,
+  "estimatedTime": "75 min",
+  "description": "Condividi un worker tra più contesti della stessa origine.",
+  "objectives": [
+    "Crea uno SharedWorker",
+    "Apri una porta di comunicazione",
+    "Scambia dati tra più pagine"
+  ],
+  "starterCode": "",
+  "validator": "shared_worker",
+  "hints": [
+    "Comunica tramite worker.port."
+  ]
+},
+{
+  "id": 235,
+  "title": "Service Worker Base",
+  "difficulty": "Advanced",
+  "category": "PWA",
+  "xp": 330,
+  "estimatedTime": "80 min",
+  "description": "Registra un Service Worker e gestisci il ciclo di vita iniziale dell'applicazione.",
+  "objectives": [
+    "Registra il Service Worker",
+    "Gestisci install e activate",
+    "Verifica l'avvenuta registrazione"
+  ],
+  "starterCode": "",
+  "validator": "service_worker",
+  "hints": [
+    "Usa navigator.serviceWorker.register().",
+    "Ricorda che il Service Worker richiede HTTPS (o localhost)."
+  ]
+}
+,
+{
+  "id": 236,
+  "title": "Performance API",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 310,
+  "estimatedTime": "50 min",
+  "description": "Misura il tempo di esecuzione di una funzione utilizzando la Performance API.",
+  "objectives": [
+    "Usa performance.now()",
+    "Calcola la durata di un'operazione",
+    "Visualizza il risultato"
+  ],
+  "starterCode": "",
+  "validator": "performance_api",
+  "hints": [
+    "performance.now() offre una precisione superiore a Date.now()."
+  ]
+},
+{
+  "id": 237,
+  "title": "Debounce Function",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 315,
+  "estimatedTime": "55 min",
+  "description": "Implementa una funzione debounce per limitare il numero di chiamate durante eventi frequenti.",
+  "objectives": [
+    "Crea una funzione debounce()",
+    "Usa setTimeout()",
+    "Annulla le chiamate precedenti"
+  ],
+  "starterCode": "",
+  "validator": "debounce_function",
+  "hints": [
+    "Utilizza clearTimeout() prima di creare un nuovo timer."
+  ]
+},
+{
+  "id": 238,
+  "title": "Throttle Function",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 320,
+  "estimatedTime": "55 min",
+  "description": "Limita la frequenza di esecuzione di una funzione con il pattern throttle.",
+  "objectives": [
+    "Implementa throttle()",
+    "Controlla l'intervallo di esecuzione",
+    "Riduci le chiamate ripetitive"
+  ],
+  "starterCode": "",
+  "validator": "throttle_function",
+  "hints": [
+    "Una funzione throttled può essere eseguita al massimo una volta per intervallo."
+  ]
+},
+{
+  "id": 239,
+  "title": "requestAnimationFrame",
+  "difficulty": "Advanced",
+  "category": "Animation",
+  "xp": 325,
+  "estimatedTime": "60 min",
+  "description": "Crea un'animazione fluida utilizzando requestAnimationFrame().",
+  "objectives": [
+    "Usa requestAnimationFrame()",
+    "Aggiorna la posizione di un elemento",
+    "Interrompi correttamente l'animazione"
+  ],
+  "starterCode": "",
+  "validator": "request_animation_frame",
+  "hints": [
+    "requestAnimationFrame() sincronizza gli aggiornamenti con il refresh del browser."
+  ]
+},
+{
+  "id": 240,
+  "title": "DOM Batch Updates",
+  "difficulty": "Advanced",
+  "category": "Performance",
+  "xp": 330,
+  "estimatedTime": "60 min",
+  "description": "Riduci i reflow del browser raggruppando gli aggiornamenti del DOM.",
+  "objectives": [
+    "Minimizza le modifiche dirette al DOM",
+    "Usa DocumentFragment",
+    "Migliora le prestazioni del rendering"
+  ],
+  "starterCode": "",
+  "validator": "dom_batch_updates",
+  "hints": [
+    "Aggiorna il DOM una sola volta dopo aver preparato tutte le modifiche."
+  ]
+}
+,
+{
+  "id": 241,
+  "title": "Advanced localStorage",
+  "difficulty": "Advanced",
+  "category": "Storage",
+  "xp": 335,
+  "estimatedTime": "45 min",
+  "description": "Salva e recupera oggetti complessi utilizzando localStorage.",
+  "objectives": [
+    "Convertire oggetti in JSON",
+    "Salvare i dati",
+    "Ripristinare gli oggetti"
+  ],
+  "starterCode": "",
+  "validator": "advanced_localstorage",
+  "hints": [
+    "Usa JSON.stringify() prima del salvataggio."
+  ]
+},
+{
+  "id": 242,
+  "title": "Session Storage",
+  "difficulty": "Advanced",
+  "category": "Storage",
+  "xp": 340,
+  "estimatedTime": "40 min",
+  "description": "Utilizza sessionStorage per conservare dati validi solo durante la sessione corrente.",
+  "objectives": [
+    "Salvare un valore",
+    "Leggere il valore",
+    "Comprendere la differenza con localStorage"
+  ],
+  "starterCode": "",
+  "validator": "session_storage",
+  "hints": [
+    "sessionStorage viene svuotato alla chiusura della scheda."
+  ]
+},
+{
+  "id": 243,
+  "title": "JSON Serialization",
+  "difficulty": "Advanced",
+  "category": "JSON",
+  "xp": 345,
+  "estimatedTime": "45 min",
+  "description": "Serializza e deserializza strutture dati JavaScript utilizzando JSON.",
+  "objectives": [
+    "Usare JSON.stringify()",
+    "Usare JSON.parse()",
+    "Gestire oggetti e array"
+  ],
+  "starterCode": "",
+  "validator": "json_serialization",
+  "hints": [
+    "JSON supporta solo tipi di dato serializzabili."
+  ]
+},
+{
+  "id": 244,
+  "title": "IndexedDB Basics",
+  "difficulty": "Advanced",
+  "category": "Storage",
+  "xp": 350,
+  "estimatedTime": "60 min",
+  "description": "Crea un database IndexedDB e memorizza un semplice record.",
+  "objectives": [
+    "Aprire un database",
+    "Creare un object store",
+    "Inserire un record"
+  ],
+  "starterCode": "",
+  "validator": "indexeddb_basic",
+  "hints": [
+    "Usa indexedDB.open() e gestisci l'evento onupgradeneeded."
+  ]
+},
+{
+  "id": 245,
+  "title": "Persistent User Settings",
+  "difficulty": "Advanced",
+  "category": "Storage",
+  "xp": 355,
+  "estimatedTime": "50 min",
+  "description": "Realizza un sistema che memorizzi e ripristini automaticamente le preferenze dell'utente.",
+  "objectives": [
+    "Salvare le impostazioni",
+    "Ripristinare i dati all'avvio",
+    "Gestire valori predefiniti"
+  ],
+  "starterCode": "",
+  "validator": "persistent_settings",
+  "hints": [
+    "Carica le impostazioni all'inizializzazione dell'applicazione."
+  ]
+}
+,
+{
+  "id": 246,
+  "title": "Canvas Basics",
+  "difficulty": "Advanced",
+  "category": "Canvas",
+  "xp": 360,
+  "estimatedTime": "50 min",
+  "description": "Crea un elemento canvas e disegna semplici forme geometriche utilizzando il contesto 2D.",
+  "objectives": [
+    "Ottenere il contesto 2D",
+    "Disegnare un rettangolo",
+    "Disegnare un cerchio"
+  ],
+  "starterCode": "",
+  "validator": "canvas_basics",
+  "hints": [
+    "Usa getContext('2d') per ottenere il contesto grafico."
+  ]
+},
+{
+  "id": 247,
+  "title": "Canvas Paths",
+  "difficulty": "Advanced",
+  "category": "Canvas",
+  "xp": 365,
+  "estimatedTime": "55 min",
+  "description": "Disegna linee e percorsi personalizzati utilizzando beginPath(), moveTo() e lineTo().",
+  "objectives": [
+    "Creare un percorso",
+    "Disegnare segmenti",
+    "Chiudere il percorso"
+  ],
+  "starterCode": "",
+  "validator": "canvas_paths",
+  "hints": [
+    "Ricorda di usare stroke() per visualizzare il percorso."
+  ]
+},
+{
+  "id": 248,
+  "title": "Canvas Animation",
+  "difficulty": "Advanced",
+  "category": "Canvas",
+  "xp": 370,
+  "estimatedTime": "60 min",
+  "description": "Anima un oggetto sul canvas utilizzando requestAnimationFrame().",
+  "objectives": [
+    "Aggiornare la posizione",
+    "Ridisegnare il canvas",
+    "Creare un'animazione fluida"
+  ],
+  "starterCode": "",
+  "validator": "canvas_animation",
+  "hints": [
+    "Pulisci il canvas con clearRect() prima di ogni nuovo frame."
+  ]
+},
+{
+  "id": 249,
+  "title": "Canvas Mouse Events",
+  "difficulty": "Advanced",
+  "category": "Canvas",
+  "xp": 375,
+  "estimatedTime": "60 min",
+  "description": "Gestisci gli eventi del mouse per interagire con gli elementi disegnati sul canvas.",
+  "objectives": [
+    "Intercettare il click",
+    "Calcolare le coordinate",
+    "Aggiornare il disegno"
+  ],
+  "starterCode": "",
+  "validator": "canvas_mouse_events",
+  "hints": [
+    "Usa getBoundingClientRect() per ottenere coordinate corrette."
+  ]
+},
+{
+  "id": 250,
+  "title": "Mini Paint Application",
+  "difficulty": "Advanced",
+  "category": "Canvas",
+  "xp": 380,
+  "estimatedTime": "75 min",
+  "description": "Realizza una semplice applicazione di disegno con pennello, gomma e pulsante per cancellare il canvas.",
+  "objectives": [
+    "Disegnare con il mouse",
+    "Implementare una gomma",
+    "Pulire completamente il canvas"
+  ],
+  "starterCode": "",
+  "validator": "mini_paint",
+  "hints": [
+    "Gestisci gli eventi mousedown, mousemove e mouseup per controllare il disegno."
+  ]
+}
+,
+{
+  "id": 251,
+  "title": "Drag & Drop Basics",
+  "difficulty": "Advanced",
+  "category": "Drag & Drop",
+  "xp": 385,
+  "estimatedTime": "50 min",
+  "description": "Implementa un semplice sistema Drag & Drop utilizzando gli eventi HTML5 dedicati.",
+  "objectives": [
+    "Rendere un elemento trascinabile",
+    "Gestire dragstart",
+    "Gestire drop"
+  ],
+  "starterCode": "",
+  "validator": "drag_drop_basic",
+  "hints": [
+    "Ricorda di chiamare preventDefault() durante dragover."
+  ]
+},
+{
+  "id": 252,
+  "title": "Sortable List",
+  "difficulty": "Advanced",
+  "category": "Drag & Drop",
+  "xp": 390,
+  "estimatedTime": "60 min",
+  "description": "Permetti all'utente di riordinare dinamicamente gli elementi di una lista tramite Drag & Drop.",
+  "objectives": [
+    "Gestire il trascinamento",
+    "Aggiornare l'ordine degli elementi",
+    "Salvare il nuovo ordinamento"
+  ],
+  "starterCode": "",
+  "validator": "sortable_list",
+  "hints": [
+    "Aggiorna il DOM solo dopo aver determinato la posizione finale."
+  ]
+},
+{
+  "id": 253,
+  "title": "FileReader API",
+  "difficulty": "Advanced",
+  "category": "Files",
+  "xp": 395,
+  "estimatedTime": "60 min",
+  "description": "Leggi il contenuto di un file selezionato dall'utente utilizzando FileReader.",
+  "objectives": [
+    "Selezionare un file",
+    "Leggere il contenuto",
+    "Visualizzare il risultato"
+  ],
+  "starterCode": "",
+  "validator": "filereader_api",
+  "hints": [
+    "Usa readAsText() per leggere file di testo."
+  ]
+},
+{
+  "id": 254,
+  "title": "Image Preview",
+  "difficulty": "Advanced",
+  "category": "Files",
+  "xp": 400,
+  "estimatedTime": "65 min",
+  "description": "Mostra un'anteprima di un'immagine selezionata dall'utente prima del caricamento.",
+  "objectives": [
+    "Leggere un'immagine",
+    "Visualizzare l'anteprima",
+    "Gestire errori di caricamento"
+  ],
+  "starterCode": "",
+  "validator": "image_preview",
+  "hints": [
+    "Usa readAsDataURL() per ottenere una rappresentazione Base64 dell'immagine."
+  ]
+},
+{
+  "id": 255,
+  "title": "Drag & Drop File Upload",
+  "difficulty": "Advanced",
+  "category": "Files",
+  "xp": 410,
+  "estimatedTime": "75 min",
+  "description": "Realizza un'area Drag & Drop che consenta di trascinare file e visualizzarne le informazioni prima dell'upload.",
+  "objectives": [
+    "Accettare file trascinati",
+    "Visualizzare nome e dimensione",
+    "Preparare il caricamento"
+  ],
+  "starterCode": "",
+  "validator": "drag_drop_upload",
+  "hints": [
+    "Recupera i file tramite event.dataTransfer.files."
+  ]
+}
+,
+{
+  "id": 256,
+  "title": "Custom Elements",
+  "difficulty": "Advanced",
+  "category": "Web Components",
+  "xp": 415,
+  "estimatedTime": "60 min",
+  "description": "Crea un elemento HTML personalizzato estendendo HTMLElement e registrandolo nel browser.",
+  "objectives": [
+    "Estendere HTMLElement",
+    "Registrare il componente",
+    "Utilizzare il nuovo elemento nella pagina"
+  ],
+  "starterCode": "",
+  "validator": "custom_elements_basic",
+  "hints": [
+    "Usa customElements.define() per registrare il componente."
+  ]
+},
+{
+  "id": 257,
+  "title": "Shadow DOM",
+  "difficulty": "Advanced",
+  "category": "Web Components",
+  "xp": 420,
+  "estimatedTime": "65 min",
+  "description": "Isola struttura e stili di un componente utilizzando lo Shadow DOM.",
+  "objectives": [
+    "Creare uno Shadow Root",
+    "Inserire HTML e CSS",
+    "Verificare l'isolamento degli stili"
+  ],
+  "starterCode": "",
+  "validator": "shadow_dom_basic",
+  "hints": [
+    "Usa attachShadow({ mode: 'open' })."
+  ]
+},
+{
+  "id": 258,
+  "title": "HTML Template",
+  "difficulty": "Advanced",
+  "category": "Web Components",
+  "xp": 425,
+  "estimatedTime": "65 min",
+  "description": "Utilizza il tag <template> per creare componenti riutilizzabili.",
+  "objectives": [
+    "Definire un template",
+    "Clonare il contenuto",
+    "Inserirlo nel DOM"
+  ],
+  "starterCode": "",
+  "validator": "html_template_component",
+  "hints": [
+    "Usa template.content.cloneNode(true)."
+  ]
+},
+{
+  "id": 259,
+  "title": "Named Slots",
+  "difficulty": "Advanced",
+  "category": "Web Components",
+  "xp": 430,
+  "estimatedTime": "70 min",
+  "description": "Permetti la personalizzazione del contenuto di un componente utilizzando gli slot.",
+  "objectives": [
+    "Definire slot",
+    "Utilizzare slot con nome",
+    "Visualizzare contenuti personalizzati"
+  ],
+  "starterCode": "",
+  "validator": "named_slots",
+  "hints": [
+    "Gli slot permettono di inserire contenuti nel componente dall'esterno."
+  ]
+},
+{
+  "id": 260,
+  "title": "Reusable Card Component",
+  "difficulty": "Advanced",
+  "category": "Web Components",
+  "xp": 440,
+  "estimatedTime": "80 min",
+  "description": "Realizza un componente Card completamente riutilizzabile utilizzando Custom Elements, Shadow DOM e Template.",
+  "objectives": [
+    "Combinare le tecnologie dei Web Components",
+    "Gestire proprietà del componente",
+    "Creare un elemento riutilizzabile"
+  ],
+  "starterCode": "",
+  "validator": "reusable_card_component",
+  "hints": [
+    "Organizza il codice in modo che il componente sia facilmente estendibile."
+  ]
+}
+,
+{
+  "id": 261,
+  "title": "IntersectionObserver",
+  "difficulty": "Advanced",
+  "category": "Observer API",
+  "xp": 445,
+  "estimatedTime": "60 min",
+  "description": "Rileva quando un elemento entra o esce dall'area visibile della pagina utilizzando IntersectionObserver.",
+  "objectives": [
+    "Creare un IntersectionObserver",
+    "Osservare un elemento",
+    "Gestire gli eventi di intersezione"
+  ],
+  "starterCode": "",
+  "validator": "intersection_observer",
+  "hints": [
+    "Utilizza observer.observe(element) per iniziare l'osservazione."
+  ]
+},
+{
+  "id": 262,
+  "title": "ResizeObserver",
+  "difficulty": "Advanced",
+  "category": "Observer API",
+  "xp": 450,
+  "estimatedTime": "60 min",
+  "description": "Monitora il ridimensionamento di un elemento HTML tramite ResizeObserver.",
+  "objectives": [
+    "Creare un ResizeObserver",
+    "Osservare un elemento",
+    "Aggiornare il layout quando cambia la dimensione"
+  ],
+  "starterCode": "",
+  "validator": "resize_observer_basic",
+  "hints": [
+    "Ogni callback riceve una lista di ResizeObserverEntry."
+  ]
+},
+{
+  "id": 263,
+  "title": "MutationObserver",
+  "difficulty": "Advanced",
+  "category": "Observer API",
+  "xp": 455,
+  "estimatedTime": "65 min",
+  "description": "Rileva modifiche alla struttura del DOM utilizzando MutationObserver.",
+  "objectives": [
+    "Osservare un nodo",
+    "Rilevare modifiche ai figli",
+    "Analizzare le mutazioni"
+  ],
+  "starterCode": "",
+  "validator": "mutation_observer_basic",
+  "hints": [
+    "Configura observe() specificando childList, attributes o subtree."
+  ]
+},
+{
+  "id": 264,
+  "title": "PerformanceObserver",
+  "difficulty": "Advanced",
+  "category": "Observer API",
+  "xp": 460,
+  "estimatedTime": "70 min",
+  "description": "Osserva gli eventi di performance dell'applicazione utilizzando PerformanceObserver.",
+  "objectives": [
+    "Creare un PerformanceObserver",
+    "Osservare entry di performance",
+    "Analizzare le metriche raccolte"
+  ],
+  "starterCode": "",
+  "validator": "performance_observer_basic",
+  "hints": [
+    "Specifica le entryTypes desiderate nella chiamata observe()."
+  ]
+},
+{
+  "id": 265,
+  "title": "Observer Dashboard",
+  "difficulty": "Advanced",
+  "category": "Observer API",
+  "xp": 470,
+  "estimatedTime": "90 min",
+  "description": "Realizza una dashboard che combini più Observer API per monitorare dinamicamente lo stato dell'applicazione.",
+  "objectives": [
+    "Integrare più Observer",
+    "Visualizzare gli eventi raccolti",
+    "Aggiornare automaticamente l'interfaccia"
+  ],
+  "starterCode": "",
+  "validator": "observer_dashboard",
+  "hints": [
+    "Mantieni separata la logica degli observer dalla visualizzazione dei dati."
+  ]
+}
+,
+{
+  "id": 266,
+  "title": "Regular Expressions Basics",
+  "difficulty": "Advanced",
+  "category": "RegExp",
+  "xp": 475,
+  "estimatedTime": "50 min",
+  "description": "Utilizza una semplice espressione regolare per individuare parole e numeri all'interno di una stringa.",
+  "objectives": [
+    "Creare una RegExp",
+    "Usare test()",
+    "Usare match()"
+  ],
+  "starterCode": "",
+  "validator": "regexp_basics",
+  "hints": [
+    "Inizia con caratteri, classi e quantificatori semplici."
+  ]
+},
+{
+  "id": 267,
+  "title": "Capturing Groups",
+  "difficulty": "Advanced",
+  "category": "RegExp",
+  "xp": 480,
+  "estimatedTime": "55 min",
+  "description": "Estrai parti specifiche di una stringa utilizzando i gruppi di cattura.",
+  "objectives": [
+    "Definire gruppi",
+    "Accedere ai gruppi catturati",
+    "Rielaborare il risultato"
+  ],
+  "starterCode": "",
+  "validator": "capturing_groups",
+  "hints": [
+    "Le parentesi tonde creano gruppi di cattura."
+  ]
+},
+{
+  "id": 268,
+  "title": "Lookahead & Lookbehind",
+  "difficulty": "Advanced",
+  "category": "RegExp",
+  "xp": 485,
+  "estimatedTime": "65 min",
+  "description": "Utilizza lookahead e lookbehind per eseguire ricerche contestuali senza includere il testo nel risultato.",
+  "objectives": [
+    "Usare lookahead positivo",
+    "Usare lookbehind positivo",
+    "Comprendere i casi d'uso"
+  ],
+  "starterCode": "",
+  "validator": "lookahead_lookbehind",
+  "hints": [
+    "Le lookaround verificano condizioni senza consumare caratteri."
+  ]
+},
+{
+  "id": 269,
+  "title": "Input Validation",
+  "difficulty": "Advanced",
+  "category": "RegExp",
+  "xp": 490,
+  "estimatedTime": "70 min",
+  "description": "Valida email, URL e password utilizzando espressioni regolari appropriate.",
+  "objectives": [
+    "Validare un indirizzo email",
+    "Validare un URL",
+    "Verificare la robustezza di una password"
+  ],
+  "starterCode": "",
+  "validator": "regexp_validation",
+  "hints": [
+    "Non esagerare con regex troppo complesse: punta a un buon compromesso tra precisione e leggibilità."
+  ]
+},
+{
+  "id": 270,
+  "title": "Text Parser",
+  "difficulty": "Advanced",
+  "category": "RegExp",
+  "xp": 500,
+  "estimatedTime": "80 min",
+  "description": "Analizza un testo strutturato ed estrai automaticamente informazioni tramite RegExp.",
+  "objectives": [
+    "Identificare pattern ripetuti",
+    "Estrarre dati",
+    "Restituire una struttura organizzata"
+  ],
+  "starterCode": "",
+  "validator": "text_parser",
+  "hints": [
+    "Combina gruppi di cattura e flag globali per ottenere tutti i risultati."
+  ]
+}
+,
+{
+  "id": 271,
+  "title": "Advanced Todo Application",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 510,
+  "estimatedTime": "90 min",
+  "description": "Realizza una Todo App completa con filtri, categorie, ricerca e persistenza dei dati nel browser.",
+  "objectives": [
+    "Gestire CRUD delle attività",
+    "Salvare i dati in localStorage",
+    "Implementare ricerca e filtri"
+  ],
+  "starterCode": "",
+  "validator": "advanced_todo_app",
+  "hints": [
+    "Organizza l'applicazione in moduli separati per dati, interfaccia e logica."
+  ]
+},
+{
+  "id": 272,
+  "title": "Weather Dashboard",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 520,
+  "estimatedTime": "90 min",
+  "description": "Costruisci una dashboard meteo che recuperi dati da un'API e mostri previsioni e condizioni attuali.",
+  "objectives": [
+    "Effettuare richieste Fetch",
+    "Visualizzare i dati ricevuti",
+    "Gestire gli errori di rete"
+  ],
+  "starterCode": "",
+  "validator": "weather_dashboard",
+  "hints": [
+    "Mantieni separata la logica API dalla visualizzazione."
+  ]
+},
+{
+  "id": 273,
+  "title": "Markdown Previewer",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 530,
+  "estimatedTime": "100 min",
+  "description": "Realizza un editor Markdown con anteprima aggiornata in tempo reale.",
+  "objectives": [
+    "Acquisire il testo",
+    "Convertire il Markdown in HTML",
+    "Aggiornare l'anteprima automaticamente"
+  ],
+  "starterCode": "",
+  "validator": "markdown_previewer",
+  "hints": [
+    "Aggiorna la preview durante la digitazione senza ricaricare la pagina."
+  ]
+},
+{
+  "id": 274,
+  "title": "Kanban Board",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 540,
+  "estimatedTime": "120 min",
+  "description": "Sviluppa una Kanban Board con colonne, schede trascinabili e salvataggio dello stato.",
+  "objectives": [
+    "Implementare Drag & Drop",
+    "Gestire colonne e card",
+    "Salvare automaticamente le modifiche"
+  ],
+  "starterCode": "",
+  "validator": "kanban_board",
+  "hints": [
+    "Rappresenta lo stato della board con una struttura dati facilmente serializzabile."
+  ]
+},
+{
+  "id": 275,
+  "title": "Realtime Chat Simulator",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 550,
+  "estimatedTime": "120 min",
+  "description": "Realizza una chat simulata che aggiorni dinamicamente i messaggi e gestisca utenti e cronologia.",
+  "objectives": [
+    "Inviare messaggi",
+    "Aggiornare l'interfaccia in tempo reale",
+    "Conservare la cronologia della conversazione"
+  ],
+  "starterCode": "",
+  "validator": "realtime_chat_simulator",
+  "hints": [
+    "Progetta la chat in modo da poter sostituire facilmente la simulazione con un backend reale."
+  ]
+}
+,
+{
+  "id": 276,
+  "title": "Password Manager",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 560,
+  "estimatedTime": "120 min",
+  "description": "Realizza un semplice Password Manager che permetta di salvare, cercare e organizzare credenziali in modo sicuro nel browser.",
+  "objectives": [
+    "Gestire credenziali",
+    "Implementare ricerca",
+    "Proteggere i dati memorizzati"
+  ],
+  "starterCode": "",
+  "validator": "password_manager",
+  "hints": [
+    "Non memorizzare mai password in chiaro in un'applicazione reale."
+  ]
+},
+{
+  "id": 277,
+  "title": "Notes Application",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 570,
+  "estimatedTime": "110 min",
+  "description": "Sviluppa un'applicazione per prendere appunti con ricerca, categorie e salvataggio automatico.",
+  "objectives": [
+    "Creare note",
+    "Ricercare contenuti",
+    "Salvare automaticamente le modifiche"
+  ],
+  "starterCode": "",
+  "validator": "notes_application",
+  "hints": [
+    "Mantieni separati dati, ricerca e interfaccia."
+  ]
+},
+{
+  "id": 278,
+  "title": "Lazy Image Gallery",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 580,
+  "estimatedTime": "100 min",
+  "description": "Costruisci una galleria immagini con caricamento progressivo mediante IntersectionObserver.",
+  "objectives": [
+    "Visualizzare miniature",
+    "Caricare immagini quando diventano visibili",
+    "Ottimizzare le prestazioni"
+  ],
+  "starterCode": "",
+  "validator": "lazy_image_gallery",
+  "hints": [
+    "Sostituisci il placeholder solo quando l'immagine entra nel viewport."
+  ]
+},
+{
+  "id": 279,
+  "title": "Quiz Engine",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 590,
+  "estimatedTime": "120 min",
+  "description": "Realizza un motore per quiz con domande casuali, punteggio, timer e riepilogo finale.",
+  "objectives": [
+    "Caricare domande",
+    "Calcolare il punteggio",
+    "Mostrare il risultato finale"
+  ],
+  "starterCode": "",
+  "validator": "quiz_engine",
+  "hints": [
+    "Organizza le domande in un file JSON separato."
+  ]
+},
+{
+  "id": 280,
+  "title": "Expense Tracker Dashboard",
+  "difficulty": "Advanced",
+  "category": "Projects",
+  "xp": 600,
+  "estimatedTime": "140 min",
+  "description": "Realizza un'applicazione per monitorare entrate e uscite con grafici, statistiche e filtri temporali.",
+  "objectives": [
+    "Registrare movimenti",
+    "Calcolare statistiche",
+    "Visualizzare grafici riepilogativi"
+  ],
+  "starterCode": "",
+  "validator": "expense_tracker_dashboard",
+  "hints": [
+    "Mantieni separati il modello dati, la logica di calcolo e la visualizzazione."
+  ]
+}
+,
+{
+  "id": 281,
+  "title": "Snake Game",
+  "difficulty": "Advanced",
+  "category": "Games",
+  "xp": 610,
+  "estimatedTime": "150 min",
+  "description": "Realizza il classico Snake gestendo movimento, collisioni, punteggio e crescita del serpente.",
+  "objectives": [
+    "Gestire il movimento",
+    "Rilevare collisioni",
+    "Aggiornare il punteggio"
+  ],
+  "starterCode": "",
+  "validator": "snake_game",
+  "hints": [
+    "Rappresenta il serpente come un array di coordinate."
+  ]
+},
+{
+  "id": 282,
+  "title": "Memory Match Game",
+  "difficulty": "Advanced",
+  "category": "Games",
+  "xp": 620,
+  "estimatedTime": "120 min",
+  "description": "Costruisci un gioco Memory con carte, animazioni di flip e conteggio delle mosse.",
+  "objectives": [
+    "Mescolare le carte",
+    "Gestire il flip",
+    "Verificare gli abbinamenti"
+  ],
+  "starterCode": "",
+  "validator": "memory_match_game",
+  "hints": [
+    "Blocca temporaneamente l'input mentre confronti due carte."
+  ]
+},
+{
+  "id": 283,
+  "title": "2048 Engine",
+  "difficulty": "Advanced",
+  "category": "Games",
+  "xp": 630,
+  "estimatedTime": "180 min",
+  "description": "Implementa il motore del gioco 2048 gestendo movimenti, fusioni e punteggio.",
+  "objectives": [
+    "Muovere le tessere",
+    "Fondere valori uguali",
+    "Generare nuove tessere"
+  ],
+  "starterCode": "",
+  "validator": "game_2048_engine",
+  "hints": [
+    "Ogni mossa dovrebbe elaborare prima lo spostamento e poi le fusioni."
+  ]
+},
+{
+  "id": 284,
+  "title": "Pathfinding Visualizer",
+  "difficulty": "Advanced",
+  "category": "Visualization",
+  "xp": 640,
+  "estimatedTime": "180 min",
+  "description": "Visualizza il funzionamento di un algoritmo di ricerca del percorso su una griglia interattiva.",
+  "objectives": [
+    "Creare una griglia",
+    "Animare l'algoritmo",
+    "Mostrare il percorso finale"
+  ],
+  "starterCode": "",
+  "validator": "pathfinding_visualizer",
+  "hints": [
+    "Separare algoritmo e visualizzazione renderà il progetto più modulare."
+  ]
+},
+{
+  "id": 285,
+  "title": "Physics Playground",
+  "difficulty": "Advanced",
+  "category": "Simulation",
+  "xp": 650,
+  "estimatedTime": "200 min",
+  "description": "Realizza una simulazione con gravità, velocità e collisioni tra oggetti.",
+  "objectives": [
+    "Aggiornare la posizione degli oggetti",
+    "Applicare la gravità",
+    "Gestire le collisioni"
+  ],
+  "starterCode": "",
+  "validator": "physics_playground",
+  "hints": [
+    "Aggiorna la simulazione utilizzando requestAnimationFrame()."
+  ]
+}
+,
+{
+  "id": 286,
+  "title": "REST API Tester",
+  "difficulty": "Advanced",
+  "category": "Developer Tools",
+  "xp": 660,
+  "estimatedTime": "120 min",
+  "description": "Realizza uno strumento che permetta di eseguire richieste HTTP verso API REST e visualizzarne le risposte.",
+  "objectives": [
+    "Supportare GET e POST",
+    "Visualizzare status e header",
+    "Mostrare il body della risposta"
+  ],
+  "starterCode": "",
+  "validator": "rest_api_tester",
+  "hints": [
+    "Progetta l'interfaccia in modo simile a un client API semplificato."
+  ]
+},
+{
+  "id": 287,
+  "title": "JSON Formatter",
+  "difficulty": "Advanced",
+  "category": "Developer Tools",
+  "xp": 670,
+  "estimatedTime": "90 min",
+  "description": "Crea uno strumento che formatta, valida e indenta automaticamente documenti JSON.",
+  "objectives": [
+    "Validare il JSON",
+    "Formattare il contenuto",
+    "Segnalare eventuali errori"
+  ],
+  "starterCode": "",
+  "validator": "json_formatter",
+  "hints": [
+    "Usa JSON.parse() per verificare la validità dell'input."
+  ]
+},
+{
+  "id": 288,
+  "title": "Text Diff Viewer",
+  "difficulty": "Advanced",
+  "category": "Developer Tools",
+  "xp": 680,
+  "estimatedTime": "140 min",
+  "description": "Confronta due testi evidenziando righe aggiunte, rimosse e modificate.",
+  "objectives": [
+    "Confrontare due versioni",
+    "Evidenziare le differenze",
+    "Mostrare un report leggibile"
+  ],
+  "starterCode": "",
+  "validator": "text_diff_viewer",
+  "hints": [
+    "Inizia confrontando il testo riga per riga."
+  ]
+},
+{
+  "id": 289,
+  "title": "Application Log Viewer",
+  "difficulty": "Advanced",
+  "category": "Developer Tools",
+  "xp": 690,
+  "estimatedTime": "120 min",
+  "description": "Visualizza e filtra file di log permettendo la ricerca per livello, data e parole chiave.",
+  "objectives": [
+    "Caricare un file di log",
+    "Applicare filtri",
+    "Visualizzare risultati ordinati"
+  ],
+  "starterCode": "",
+  "validator": "log_viewer",
+  "hints": [
+    "Mantieni separata la logica di parsing dalla visualizzazione."
+  ]
+},
+{
+  "id": 290,
+  "title": "Network Request Inspector",
+  "difficulty": "Advanced",
+  "category": "Developer Tools",
+  "xp": 700,
+  "estimatedTime": "150 min",
+  "description": "Costruisci uno strumento che registri e visualizzi le richieste HTTP effettuate dall'applicazione.",
+  "objectives": [
+    "Registrare richieste",
+    "Visualizzare tempi di risposta",
+    "Mostrare dettagli di request e response"
+  ],
+  "starterCode": "",
+  "validator": "network_request_inspector",
+  "hints": [
+    "Memorizza ogni richiesta in una struttura dati consultabile."
+  ]
+}
+,
+{
+  "id": 291,
+  "title": "Binary Search",
+  "difficulty": "Advanced",
+  "category": "Algorithms",
+  "xp": 710,
+  "estimatedTime": "75 min",
+  "description": "Implementa l'algoritmo di ricerca binaria su un array ordinato e confrontane le prestazioni con la ricerca lineare.",
+  "objectives": [
+    "Implementare Binary Search",
+    "Gestire casi limite",
+    "Confrontare la complessità"
+  ],
+  "starterCode": "",
+  "validator": "binary_search",
+  "hints": [
+    "Ricorda che l'array deve essere ordinato."
+  ]
+},
+{
+  "id": 292,
+  "title": "Merge Sort",
+  "difficulty": "Advanced",
+  "category": "Algorithms",
+  "xp": 720,
+  "estimatedTime": "90 min",
+  "description": "Ordina un array implementando l'algoritmo Merge Sort con approccio divide et impera.",
+  "objectives": [
+    "Dividere il problema",
+    "Fondere gli array ordinati",
+    "Analizzare la complessità"
+  ],
+  "starterCode": "",
+  "validator": "merge_sort",
+  "hints": [
+    "La fase di merge è il cuore dell'algoritmo."
+  ]
+},
+{
+  "id": 293,
+  "title": "Quick Sort",
+  "difficulty": "Advanced",
+  "category": "Algorithms",
+  "xp": 730,
+  "estimatedTime": "90 min",
+  "description": "Implementa Quick Sort scegliendo un pivot e partizionando l'array.",
+  "objectives": [
+    "Scegliere il pivot",
+    "Partizionare correttamente",
+    "Ordinare ricorsivamente"
+  ],
+  "starterCode": "",
+  "validator": "quick_sort",
+  "hints": [
+    "La scelta del pivot influenza le prestazioni."
+  ]
+},
+{
+  "id": 294,
+  "title": "Memoization",
+  "difficulty": "Advanced",
+  "category": "Optimization",
+  "xp": 740,
+  "estimatedTime": "80 min",
+  "description": "Ottimizza una funzione ricorsiva memorizzando i risultati già calcolati.",
+  "objectives": [
+    "Creare una cache",
+    "Ridurre i ricalcoli",
+    "Misurare il miglioramento"
+  ],
+  "starterCode": "",
+  "validator": "memoization",
+  "hints": [
+    "Usa un Map per memorizzare i risultati intermedi."
+  ]
+},
+{
+  "id": 295,
+  "title": "LRU Cache",
+  "difficulty": "Advanced",
+  "category": "Data Structures",
+  "xp": 750,
+  "estimatedTime": "120 min",
+  "description": "Implementa una cache Least Recently Used (LRU) con capacità limitata e sostituzione automatica degli elementi meno utilizzati.",
+  "objectives": [
+    "Gestire inserimento e recupero",
+    "Aggiornare l'ordine di utilizzo",
+    "Eliminare automaticamente gli elementi meno recenti"
+  ],
+  "starterCode": "",
+  "validator": "lru_cache",
+  "hints": [
+    "Una combinazione di Map e lista doppiamente collegata permette operazioni O(1)."
+  ]
+}
+,
+{
+  "id": 296,
+  "title": "Task Management Platform",
+  "difficulty": "Advanced",
+  "category": "Capstone",
+  "xp": 800,
+  "estimatedTime": "240 min",
+  "description": "Realizza una piattaforma per la gestione delle attività con autenticazione simulata, categorie, filtri, ricerca e persistenza dei dati.",
+  "objectives": [
+    "Gestire attività e categorie",
+    "Implementare ricerca e filtri",
+    "Salvare automaticamente i dati"
+  ],
+  "starterCode": "",
+  "validator": "task_management_platform",
+  "hints": [
+    "Organizza il progetto seguendo un'architettura modulare."
+  ]
+},
+{
+  "id": 297,
+  "title": "Interactive Analytics Dashboard",
+  "difficulty": "Advanced",
+  "category": "Capstone",
+  "xp": 850,
+  "estimatedTime": "270 min",
+  "description": "Sviluppa una dashboard con grafici, statistiche, filtri e aggiornamenti dinamici dei dati.",
+  "objectives": [
+    "Visualizzare dati",
+    "Applicare filtri",
+    "Aggiornare grafici in tempo reale"
+  ],
+  "starterCode": "",
+  "validator": "analytics_dashboard",
+  "hints": [
+    "Mantieni separati il modello dati e la visualizzazione."
+  ]
+},
+{
+  "id": 298,
+  "title": "Offline First Application",
+  "difficulty": "Advanced",
+  "category": "Capstone",
+  "xp": 900,
+  "estimatedTime": "300 min",
+  "description": "Realizza un'applicazione Offline First che continui a funzionare anche in assenza di connessione.",
+  "objectives": [
+    "Gestire dati offline",
+    "Sincronizzare le modifiche",
+    "Ripristinare automaticamente la connessione"
+  ],
+  "starterCode": "",
+  "validator": "offline_first_application",
+  "hints": [
+    "Combina IndexedDB, Cache API e Service Worker."
+  ]
+},
+{
+  "id": 299,
+  "title": "Collaborative Workspace",
+  "difficulty": "Advanced",
+  "category": "Capstone",
+  "xp": 950,
+  "estimatedTime": "330 min",
+  "description": "Costruisci un ambiente collaborativo che simuli la modifica condivisa di documenti e la sincronizzazione tra utenti.",
+  "objectives": [
+    "Gestire più utenti",
+    "Sincronizzare modifiche",
+    "Risolvere conflitti di aggiornamento"
+  ],
+  "starterCode": "",
+  "validator": "collaborative_workspace",
+  "hints": [
+    "Progetta una struttura dati che permetta di estendere facilmente la sincronizzazione."
+  ]
+},
+{
+  "id": 300,
+  "title": "JavaScript Developer Toolkit",
+  "difficulty": "Advanced",
+  "category": "Final Project",
+  "xp": 1000,
+  "estimatedTime": "420 min",
+  "description": "Realizza un toolkit completo per sviluppatori JavaScript che integri editor, formatter, linter, API Tester, JSON Formatter, Diff Viewer, Log Viewer e strumenti di diagnostica in un'unica applicazione modulare.",
+  "objectives": [
+    "Integrare tutti gli strumenti sviluppati",
+    "Progettare un'interfaccia modulare",
+    "Gestire workspace e configurazioni",
+    "Salvare preferenze e cronologia",
+    "Realizzare un'applicazione pronta per il portfolio"
+  ],
+  "starterCode": "",
+  "validator": "javascript_developer_toolkit",
+  "hints": [
+    "Progetta il toolkit come un insieme di moduli indipendenti e facilmente estendibili."
+  ]
+}
+,
+{
+  "id": 141,
+  "title": "Array.reduce()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 155,
+  "estimatedTime": "20 min",
+  "description": "Utilizza Array.reduce() per trasformare un array in un singolo valore.",
+  "objectives": [
+    "Usare reduce()",
+    "Gestire l'accumulatore",
+    "Restituire il risultato finale"
+  ],
+  "starterCode": "",
+  "validator": "array_reduce",
+  "hints": [
+    "L'accumulatore mantiene il risultato delle iterazioni precedenti."
+  ]
+},
+{
+  "id": 142,
+  "title": "Array.some()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 160,
+  "estimatedTime": "15 min",
+  "description": "Verifica se almeno un elemento dell'array soddisfa una determinata condizione.",
+  "objectives": [
+    "Usare some()",
+    "Creare una callback",
+    "Interpretare il valore booleano restituito"
+  ],
+  "starterCode": "",
+  "validator": "array_some",
+  "hints": [
+    "some() termina non appena trova un elemento valido."
+  ]
+},
+{
+  "id": 143,
+  "title": "Array.every()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 160,
+  "estimatedTime": "15 min",
+  "description": "Controlla se tutti gli elementi dell'array rispettano una determinata condizione.",
+  "objectives": [
+    "Usare every()",
+    "Valutare ogni elemento",
+    "Restituire un valore booleano"
+  ],
+  "starterCode": "",
+  "validator": "array_every",
+  "hints": [
+    "every() restituisce false appena trova un elemento non valido."
+  ]
+},
+{
+  "id": 144,
+  "title": "Array.findIndex()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 165,
+  "estimatedTime": "20 min",
+  "description": "Trova l'indice del primo elemento che soddisfa una condizione.",
+  "objectives": [
+    "Usare findIndex()",
+    "Gestire il caso -1",
+    "Accedere all'elemento trovato"
+  ],
+  "starterCode": "",
+  "validator": "array_find_index",
+  "hints": [
+    "findIndex() restituisce -1 se nessun elemento soddisfa la condizione."
+  ]
+},
+{
+  "id": 145,
+  "title": "Array.flat()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 165,
+  "estimatedTime": "20 min",
+  "description": "Appiattisci un array multidimensionale utilizzando Array.flat().",
+  "objectives": [
+    "Usare flat()",
+    "Specificare la profondità",
+    "Restituire un array monodimensionale"
+  ],
+  "starterCode": "",
+  "validator": "array_flat",
+  "hints": [
+    "Puoi passare un livello di profondità a flat()."
+  ]
+}
+,
+{
+  "id": 146,
+  "title": "Array.flatMap()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 170,
+  "estimatedTime": "20 min",
+  "description": "Utilizza Array.flatMap() per trasformare e appiattire un array in un'unica operazione.",
+  "objectives": [
+    "Usare flatMap()",
+    "Trasformare ogni elemento",
+    "Restituire un array appiattito"
+  ],
+  "starterCode": "",
+  "validator": "array_flatmap",
+  "hints": [
+    "flatMap() equivale a map() seguito da flat(1)."
+  ]
+},
+{
+  "id": 147,
+  "title": "Array.from()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 170,
+  "estimatedTime": "20 min",
+  "description": "Crea un array a partire da un oggetto iterabile o array-like.",
+  "objectives": [
+    "Usare Array.from()",
+    "Convertire un iterable",
+    "Applicare una funzione di trasformazione"
+  ],
+  "starterCode": "",
+  "validator": "array_from",
+  "hints": [
+    "Array.from() può ricevere anche una funzione di mapping."
+  ]
+},
+{
+  "id": 148,
+  "title": "Array.of()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 175,
+  "estimatedTime": "15 min",
+  "description": "Crea un nuovo array utilizzando Array.of().",
+  "objectives": [
+    "Creare un array",
+    "Comprendere la differenza con Array()",
+    "Verificare il contenuto"
+  ],
+  "starterCode": "",
+  "validator": "array_of",
+  "hints": [
+    "Array.of(5) crea un array contenente il valore 5, non un array di lunghezza 5."
+  ]
+},
+{
+  "id": 149,
+  "title": "Object.keys()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 175,
+  "estimatedTime": "20 min",
+  "description": "Ottieni tutte le chiavi di un oggetto utilizzando Object.keys().",
+  "objectives": [
+    "Usare Object.keys()",
+    "Iterare sulle proprietà",
+    "Accedere ai valori associati"
+  ],
+  "starterCode": "",
+  "validator": "object_keys",
+  "hints": [
+    "Object.keys() restituisce un array contenente le proprietà enumerabili."
+  ]
+},
+{
+  "id": 150,
+  "title": "Object.values()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 180,
+  "estimatedTime": "20 min",
+  "description": "Recupera tutti i valori di un oggetto utilizzando Object.values().",
+  "objectives": [
+    "Usare Object.values()",
+    "Iterare sui valori",
+    "Elaborare i dati restituiti"
+  ],
+  "starterCode": "",
+  "validator": "object_values",
+  "hints": [
+    "Object.values() restituisce un array contenente tutti i valori dell'oggetto."
+  ]
+}
+,
+{
+  "id": 151,
+  "title": "Object.entries()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 180,
+  "estimatedTime": "20 min",
+  "description": "Utilizza Object.entries() per ottenere coppie chiave-valore da un oggetto e iterarle.",
+  "objectives": [
+    "Usare Object.entries()",
+    "Iterare con for...of",
+    "Accedere a chiavi e valori"
+  ],
+  "starterCode": "",
+  "validator": "object_entries",
+  "hints": [
+    "Ogni elemento restituito è un array composto da [chiave, valore]."
+  ]
+},
+{
+  "id": 152,
+  "title": "Object.assign()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 185,
+  "estimatedTime": "20 min",
+  "description": "Copia proprietà da uno o più oggetti utilizzando Object.assign().",
+  "objectives": [
+    "Copiare proprietà",
+    "Unire più oggetti",
+    "Comprendere la copia superficiale"
+  ],
+  "starterCode": "",
+  "validator": "object_assign",
+  "hints": [
+    "Object.assign() esegue una shallow copy delle proprietà."
+  ]
+},
+{
+  "id": 153,
+  "title": "Object.freeze()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 190,
+  "estimatedTime": "20 min",
+  "description": "Rendi un oggetto immutabile utilizzando Object.freeze().",
+  "objectives": [
+    "Congelare un oggetto",
+    "Verificare l'immutabilità",
+    "Comprendere i limiti della shallow freeze"
+  ],
+  "starterCode": "",
+  "validator": "object_freeze",
+  "hints": [
+    "Object.freeze() non rende immutabili gli oggetti annidati."
+  ]
+},
+{
+  "id": 154,
+  "title": "Object.seal()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 190,
+  "estimatedTime": "20 min",
+  "description": "Proteggi la struttura di un oggetto impedendo l'aggiunta o la rimozione di proprietà.",
+  "objectives": [
+    "Applicare Object.seal()",
+    "Verificare le modifiche consentite",
+    "Confrontare seal() e freeze()"
+  ],
+  "starterCode": "",
+  "validator": "object_seal",
+  "hints": [
+    "Con un oggetto sigillato puoi modificare i valori delle proprietà esistenti."
+  ]
+},
+{
+  "id": 155,
+  "title": "structuredClone()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 200,
+  "estimatedTime": "25 min",
+  "description": "Crea una copia profonda di un oggetto utilizzando structuredClone().",
+  "objectives": [
+    "Creare una deep copy",
+    "Verificare l'indipendenza delle copie",
+    "Confrontare structuredClone() con JSON.parse(JSON.stringify())"
+  ],
+  "starterCode": "",
+  "validator": "structured_clone",
+  "hints": [
+    "structuredClone() supporta molti tipi di dato che JSON non può gestire."
+  ]
+}
+,
+{
+  "id": 156,
+  "title": "Working with Date",
+  "difficulty": "Intermediate",
+  "category": "Date & Time",
+  "xp": 205,
+  "estimatedTime": "20 min",
+  "description": "Crea, modifica e formatta oggetti Date utilizzando l'API nativa di JavaScript.",
+  "objectives": [
+    "Creare un oggetto Date",
+    "Leggere giorno, mese e anno",
+    "Formattare una data"
+  ],
+  "starterCode": "",
+  "validator": "working_with_date",
+  "hints": [
+    "Esplora metodi come getFullYear(), getMonth() e getDate()."
+  ]
+},
+{
+  "id": 157,
+  "title": "Intl.DateTimeFormat",
+  "difficulty": "Intermediate",
+  "category": "Internationalization",
+  "xp": 210,
+  "estimatedTime": "25 min",
+  "description": "Formatta date e orari secondo le impostazioni locali utilizzando Intl.DateTimeFormat.",
+  "objectives": [
+    "Creare un formatter",
+    "Specificare una locale",
+    "Personalizzare il formato"
+  ],
+  "starterCode": "",
+  "validator": "intl_datetimeformat",
+  "hints": [
+    "Prova a confrontare i risultati con diverse localizzazioni."
+  ]
+},
+{
+  "id": 158,
+  "title": "Intl.NumberFormat",
+  "difficulty": "Intermediate",
+  "category": "Internationalization",
+  "xp": 215,
+  "estimatedTime": "25 min",
+  "description": "Formatta numeri, valute e percentuali utilizzando Intl.NumberFormat.",
+  "objectives": [
+    "Formattare numeri",
+    "Visualizzare una valuta",
+    "Mostrare percentuali"
+  ],
+  "starterCode": "",
+  "validator": "intl_numberformat",
+  "hints": [
+    "Sperimenta con style: 'currency' e style: 'percent'."
+  ]
+},
+{
+  "id": 159,
+  "title": "Intl.RelativeTimeFormat",
+  "difficulty": "Intermediate",
+  "category": "Internationalization",
+  "xp": 220,
+  "estimatedTime": "25 min",
+  "description": "Visualizza intervalli temporali relativi come '2 giorni fa' o 'tra 5 minuti'.",
+  "objectives": [
+    "Creare un RelativeTimeFormat",
+    "Formattare intervalli",
+    "Supportare più lingue"
+  ],
+  "starterCode": "",
+  "validator": "intl_relative_time",
+  "hints": [
+    "Valori negativi indicano il passato, valori positivi il futuro."
+  ]
+},
+{
+  "id": 160,
+  "title": "Intl.ListFormat",
+  "difficulty": "Intermediate",
+  "category": "Internationalization",
+  "xp": 225,
+  "estimatedTime": "20 min",
+  "description": "Formatta automaticamente liste di elementi secondo le convenzioni della lingua selezionata.",
+  "objectives": [
+    "Creare un ListFormat",
+    "Formattare un array di stringhe",
+    "Confrontare più localizzazioni"
+  ],
+  "starterCode": "",
+  "validator": "intl_listformat",
+  "hints": [
+    "Le regole di punteggiatura cambiano a seconda della lingua."
+  ]
+}
+,
+{
+  "id": 161,
+  "title": "Working with Map",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 230,
+  "estimatedTime": "25 min",
+  "description": "Utilizza la struttura Map per memorizzare coppie chiave-valore e confrontala con un normale oggetto.",
+  "objectives": [
+    "Creare una Map",
+    "Inserire elementi",
+    "Recuperare valori tramite chiave"
+  ],
+  "starterCode": "",
+  "validator": "working_with_map",
+  "hints": [
+    "Map permette di utilizzare qualsiasi tipo di dato come chiave."
+  ]
+},
+{
+  "id": 162,
+  "title": "WeakMap Basics",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 235,
+  "estimatedTime": "30 min",
+  "description": "Comprendi il funzionamento di WeakMap e quando utilizzarla rispetto a Map.",
+  "objectives": [
+    "Creare una WeakMap",
+    "Associare dati a un oggetto",
+    "Comprendere il comportamento del Garbage Collector"
+  ],
+  "starterCode": "",
+  "validator": "weakmap_basics",
+  "hints": [
+    "Le chiavi di una WeakMap devono essere oggetti."
+  ]
+},
+{
+  "id": 163,
+  "title": "Working with Set",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 240,
+  "estimatedTime": "25 min",
+  "description": "Utilizza Set per gestire raccolte di valori univoci.",
+  "objectives": [
+    "Creare un Set",
+    "Aggiungere elementi",
+    "Eliminare duplicati da un array"
+  ],
+  "starterCode": "",
+  "validator": "working_with_set",
+  "hints": [
+    "Set conserva automaticamente valori unici."
+  ]
+},
+{
+  "id": 164,
+  "title": "WeakSet Basics",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 245,
+  "estimatedTime": "30 min",
+  "description": "Esplora WeakSet e comprendine le differenze rispetto a Set.",
+  "objectives": [
+    "Creare un WeakSet",
+    "Aggiungere oggetti",
+    "Comprendere i limiti della struttura"
+  ],
+  "starterCode": "",
+  "validator": "weakset_basics",
+  "hints": [
+    "WeakSet può contenere esclusivamente oggetti."
+  ]
+},
+{
+  "id": 165,
+  "title": "Map vs Object",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 250,
+  "estimatedTime": "35 min",
+  "description": "Confronta Map e Object valutandone prestazioni, casi d'uso e caratteristiche principali.",
+  "objectives": [
+    "Confrontare le due strutture",
+    "Identificare i casi d'uso migliori",
+    "Scegliere la struttura più adatta"
+  ],
+  "starterCode": "",
+  "validator": "map_vs_object",
+  "hints": [
+    "Map è spesso preferibile quando le chiavi sono dinamiche o non sono stringhe."
+  ]
+}
+,
+{
+  "id": 166,
+  "title": "Iterator Protocol",
+  "difficulty": "Intermediate",
+  "category": "Iterators",
+  "xp": 255,
+  "estimatedTime": "30 min",
+  "description": "Implementa un iteratore personalizzato seguendo l'Iterator Protocol di JavaScript.",
+  "objectives": [
+    "Creare un iteratore",
+    "Implementare next()",
+    "Restituire value e done"
+  ],
+  "starterCode": "",
+  "validator": "iterator_protocol",
+  "hints": [
+    "Il metodo next() deve restituire un oggetto con le proprietà value e done."
+  ]
+},
+{
+  "id": 167,
+  "title": "Iterable Objects",
+  "difficulty": "Intermediate",
+  "category": "Iterators",
+  "xp": 260,
+  "estimatedTime": "30 min",
+  "description": "Rendi un oggetto iterabile implementando Symbol.iterator.",
+  "objectives": [
+    "Implementare Symbol.iterator",
+    "Utilizzare for...of",
+    "Restituire un iteratore valido"
+  ],
+  "starterCode": "",
+  "validator": "iterable_objects",
+  "hints": [
+    "Un oggetto iterabile deve restituire un iteratore tramite Symbol.iterator."
+  ]
+},
+{
+  "id": 168,
+  "title": "Generator Functions",
+  "difficulty": "Intermediate",
+  "category": "Generators",
+  "xp": 265,
+  "estimatedTime": "35 min",
+  "description": "Crea una funzione generatrice utilizzando function* e produci valori tramite yield.",
+  "objectives": [
+    "Definire una generator function",
+    "Usare yield",
+    "Consumare il generatore"
+  ],
+  "starterCode": "",
+  "validator": "generator_functions",
+  "hints": [
+    "Ogni chiamata a next() riprende l'esecuzione dal precedente yield."
+  ]
+},
+{
+  "id": 169,
+  "title": "Yield Expressions",
+  "difficulty": "Intermediate",
+  "category": "Generators",
+  "xp": 270,
+  "estimatedTime": "35 min",
+  "description": "Comprendi come utilizzare yield per sospendere e riprendere l'esecuzione di una funzione.",
+  "objectives": [
+    "Utilizzare più istruzioni yield",
+    "Passare valori al generatore",
+    "Analizzare il flusso di esecuzione"
+  ],
+  "starterCode": "",
+  "validator": "yield_expressions",
+  "hints": [
+    "next(valore) permette di inviare dati al generatore."
+  ]
+},
+{
+  "id": 170,
+  "title": "Generator Applications",
+  "difficulty": "Intermediate",
+  "category": "Generators",
+  "xp": 275,
+  "estimatedTime": "40 min",
+  "description": "Utilizza i generatori per implementare sequenze infinite, paginazione o elaborazione incrementale dei dati.",
+  "objectives": [
+    "Creare una sequenza infinita",
+    "Interrompere l'iterazione quando necessario",
+    "Applicare un caso d'uso pratico"
+  ],
+  "starterCode": "",
+  "validator": "generator_applications",
+  "hints": [
+    "I generatori sono utili quando non è necessario produrre tutti i valori contemporaneamente."
+  ]
+}
+,
+{
+  "id": 171,
+  "title": "Named Exports",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 280,
+  "estimatedTime": "25 min",
+  "description": "Esporta funzioni, costanti e classi utilizzando gli export nominati di ES Modules.",
+  "objectives": [
+    "Creare un modulo",
+    "Esportare più elementi",
+    "Importare gli export nominati"
+  ],
+  "starterCode": "",
+  "validator": "named_exports",
+  "hints": [
+    "Puoi esportare più elementi nello stesso file con export."
+  ]
+},
+{
+  "id": 172,
+  "title": "Default Export",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 285,
+  "estimatedTime": "25 min",
+  "description": "Esporta un elemento principale utilizzando export default.",
+  "objectives": [
+    "Usare export default",
+    "Importare il modulo",
+    "Comprendere la differenza rispetto ai named export"
+  ],
+  "starterCode": "",
+  "validator": "default_export",
+  "hints": [
+    "Ogni modulo può avere un solo export default."
+  ]
+},
+{
+  "id": 173,
+  "title": "Import Statements",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 290,
+  "estimatedTime": "25 min",
+  "description": "Importa moduli utilizzando le diverse sintassi disponibili negli ES Modules.",
+  "objectives": [
+    "Importare export nominati",
+    "Importare export default",
+    "Utilizzare alias con as"
+  ],
+  "starterCode": "",
+  "validator": "import_statements",
+  "hints": [
+    "Puoi combinare import default e named export nella stessa istruzione."
+  ]
+},
+{
+  "id": 174,
+  "title": "Dynamic Import",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 295,
+  "estimatedTime": "35 min",
+  "description": "Carica un modulo soltanto quando necessario utilizzando import() dinamico.",
+  "objectives": [
+    "Usare import()",
+    "Gestire la Promise restituita",
+    "Caricare moduli on demand"
+  ],
+  "starterCode": "",
+  "validator": "dynamic_import_basic",
+  "hints": [
+    "import() restituisce una Promise che risolve il modulo richiesto."
+  ]
+},
+{
+  "id": 175,
+  "title": "Project Module Structure",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 300,
+  "estimatedTime": "40 min",
+  "description": "Organizza un'applicazione suddividendola in moduli separati per migliorarne leggibilità e manutenzione.",
+  "objectives": [
+    "Separare la logica",
+    "Creare moduli riutilizzabili",
+    "Ridurre le dipendenze"
+  ],
+  "starterCode": "",
+  "validator": "project_module_structure",
+  "hints": [
+    "Ogni modulo dovrebbe avere una responsabilità ben definita."
+  ]
+}
+,
+{
+  "id": 176,
+  "title": "Throw Statement",
+  "difficulty": "Intermediate",
+  "category": "Error Handling",
+  "xp": 305,
+  "estimatedTime": "20 min",
+  "description": "Genera eccezioni personalizzate utilizzando l'istruzione throw.",
+  "objectives": [
+    "Usare throw",
+    "Lanciare un errore significativo",
+    "Interrompere l'esecuzione quando necessario"
+  ],
+  "starterCode": "",
+  "validator": "throw_statement",
+  "hints": [
+    "È preferibile lanciare oggetti Error anziché semplici stringhe."
+  ]
+},
+{
+  "id": 177,
+  "title": "Try...Catch",
+  "difficulty": "Intermediate",
+  "category": "Error Handling",
+  "xp": 310,
+  "estimatedTime": "25 min",
+  "description": "Gestisci eccezioni utilizzando il blocco try...catch.",
+  "objectives": [
+    "Proteggere codice potenzialmente rischioso",
+    "Intercettare gli errori",
+    "Mostrare messaggi appropriati"
+  ],
+  "starterCode": "",
+  "validator": "try_catch",
+  "hints": [
+    "Inserisci nel blocco try solo il codice che può realmente generare un'eccezione."
+  ]
+},
+{
+  "id": 178,
+  "title": "Finally Block",
+  "difficulty": "Intermediate",
+  "category": "Error Handling",
+  "xp": 315,
+  "estimatedTime": "25 min",
+  "description": "Utilizza finally per eseguire operazioni di pulizia indipendentemente dall'esito del codice.",
+  "objectives": [
+    "Usare finally",
+    "Gestire il rilascio delle risorse",
+    "Comprendere l'ordine di esecuzione"
+  ],
+  "starterCode": "",
+  "validator": "finally_block",
+  "hints": [
+    "Il blocco finally viene eseguito anche se viene lanciata un'eccezione."
+  ]
+},
+{
+  "id": 179,
+  "title": "Custom Error Classes",
+  "difficulty": "Intermediate",
+  "category": "Error Handling",
+  "xp": 320,
+  "estimatedTime": "35 min",
+  "description": "Crea classi di errore personalizzate estendendo la classe Error.",
+  "objectives": [
+    "Estendere Error",
+    "Aggiungere proprietà personalizzate",
+    "Lanciare errori specifici"
+  ],
+  "starterCode": "",
+  "validator": "custom_error_classes",
+  "hints": [
+    "Ricorda di chiamare super(message) nel costruttore."
+  ]
+},
+{
+  "id": 180,
+  "title": "Error Handling Best Practices",
+  "difficulty": "Intermediate",
+  "category": "Error Handling",
+  "xp": 325,
+  "estimatedTime": "40 min",
+  "description": "Applica tecniche corrette di gestione delle eccezioni in una piccola applicazione JavaScript.",
+  "objectives": [
+    "Gestire errori prevedibili",
+    "Separare logica e gestione delle eccezioni",
+    "Fornire messaggi chiari all'utente"
+  ],
+  "starterCode": "",
+  "validator": "error_handling_best_practices",
+  "hints": [
+    "Non usare le eccezioni per controllare il normale flusso dell'applicazione."
+  ]
+}
+,
+{
+  "id": 181,
+  "title": "DOM Traversal",
+  "difficulty": "Intermediate",
+  "category": "DOM",
+  "xp": 330,
+  "estimatedTime": "25 min",
+  "description": "Naviga la struttura del DOM utilizzando parent, children e sibling di un elemento.",
+  "objectives": [
+    "Accedere al nodo padre",
+    "Iterare gli elementi figli",
+    "Navigare tra gli elementi fratelli"
+  ],
+  "starterCode": "",
+  "validator": "dom_traversal",
+  "hints": [
+    "Esplora proprietà come parentElement, children, nextElementSibling e previousElementSibling."
+  ]
+},
+{
+  "id": 182,
+  "title": "Dynamic DOM Creation",
+  "difficulty": "Intermediate",
+  "category": "DOM",
+  "xp": 335,
+  "estimatedTime": "30 min",
+  "description": "Crea e inserisci dinamicamente elementi HTML all'interno della pagina.",
+  "objectives": [
+    "Creare nuovi elementi",
+    "Impostare attributi e contenuto",
+    "Inserire gli elementi nel DOM"
+  ],
+  "starterCode": "",
+  "validator": "dynamic_dom_creation",
+  "hints": [
+    "Usa createElement(), append() e prepend() per costruire la struttura."
+  ]
+},
+{
+  "id": 183,
+  "title": "DocumentFragment",
+  "difficulty": "Intermediate",
+  "category": "DOM",
+  "xp": 340,
+  "estimatedTime": "30 min",
+  "description": "Ottimizza gli aggiornamenti del DOM utilizzando DocumentFragment.",
+  "objectives": [
+    "Creare un DocumentFragment",
+    "Aggiungere più elementi",
+    "Inserire il frammento nel DOM"
+  ],
+  "starterCode": "",
+  "validator": "document_fragment",
+  "hints": [
+    "DocumentFragment riduce il numero di reflow e repaint."
+  ]
+},
+{
+  "id": 184,
+  "title": "DOM Dataset API",
+  "difficulty": "Intermediate",
+  "category": "DOM",
+  "xp": 345,
+  "estimatedTime": "25 min",
+  "description": "Utilizza gli attributi data-* tramite la proprietà dataset.",
+  "objectives": [
+    "Leggere valori data-*",
+    "Modificare dataset",
+    "Utilizzare dati personalizzati negli elementi"
+  ],
+  "starterCode": "",
+  "validator": "dom_dataset_api",
+  "hints": [
+    "Gli attributi data-user-id diventano dataset.userId."
+  ]
+},
+{
+  "id": 185,
+  "title": "Dynamic Table Generator",
+  "difficulty": "Intermediate",
+  "category": "DOM",
+  "xp": 350,
+  "estimatedTime": "40 min",
+  "description": "Genera dinamicamente una tabella HTML partendo da un array di oggetti JavaScript.",
+  "objectives": [
+    "Creare una tabella",
+    "Popolare righe e colonne",
+    "Aggiornare dinamicamente i dati"
+  ],
+  "starterCode": "",
+  "validator": "dynamic_table_generator",
+  "hints": [
+    "Costruisci prima thead e tbody, poi inserisci tutto nel DOM."
+  ]
+}
+,
+{
+  "id": 186,
+  "title": "Event Delegation",
+  "difficulty": "Intermediate",
+  "category": "Events",
+  "xp": 355,
+  "estimatedTime": "30 min",
+  "description": "Gestisci gli eventi di più elementi utilizzando un unico listener applicato al contenitore.",
+  "objectives": [
+    "Applicare la delegazione degli eventi",
+    "Usare event.target",
+    "Gestire elementi creati dinamicamente"
+  ],
+  "starterCode": "",
+  "validator": "event_delegation",
+  "hints": [
+    "La delegazione riduce il numero di event listener necessari."
+  ]
+},
+{
+  "id": 187,
+  "title": "Custom Events",
+  "difficulty": "Intermediate",
+  "category": "Events",
+  "xp": 360,
+  "estimatedTime": "30 min",
+  "description": "Crea ed emetti eventi personalizzati per comunicare tra componenti dell'applicazione.",
+  "objectives": [
+    "Creare un CustomEvent",
+    "Passare dati tramite detail",
+    "Gestire l'evento personalizzato"
+  ],
+  "starterCode": "",
+  "validator": "custom_events",
+  "hints": [
+    "Utilizza la proprietà detail per trasportare informazioni aggiuntive."
+  ]
+},
+{
+  "id": 188,
+  "title": "Keyboard Events",
+  "difficulty": "Intermediate",
+  "category": "Events",
+  "xp": 365,
+  "estimatedTime": "30 min",
+  "description": "Gestisci input da tastiera utilizzando gli eventi keydown, keyup e keypress.",
+  "objectives": [
+    "Rilevare i tasti premuti",
+    "Utilizzare event.key",
+    "Implementare scorciatoie da tastiera"
+  ],
+  "starterCode": "",
+  "validator": "keyboard_events",
+  "hints": [
+    "Preferisci event.key rispetto ai codici numerici legacy."
+  ]
+},
+{
+  "id": 189,
+  "title": "Clipboard API",
+  "difficulty": "Intermediate",
+  "category": "Browser APIs",
+  "xp": 370,
+  "estimatedTime": "35 min",
+  "description": "Leggi e scrivi contenuti negli appunti utilizzando la Clipboard API.",
+  "objectives": [
+    "Copiare testo",
+    "Leggere il contenuto degli appunti",
+    "Gestire i permessi del browser"
+  ],
+  "starterCode": "",
+  "validator": "clipboard_api",
+  "hints": [
+    "navigator.clipboard utilizza metodi asincroni basati su Promise."
+  ]
+},
+{
+  "id": 190,
+  "title": "Drag Events",
+  "difficulty": "Intermediate",
+  "category": "Events",
+  "xp": 375,
+  "estimatedTime": "40 min",
+  "description": "Gestisci gli eventi di trascinamento per implementare semplici interazioni Drag & Drop.",
+  "objectives": [
+    "Intercettare dragstart",
+    "Gestire dragover",
+    "Completare l'operazione con drop"
+  ],
+  "starterCode": "",
+  "validator": "drag_events",
+  "hints": [
+    "Ricorda di usare preventDefault() durante dragover per consentire il drop."
+  ]
+}
+,
+{
+  "id": 191,
+  "title": "AbortController",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 380,
+  "estimatedTime": "35 min",
+  "description": "Annulla una richiesta Fetch in corso utilizzando AbortController.",
+  "objectives": [
+    "Creare un AbortController",
+    "Associare il signal alla richiesta",
+    "Gestire l'annullamento della fetch"
+  ],
+  "starterCode": "",
+  "validator": "abort_controller",
+  "hints": [
+    "Passa controller.signal tra le opzioni di fetch()."
+  ]
+},
+{
+  "id": 192,
+  "title": "Parallel Fetch Requests",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 385,
+  "estimatedTime": "35 min",
+  "description": "Esegui più richieste HTTP in parallelo e raccogli i risultati.",
+  "objectives": [
+    "Usare Promise.all()",
+    "Gestire più endpoint",
+    "Combinare le risposte"
+  ],
+  "starterCode": "",
+  "validator": "parallel_fetch_requests",
+  "hints": [
+    "Promise.all() risolve quando tutte le Promise sono completate."
+  ]
+},
+{
+  "id": 193,
+  "title": "File Upload",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 390,
+  "estimatedTime": "40 min",
+  "description": "Carica un file verso un server utilizzando FormData e Fetch API.",
+  "objectives": [
+    "Creare un FormData",
+    "Aggiungere un file",
+    "Inviare la richiesta"
+  ],
+  "starterCode": "",
+  "validator": "file_upload",
+  "hints": [
+    "Non impostare manualmente Content-Type quando utilizzi FormData."
+  ]
+},
+{
+  "id": 194,
+  "title": "File Download",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 395,
+  "estimatedTime": "40 min",
+  "description": "Scarica un file dal server e rendilo disponibile all'utente.",
+  "objectives": [
+    "Recuperare un Blob",
+    "Creare un URL temporaneo",
+    "Avviare il download"
+  ],
+  "starterCode": "",
+  "validator": "file_download",
+  "hints": [
+    "Usa URL.createObjectURL() per creare un collegamento temporaneo."
+  ]
+},
+{
+  "id": 195,
+  "title": "Request Retry Strategy",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 400,
+  "estimatedTime": "45 min",
+  "description": "Implementa una strategia di ritentativo automatico per richieste HTTP che falliscono temporaneamente.",
+  "objectives": [
+    "Rilevare errori temporanei",
+    "Ripetere la richiesta",
+    "Limitare il numero di tentativi"
+  ],
+  "starterCode": "",
+  "validator": "request_retry_strategy",
+  "hints": [
+    "Valuta l'utilizzo di un ritardo progressivo (exponential backoff) tra un tentativo e il successivo."
+  ]
+}
+,
+{
+  "id": 196,
+  "title": "Personal Task Manager",
+  "difficulty": "Intermediate",
+  "category": "Capstone",
+  "xp": 420,
+  "estimatedTime": "120 min",
+  "description": "Realizza un'applicazione per la gestione delle attività con categorie, priorità, filtri, ricerca e salvataggio locale.",
+  "objectives": [
+    "Gestire attività",
+    "Applicare filtri e ricerca",
+    "Salvare automaticamente i dati"
+  ],
+  "starterCode": "",
+  "validator": "personal_task_manager",
+  "hints": [
+    "Organizza il codice separando modello dati, logica e interfaccia."
+  ]
+},
+{
+  "id": 197,
+  "title": "Weather Application",
+  "difficulty": "Intermediate",
+  "category": "Capstone",
+  "xp": 440,
+  "estimatedTime": "120 min",
+  "description": "Costruisci un'applicazione meteo che recuperi dati da un'API, mostri le condizioni correnti e gestisca gli errori di rete.",
+  "objectives": [
+    "Effettuare richieste HTTP",
+    "Visualizzare dati meteo",
+    "Gestire errori e stati di caricamento"
+  ],
+  "starterCode": "",
+  "validator": "weather_application",
+  "hints": [
+    "Mantieni separata la logica API dalla presentazione dei dati."
+  ]
+},
+{
+  "id": 198,
+  "title": "Notes Manager",
+  "difficulty": "Intermediate",
+  "category": "Capstone",
+  "xp": 460,
+  "estimatedTime": "140 min",
+  "description": "Realizza un gestore di note con modifica, ricerca, categorie e persistenza tramite localStorage.",
+  "objectives": [
+    "Creare e modificare note",
+    "Ricercare contenuti",
+    "Salvare automaticamente le modifiche"
+  ],
+  "starterCode": "",
+  "validator": "notes_manager",
+  "hints": [
+    "Utilizza identificatori univoci per gestire correttamente ogni nota."
+  ]
+},
+{
+  "id": 199,
+  "title": "Quiz Platform",
+  "difficulty": "Intermediate",
+  "category": "Capstone",
+  "xp": 480,
+  "estimatedTime": "150 min",
+  "description": "Sviluppa una piattaforma per quiz con caricamento delle domande da JSON, timer, punteggio e riepilogo finale.",
+  "objectives": [
+    "Caricare domande",
+    "Gestire il timer",
+    "Calcolare il punteggio",
+    "Mostrare il riepilogo finale"
+  ],
+  "starterCode": "",
+  "validator": "quiz_platform",
+  "hints": [
+    "Mantieni il motore del quiz indipendente dall'interfaccia."
+  ]
+},
+{
+  "id": 200,
+  "title": "Personal Productivity Dashboard",
+  "difficulty": "Intermediate",
+  "category": "Final Project",
+  "xp": 500,
+  "estimatedTime": "180 min",
+  "description": "Realizza una dashboard personale che integri attività, meteo, calendario, note e statistiche in un'unica applicazione modulare.",
+  "objectives": [
+    "Integrare più moduli",
+    "Gestire dati persistenti",
+    "Creare una dashboard responsive",
+    "Applicare un'architettura modulare"
+  ],
+  "starterCode": "",
+  "validator": "personal_productivity_dashboard",
+  "hints": [
+    "Progetta l'applicazione come un insieme di componenti indipendenti e riutilizzabili."
+  ]
+}
+]

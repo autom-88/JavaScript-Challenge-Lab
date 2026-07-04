@@ -1,0 +1,722 @@
+[
+  {
+    "id": 101,
+    "title": "Array.map()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 70,
+    "estimatedTime": "10 min",
+    "description": "Trasforma un array di numeri raddoppiando ogni valore.",
+    "objectives": [
+      "Usa map()",
+      "Restituisci un nuovo array"
+    ],
+    "starterCode": "const numbers = [1,2,3,4,5];",
+    "validator": "array_map",
+    "hints": [
+      "map() restituisce un nuovo array."
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Array.filter()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 70,
+    "estimatedTime": "10 min",
+    "description": "Filtra solo i numeri pari.",
+    "objectives": [
+      "Usa filter()"
+    ],
+    "starterCode": "const numbers = [1,2,3,4,5,6];",
+    "validator": "array_filter",
+    "hints": [
+      "Controlla n % 2 === 0."
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Array.reduce()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 75,
+    "estimatedTime": "12 min",
+    "description": "Calcola la somma degli elementi di un array.",
+    "objectives": [
+      "Usa reduce()"
+    ],
+    "starterCode": "const numbers = [5,10,15];",
+    "validator": "array_reduce",
+    "hints": [
+      "L'accumulatore parte da 0."
+    ]
+  },
+  {
+    "id": 104,
+    "title": "find()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 75,
+    "estimatedTime": "10 min",
+    "description": "Trova il primo numero maggiore di 50.",
+    "objectives": [
+      "Usa find()"
+    ],
+    "starterCode": "const values = [10,35,60,80];",
+    "validator": "array_find",
+    "hints": [
+      "find() restituisce il primo elemento."
+    ]
+  },
+  {
+    "id": 105,
+    "title": "findIndex()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 75,
+    "estimatedTime": "10 min",
+    "description": "Trova l'indice del valore 'CSS'.",
+    "objectives": [
+      "Usa findIndex()"
+    ],
+    "starterCode": "const skills = ['HTML','CSS','JS'];",
+    "validator": "array_findindex",
+    "hints": [
+      "L'indice parte da 0."
+    ]
+  },
+  {
+    "id": 106,
+    "title": "forEach()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 75,
+    "estimatedTime": "10 min",
+    "description": "Visualizza ogni elemento dell'array.",
+    "objectives": [
+      "Usa forEach()"
+    ],
+    "starterCode": "const fruits = ['Mela','Pera','Kiwi'];",
+    "validator": "array_foreach",
+    "hints": [
+      "forEach() non restituisce un array."
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Destructuring",
+    "difficulty": "Intermediate",
+    "category": "ES6",
+    "xp": 80,
+    "estimatedTime": "12 min",
+    "description": "Estrai nome ed età da un oggetto.",
+    "objectives": [
+      "Usa il destructuring"
+    ],
+    "starterCode": "const user={name:'Mario',age:30};",
+    "validator": "destructuring_object",
+    "hints": [
+      "Usa { name, age }."
+    ]
+  },
+  {
+    "id": 108,
+    "title": "Spread Operator",
+    "difficulty": "Intermediate",
+    "category": "ES6",
+    "xp": 80,
+    "estimatedTime": "12 min",
+    "description": "Unisci due array con lo spread operator.",
+    "objectives": [
+      "Usa ..."
+    ],
+    "starterCode": "const a=[1,2]; const b=[3,4];",
+    "validator": "spread_array",
+    "hints": [
+      "Usa [...a,...b]."
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Rest Parameters",
+    "difficulty": "Intermediate",
+    "category": "ES6",
+    "xp": 80,
+    "estimatedTime": "12 min",
+    "description": "Crea una funzione che accetti un numero variabile di parametri.",
+    "objectives": [
+      "Usa ...args"
+    ],
+    "starterCode": "",
+    "validator": "rest_parameters",
+    "hints": [
+      "I parametri rest sono un array."
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Default Parameters",
+    "difficulty": "Intermediate",
+    "category": "Functions",
+    "xp": 80,
+    "estimatedTime": "10 min",
+    "description": "Imposta un valore predefinito per un parametro.",
+    "objectives": [
+      "Usa i default parameter"
+    ],
+    "starterCode": "",
+    "validator": "default_parameters",
+    "hints": [
+      "function saluta(nome='Ospite')"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Template Literal Avanzati",
+    "difficulty": "Intermediate",
+    "category": "Strings",
+    "xp": 85,
+    "estimatedTime": "12 min",
+    "description": "Costruisci una stringa multilinea con template literal.",
+    "objectives": [
+      "Usa backtick",
+      "Inserisci variabili"
+    ],
+    "starterCode": "",
+    "validator": "template_advanced",
+    "hints": [
+      "Usa ${}."
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Object.keys()",
+    "difficulty": "Intermediate",
+    "category": "Objects",
+    "xp": 85,
+    "estimatedTime": "10 min",
+    "description": "Ottieni tutte le chiavi di un oggetto.",
+    "objectives": [
+      "Usa Object.keys()"
+    ],
+    "starterCode": "",
+    "validator": "object_keys",
+    "hints": [
+      "Restituisce un array."
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Object.values()",
+    "difficulty": "Intermediate",
+    "category": "Objects",
+    "xp": 85,
+    "estimatedTime": "10 min",
+    "description": "Ottieni tutti i valori di un oggetto.",
+    "objectives": [
+      "Usa Object.values()"
+    ],
+    "starterCode": "",
+    "validator": "object_values",
+    "hints": [
+      "Lavora sui valori dell'oggetto."
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Object.entries()",
+    "difficulty": "Intermediate",
+    "category": "Objects",
+    "xp": 90,
+    "estimatedTime": "12 min",
+    "description": "Trasforma un oggetto in un array di coppie chiave/valore.",
+    "objectives": [
+      "Usa Object.entries()"
+    ],
+    "starterCode": "",
+    "validator": "object_entries",
+    "hints": [
+      "Ogni elemento è un array [chiave,valore]."
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Array.sort()",
+    "difficulty": "Intermediate",
+    "category": "Arrays",
+    "xp": 90,
+    "estimatedTime": "15 min",
+    "description": "Ordina un array di numeri in ordine crescente.",
+    "objectives": [
+      "Usa sort() con una funzione di confronto"
+    ],
+    "starterCode": "const values=[8,2,15,4];",
+    "validator": "array_sort",
+    "hints": [
+      "Usa (a,b)=>a-b."
+    ]
+  }
+  ,
+{
+  "id": 116,
+  "title": "Array.some()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 90,
+  "estimatedTime": "12 min",
+  "description": "Verifica se almeno un elemento dell'array è maggiore di 100.",
+  "objectives": [
+    "Usa some()",
+    "Restituisci un valore booleano"
+  ],
+  "starterCode": "const numbers = [10, 35, 150, 20];",
+  "validator": "array_some",
+  "hints": [
+    "some() restituisce true se almeno un elemento soddisfa la condizione."
+  ]
+},
+{
+  "id": 117,
+  "title": "Array.every()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 90,
+  "estimatedTime": "12 min",
+  "description": "Verifica se tutti gli elementi dell'array sono positivi.",
+  "objectives": [
+    "Usa every()"
+  ],
+  "starterCode": "const numbers = [2,4,8,10];",
+  "validator": "array_every",
+  "hints": [
+    "every() restituisce true solo se tutti gli elementi soddisfano la condizione."
+  ]
+},
+{
+  "id": 118,
+  "title": "Array.includes()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 90,
+  "estimatedTime": "10 min",
+  "description": "Controlla se un array contiene la stringa 'JavaScript'.",
+  "objectives": [
+    "Usa includes()"
+  ],
+  "starterCode": "const skills = ['HTML','CSS','JavaScript'];",
+  "validator": "array_includes",
+  "hints": [
+    "includes() restituisce true oppure false."
+  ]
+},
+{
+  "id": 119,
+  "title": "Array.flat()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 95,
+  "estimatedTime": "12 min",
+  "description": "Trasforma un array annidato in un array monodimensionale.",
+  "objectives": [
+    "Usa flat()"
+  ],
+  "starterCode": "const values = [[1,2],[3,4],[5]];",
+  "validator": "array_flat",
+  "hints": [
+    "flat() rimuove un livello di annidamento."
+  ]
+},
+{
+  "id": 120,
+  "title": "Array.flatMap()",
+  "difficulty": "Intermediate",
+  "category": "Arrays",
+  "xp": 95,
+  "estimatedTime": "15 min",
+  "description": "Trasforma e appiattisci un array utilizzando flatMap().",
+  "objectives": [
+    "Usa flatMap()"
+  ],
+  "starterCode": "const words = ['ciao mondo','javascript challenge'];",
+  "validator": "array_flatmap",
+  "hints": [
+    "flatMap() combina map() e flat()."
+  ]
+}
+,
+{
+  "id": 121,
+  "title": "Object Destructuring Avanzato",
+  "difficulty": "Intermediate",
+  "category": "ES6",
+  "xp": 95,
+  "estimatedTime": "15 min",
+  "description": "Estrai proprietà annidate da un oggetto utilizzando il destructuring.",
+  "objectives": [
+    "Usa il destructuring",
+    "Accedi a proprietà annidate"
+  ],
+  "starterCode": "const user = { name:'Mario', address:{ city:'Roma', zip:'00100' } };",
+  "validator": "nested_destructuring",
+  "hints": [
+    "Puoi destrutturare direttamente gli oggetti interni."
+  ]
+},
+{
+  "id": 122,
+  "title": "Spread con Oggetti",
+  "difficulty": "Intermediate",
+  "category": "ES6",
+  "xp": 95,
+  "estimatedTime": "15 min",
+  "description": "Crea una copia di un oggetto aggiungendo una nuova proprietà.",
+  "objectives": [
+    "Usa lo spread operator",
+    "Non modificare l'oggetto originale"
+  ],
+  "starterCode": "const user = { name:'Mario', age:30 };",
+  "validator": "object_spread",
+  "hints": [
+    "Usa { ...user, ruolo:'Developer' }."
+  ]
+},
+{
+  "id": 123,
+  "title": "Object.assign()",
+  "difficulty": "Intermediate",
+  "category": "Objects",
+  "xp": 100,
+  "estimatedTime": "15 min",
+  "description": "Unisci due oggetti utilizzando Object.assign().",
+  "objectives": [
+    "Usa Object.assign()",
+    "Ottieni un unico oggetto"
+  ],
+  "starterCode": "const a = { nome:'Mario' }; const b = { eta:30 };",
+  "validator": "object_assign",
+  "hints": [
+    "Il primo parametro è l'oggetto di destinazione."
+  ]
+},
+{
+  "id": 124,
+  "title": "Map",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 100,
+  "estimatedTime": "18 min",
+  "description": "Crea una Map e aggiungi tre coppie chiave/valore.",
+  "objectives": [
+    "Usa new Map()",
+    "Inserisci elementi con set()",
+    "Recupera un valore con get()"
+  ],
+  "starterCode": "",
+  "validator": "map_collection",
+  "hints": [
+    "Map permette chiavi di qualsiasi tipo."
+  ]
+},
+{
+  "id": 125,
+  "title": "Set",
+  "difficulty": "Intermediate",
+  "category": "Collections",
+  "xp": 100,
+  "estimatedTime": "18 min",
+  "description": "Crea un Set eliminando automaticamente i duplicati.",
+  "objectives": [
+    "Usa new Set()",
+    "Verifica il numero di elementi"
+  ],
+  "starterCode": "const values = [1,2,2,3,4,4,5];",
+  "validator": "set_collection",
+  "hints": [
+    "Set mantiene solo valori univoci."
+  ]
+}
+,
+{
+  "id": 126,
+  "title": "for...of",
+  "difficulty": "Intermediate",
+  "category": "Iteration",
+  "xp": 105,
+  "estimatedTime": "12 min",
+  "description": "Scorri un array utilizzando il ciclo for...of.",
+  "objectives": [
+    "Usa for...of",
+    "Visualizza ogni elemento con console.log()"
+  ],
+  "starterCode": "const languages = ['HTML','CSS','JavaScript'];",
+  "validator": "for_of_loop",
+  "hints": [
+    "La sintassi è: for (const item of array) { ... }"
+  ]
+},
+{
+  "id": 127,
+  "title": "Generator Function",
+  "difficulty": "Intermediate",
+  "category": "Functions",
+  "xp": 110,
+  "estimatedTime": "20 min",
+  "description": "Crea una generator function che produca i numeri da 1 a 5.",
+  "objectives": [
+    "Usa function*",
+    "Restituisci i valori con yield"
+  ],
+  "starterCode": "",
+  "validator": "generator_function",
+  "hints": [
+    "Una generator function utilizza yield invece di return."
+  ]
+},
+{
+  "id": 128,
+  "title": "ES Modules",
+  "difficulty": "Intermediate",
+  "category": "Modules",
+  "xp": 110,
+  "estimatedTime": "18 min",
+  "description": "Esporta una funzione da un modulo JavaScript e importala in un altro file.",
+  "objectives": [
+    "Usa export",
+    "Usa import"
+  ],
+  "starterCode": "",
+  "validator": "es_modules",
+  "hints": [
+    "Ricorda di usare <script type=\"module\">."
+  ]
+},
+{
+  "id": 129,
+  "title": "Classi JavaScript",
+  "difficulty": "Intermediate",
+  "category": "OOP",
+  "xp": 115,
+  "estimatedTime": "20 min",
+  "description": "Crea una classe Persona con nome ed età.",
+  "objectives": [
+    "Usa class",
+    "Definisci un costruttore",
+    "Crea un'istanza"
+  ],
+  "starterCode": "",
+  "validator": "class_basic",
+  "hints": [
+    "Usa constructor(nome, eta)."
+  ]
+},
+{
+  "id": 130,
+  "title": "Ereditarietà",
+  "difficulty": "Intermediate",
+  "category": "OOP",
+  "xp": 120,
+  "estimatedTime": "20 min",
+  "description": "Crea una classe Studente che estenda la classe Persona.",
+  "objectives": [
+    "Usa extends",
+    "Richiama super()",
+    "Aggiungi una proprietà specifica"
+  ],
+  "starterCode": "",
+  "validator": "class_inheritance",
+  "hints": [
+    "Chiama super() all'interno del costruttore della classe derivata."
+  ]
+}
+,
+{
+  "id": 131,
+  "title": "Getter e Setter",
+  "difficulty": "Intermediate",
+  "category": "OOP",
+  "xp": 120,
+  "estimatedTime": "20 min",
+  "description": "Crea una classe con un getter e un setter per gestire il nome di un utente.",
+  "objectives": [
+    "Definisci un getter",
+    "Definisci un setter",
+    "Leggi e modifica una proprietà"
+  ],
+  "starterCode": "",
+  "validator": "getter_setter",
+  "hints": [
+    "Usa le parole chiave get e set."
+  ]
+},
+{
+  "id": 132,
+  "title": "Metodi Statici",
+  "difficulty": "Intermediate",
+  "category": "OOP",
+  "xp": 125,
+  "estimatedTime": "18 min",
+  "description": "Crea una classe con un metodo statico che restituisca la versione dell'applicazione.",
+  "objectives": [
+    "Usa static",
+    "Richiama il metodo dalla classe"
+  ],
+  "starterCode": "",
+  "validator": "static_method",
+  "hints": [
+    "I metodi statici appartengono alla classe e non alle istanze."
+  ]
+},
+{
+  "id": 133,
+  "title": "Fetch API Avanzata",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 130,
+  "estimatedTime": "20 min",
+  "description": "Recupera dati da un endpoint e verifica che la risposta sia valida.",
+  "objectives": [
+    "Usa fetch()",
+    "Controlla response.ok",
+    "Converti la risposta in JSON"
+  ],
+  "starterCode": "",
+  "validator": "fetch_advanced",
+  "hints": [
+    "Lancia un errore se response.ok è false."
+  ]
+},
+{
+  "id": 134,
+  "title": "Async / Await",
+  "difficulty": "Intermediate",
+  "category": "Async",
+  "xp": 130,
+  "estimatedTime": "20 min",
+  "description": "Riscrivi una richiesta fetch() utilizzando async e await.",
+  "objectives": [
+    "Dichiara una funzione async",
+    "Usa await",
+    "Gestisci gli errori"
+  ],
+  "starterCode": "",
+  "validator": "async_await",
+  "hints": [
+    "Inserisci il codice in un blocco try...catch."
+  ]
+},
+{
+  "id": 135,
+  "title": "Gestione Errori HTTP",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 135,
+  "estimatedTime": "20 min",
+  "description": "Gestisci gli errori di rete e mostra un messaggio significativo all'utente.",
+  "objectives": [
+    "Usa try...catch",
+    "Intercetta gli errori di fetch()",
+    "Visualizza un messaggio di errore"
+  ],
+  "starterCode": "",
+  "validator": "http_error_handling",
+  "hints": [
+    "Mostra un messaggio diverso per errore di rete e risposta non valida."
+  ]
+}
+,
+{
+  "id": 136,
+  "title": "Fetch POST Request",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 140,
+  "estimatedTime": "20 min",
+  "description": "Invia dati a un'API utilizzando una richiesta POST con fetch().",
+  "objectives": [
+    "Usa fetch()",
+    "Specifica il metodo POST",
+    "Invia un body in formato JSON"
+  ],
+  "starterCode": "",
+  "validator": "fetch_post",
+  "hints": [
+    "Ricorda di impostare l'header Content-Type: application/json."
+  ]
+},
+{
+  "id": 137,
+  "title": "Fetch PUT Request",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 145,
+  "estimatedTime": "20 min",
+  "description": "Aggiorna una risorsa remota tramite una richiesta PUT.",
+  "objectives": [
+    "Usa fetch()",
+    "Imposta il metodo PUT",
+    "Invia i dati aggiornati"
+  ],
+  "starterCode": "",
+  "validator": "fetch_put",
+  "hints": [
+    "Le richieste PUT sostituiscono normalmente l'intera risorsa."
+  ]
+},
+{
+  "id": 138,
+  "title": "Fetch DELETE Request",
+  "difficulty": "Intermediate",
+  "category": "HTTP",
+  "xp": 145,
+  "estimatedTime": "18 min",
+  "description": "Elimina una risorsa remota utilizzando una richiesta DELETE.",
+  "objectives": [
+    "Usa fetch()",
+    "Specifica il metodo DELETE",
+    "Gestisci la risposta del server"
+  ],
+  "starterCode": "",
+  "validator": "fetch_delete",
+  "hints": [
+    "Controlla sempre response.ok prima di considerare completata l'operazione."
+  ]
+},
+{
+  "id": 139,
+  "title": "Promise Error Handling",
+  "difficulty": "Intermediate",
+  "category": "Async",
+  "xp": 150,
+  "estimatedTime": "20 min",
+  "description": "Gestisci correttamente gli errori generati da una Promise.",
+  "objectives": [
+    "Usa catch()",
+    "Intercetta gli errori",
+    "Mostra un messaggio significativo"
+  ],
+  "starterCode": "",
+  "validator": "promise_error_handling",
+  "hints": [
+    "Ogni catena di Promise dovrebbe prevedere una gestione degli errori."
+  ]
+},
+{
+  "id": 140,
+  "title": "Promise.finally()",
+  "difficulty": "Intermediate",
+  "category": "Async",
+  "xp": 150,
+  "estimatedTime": "18 min",
+  "description": "Utilizza finally() per eseguire operazioni indipendentemente dall'esito della Promise.",
+  "objectives": [
+    "Usa finally()",
+    "Comprendi quando viene eseguito",
+    "Mantieni separata la logica di pulizia"
+  ],
+  "starterCode": "",
+  "validator": "promise_finally",
+  "hints": [
+    "finally() viene eseguito sia in caso di successo sia di errore."
+  ]
+}
+]
