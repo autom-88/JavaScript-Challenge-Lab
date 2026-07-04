@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚡ JavaScript Challenge | Profilo</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/profilo.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer src="js/profile.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>⚡ JavaScript Challenge ⚡</h1>
+        <p>User Profile Dashboard</p>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="challenge.html">Challenges</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+<main class="profile-page">
+<section class="profile-header">
+    <div class="avatar-container">
+        <div class="avatar-ring">
+            <div class="avatar">
+                <img
+                    src="assets/images/avatar-default.png"
+                    alt="Avatar">
+                <span class="online"></span>
+                <span class="level-badge">
+                    Lv.
+                    <span id="playerLevel">
+                        1
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="profile-info">
+        <h2 id="playerName">
+            Developer
+        </h2>
+        <p>
+            🚀 Benvenuto nella JavaScript Challenge.
+            Continua a risolvere le sfide per aumentare il tuo livello.
+        </p>
+        <div class="xp-bar">
+            <div
+                class="xp-fill"
+                id="xpFill">
+            </div>
+        </div>
+        <p id="xpText">
+            0 / 100 XP
+        </p>
+        <div class="profile-buttons">
+            <button id="editProfile">
+                ✏️ Modifica Profilo
+            </button>
+            <button id="shareProfile">
+                📤 Condividi
+            </button>
+        </div>
+    </div>
+</section>
+<section class="stats-grid">
+    <div class="stat-card">
+        <h3 id="completedChallenges">
+            0
+        </h3>
+        <p>
+            Challenge completate
+        </p>
+    </div>
+    <div class="stat-card">
+        <h3 id="points">
+            0
+        </h3>
+        <p>
+            XP Totali
+        </p>
+    </div>
+    <div class="stat-card">
+        <h3 id="streak">
+            0
+        </h3>
+        <p>
+            Giorni consecutivi
+        </p>
+    </div>
+    <div class="stat-card">
+        <h3 id="badges">
+            0
+        </h3>
+        <p>
+            Badge ottenuti
+        </p>
+    </div>
+</section>
+<section class="progress-section">
+    <h2>📈 Progressione Livelli</h2>
+    <div class="progress-item">
+        <p>🌱 Beginner</p>
+        <div class="progress">
+            <div class="progress-fill beginner"></div>
+        </div>
+        <span>0%</span>
+    </div>
+    <div class="progress-item">
+        <p>⚡ Intermediate</p>
+        <div class="progress">
+            <div class="progress-fill intermediate"></div>
+        </div>
+        <span>0%</span>
+    </div>
+    <div class="progress-item">
+        <p>🚀 Advanced</p>
+        <div class="progress">
+            <div class="progress-fill advanced"></div>
+        </div>
+        <span>0%</span>
+    </div>
+    <div class="progress-item">
+        <p>👑 Expert</p>
+        <div class="progress">
+            <div class="progress-fill expert"></div>
+        </div>
+        <span>0%</span>
+    </div>
+</section>
+<section class="badges-section">
+    <h2>🏅 Badge Sbloccati</h2>
+    <div class="badge-grid">
+        <div class="badge locked">
+            <span>🏅</span>
+            <p>Hello World</p>
+        </div>
+        <div class="badge locked">
+            <span>🚀</span>
+            <p>Problem Solver</p>
+        </div>
+        <div class="badge locked">
+            <span>🧠</span>
+            <p>Logic Master</p>
+        </div>
+        <div class="badge locked">
+            <span>⚙️</span>
+            <p>DOM Hero</p>
+        </div>
+        <div class="badge locked">
+            <span>📦</span>
+            <p>JSON Ninja</p>
+        </div>
+        <div class="badge locked">
+            <span>🔥</span>
+            <p>Async Wizard</p>
+        </div>
+        <div class="badge locked">
+            <span>👑</span>
+            <p>JavaScript Master</p>
+        </div>
+        <div class="badge locked">
+            <span>💎</span>
+            <p>Legend</p>
+        </div>
+    </div>
+</section>
+<section class="recent-activity">
+    <h2>📝 Attività Recenti</h2>
+    <ul id="activityList">
+        <li>
+            Benvenuto nella JavaScript Challenge!
+            Completa la tua prima challenge per iniziare
+            la tua avventura.
+        </li>
+        <li>
+            Ogni challenge completata aumenta gli XP,
+            il livello e può sbloccare nuovi badge.
+        </li>
+        <li>
+            Continua la tua streak giornaliera
+            per ottenere ricompense speciali.
+        </li>
+    </ul>
+</section>
+<section class="achievements">
+    <h2>🏆 Obiettivi</h2>
+    <div class="achievement-grid">
+        <div class="achievement-card">
+            <h3>🌱 Prima Challenge</h3>
+            <p>❌ Non completata</p>
+        </div>
+        <div class="achievement-card">
+            <h3>💯 100 XP</h3>
+            <p>❌ Non completata</p>
+        </div>
+        <div class="achievement-card">
+            <h3>🔥 Streak di 7 giorni</h3>
+            <p>❌ Non completata</p>
+        </div>
+        <div class="achievement-card">
+            <h3>⚡ 10 Challenge</h3>
+            <p>❌ Non completata</p>
+        </div>
+        <div class="achievement-card">
+            <h3>📦 JSON Explorer</h3>
+            <p>❌ Non completata</p>
+        </div>
+        <div class="achievement-card">
+            <h3>👑 JavaScript Master</h3>
+            <p>❌ Non completata</p>
+        </div>
+    </div>
+</section>
+<section class="settings">
+    <h2>⚙️ Impostazioni Profilo</h2>
+    <div class="settings-grid">
+        <div class="setting">
+            <label for="themeSelect">
+                Tema
+            </label>
+            <select id="themeSelect">
+                <option value="light">
+                    ☀️ Chiaro
+                </option>
+                <option value="dark" selected>
+                    🌙 Scuro
+                </option>
+                <option value="auto">
+                    💻 Automatico
+                </option>
+            </select>
+        </div>
+        <div class="setting">
+            <label for="nickname">
+                Nickname
+            </label>
+            <input
+                type="text"
+                id="nickname"
+                placeholder="Inserisci il tuo nickname">
+        </div>
+        <div class="setting">
+            <label>&nbsp;</label>
+            <button id="saveProfile">
+                💾 Salva Profilo
+            </button>
+        </div>
+        <div class="setting">
+            <label>&nbsp;</label>
+            <button id="resetProgress">
+                🗑️ Reset Progressi
+            </button>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <p>
+        ⚡ JavaScript Challenge © 2026
+    </p>
+    <p>
+        Impara JavaScript risolvendo sfide, guadagnando XP,
+        sbloccando badge e scalando la classifica.
+    </p>
+</footer>
+</body>
+</html>

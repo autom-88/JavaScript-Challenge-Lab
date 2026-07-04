@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Challenge | Leaderboard</title>
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/leaderboard.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer src="js/leaderboard.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>🏆 JavaScript Challenge 🏆</h1>
+<p>Global Leaderboard</p>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="challenge.html">Challenges</a>
+<a href="leaderboard.html" class="active">Leaderboard</a>
+<a href="profile.html">Profile</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main class="leaderboard-page">
+<section class="hero-ranking">
+<h2>Classifica Generale</h2>
+<p>
+Confronta il tuo punteggio con gli altri sviluppatori.
+</p>
+</section>
+<section class="ranking-stats">
+<div class="stat-card">
+<h3 id="playersCount">125</h3>
+<p>Giocatori</p>
+</div>
+<div class="stat-card">
+<h3 id="completedChallenges">9.520</h3>
+<p>Challenge completate</p>
+</div>
+<div class="stat-card">
+<h3 id="highestScore">25.800</h3>
+<p>Punteggio Record</p>
+</div>
+<div class="stat-card">
+<h3 id="averageScore">7.450</h3>
+<p>Media XP</p>
+</div>
+</section>
+<section class="filters">
+<select id="difficultyFilter">
+<option value="all">Tutti i livelli</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+<option>Expert</option>
+</select>
+<select id="periodFilter">
+<option>Oggi</option>
+<option>Questa settimana</option>
+<option>Questo mese</option>
+<option selected>Totale</option>
+</select>
+<input
+type="text"
+id="searchPlayer"
+placeholder="Cerca giocatore">
+</section>
+<section class="podium">
+<div class="podium-card second">
+<div class="medal">🥈</div>
+<h3>Sara</h3>
+<p>23.100 XP</p>
+</div>
+<div class="podium-card first">
+<div class="medal">🥇</div>
+<h3>Marco</h3>
+<p>25.800 XP</p>
+</div>
+<div class="podium-card third">
+<div class="medal">🥉</div>
+<h3>Luca</h3>
+<p>21.450 XP</p>
+</div>
+</section>
+<section class="leaderboard-table">
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Giocatore</th>
+<th>Livello</th>
+<th>Challenge</th>
+<th>Badge</th>
+<th>XP</th>
+<th>Streak</th>
+</tr>
+</thead>
+<tbody id="leaderboardBody">
+<tr>
+<td>1</td>
+<td>Marco</td>
+<td>Expert</td>
+<td>200</td>
+<td>24</td>
+<td>25800</td>
+<td>120 🔥</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sara</td>
+<td>Expert</td>
+<td>194</td>
+<td>23</td>
+<td>23100</td>
+<td>105 🔥</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Luca</td>
+<td>Advanced</td>
+<td>181</td>
+<td>20</td>
+<td>21450</td>
+<td>94 🔥</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Giulia</td>
+<td>Advanced</td>
+<td>170</td>
+<td>18</td>
+<td>20300</td>
+<td>81 🔥</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Andrea</td>
+<td>Intermediate</td>
+<td>150</td>
+<td>16</td>
+<td>18200</td>
+<td>63 🔥</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="player-card">
+<h2>La tua posizione</h2>
+<div class="profile-box">
+<div>
+<h3 id="myRank">
+#--
+</h3>
+<p>Posizione</p>
+</div>
+<div>
+<h3 id="myXP">
+0 XP
+</h3>
+<p>Punteggio</p>
+</div>
+<div>
+<h3 id="myLevel">
+Beginner
+</h3>
+<p>Livello</p>
+</div>
+<div>
+<h3 id="myChallenges">
+0
+</h3>
+<p>Challenge completate</p>
+</div>
+</div>
+</section>
+<section class="achievements">
+<h2>Record della Community</h2>
+<div class="achievement-grid">
+<div class="achievement">
+🏆
+<h3>Più XP</h3>
+<p>25.800</p>
+</div>
+<div class="achievement">
+⚡
+<h3>Più veloce</h3>
+<p>42 secondi</p>
+</div>
+<div class="achievement">
+🔥
+<h3>Streak</h3>
+<p>120 giorni</p>
+</div>
+<div class="achievement">
+🎯
+<h3>Precisione</h3>
+<p>99%</p>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<p>
+© 2026 JavaScript Challenge
+</p>
+</footer>
+</body>
+</html>

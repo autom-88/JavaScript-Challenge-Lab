@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Challenge</title>
+<meta name="description" content="Impara JavaScript attraverso centinaia di esercizi interattivi, quiz e sfide progressive.">
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer src="js/app.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>⚡ JavaScript Challenge ⚡</h1>
+<p>Learn • Practice • Master</p>
+</div>
+<nav>
+<a href="index.html" class="active">Home</a>
+<a href="challenge.html">Challenges</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="profile.html">Profile</a>
+<a href="about.html">About</a>
+</nav>
+<button id="themeToggle">🌙</button>
+</header>
+<section class="hero">
+<div class="hero-text">
+<h2>Diventa un esperto di JavaScript</h2>
+<p>
+Allenati con centinaia di esercizi,
+quiz, debug challenge e missioni
+progressive.
+</p>
+<div class="hero-buttons">
+<button id="startBtn" onclick="location.href='challenge.html'">
+Inizia subito
+</button>
+<button onclick="location.href='profile.html'">
+Continua
+</button>
+</div>
+</div>
+<div class="hero-image">
+<div class="hero-card">
+<h3>Livello attuale</h3>
+<h1>Beginner</h1>
+<p>0 / 200 esercizi</p>
+<div class="progress">
+<div class="progress-fill" style="width:0%"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="categories">
+<h2>Tipologie di Challenge</h2>
+<div class="grid">
+<div class="card">
+<h3>💻 Coding</h3>
+<p>Scrivi codice JavaScript direttamente nel browser.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="card">
+<h3>🐞 Debug</h3>
+<p>Trova e correggi gli errori presenti nel codice.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="card">
+<h3>❓ Quiz</h3>
+<p>Metti alla prova le tue conoscenze.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="card">
+<h3>🧩 Fill Code</h3>
+<p>Completa il codice mancante.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="card">
+<h3>📦 Output</h3>
+<p>Indovina il risultato del codice.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="card">
+<h3>⚙ DOM</h3>
+<p>Esercitati con eventi e manipolazione della pagina.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+</div>
+</section>
+<section class="stats">
+<h2>Statistiche</h2>
+<div class="stats-grid">
+<div class="stat">
+<h3 id="completed">0</h3>
+<p>Challenge completate</p>
+</div>
+<div class="stat">
+<h3 id="points">0</h3>
+<p>Punti</p>
+</div>
+<div class="stat">
+<h3 id="level">1</h3>
+<p>Livello</p>
+</div>
+<div class="stat">
+<h3 id="streak">0</h3>
+<p>Streak</p>
+</div>
+</div>
+</section>
+<section class="progress-section">
+<h2>Progressi</h2>
+<div class="progress-box">
+<p>Beginner</p>
+<div class="progress">
+<div class="progress-fill beginner"></div>
+</div>
+<p>0%</p>
+</div>
+<div class="progress-box">
+<p>Intermediate</p>
+<div class="progress">
+<div class="progress-fill intermediate"></div>
+</div>
+<p>0%</p>
+</div>
+<div class="progress-box">
+<p>Advanced</p>
+<div class="progress">
+<div class="progress-fill advanced"></div>
+</div>
+<p>0%</p>
+</div>
+<div class="progress-box">
+<p>Expert</p>
+<div class="progress">
+<div class="progress-fill expert"></div>
+</div>
+<p>0%</p>
+</div>
+</section>
+<section class="badges">
+<h2>Badge</h2>
+<div class="grid">
+<div class="badge locked">
+🏅
+<p>Hello World</p>
+</div>
+<div class="badge locked">
+🚀
+<p>Problem Solver</p>
+</div>
+<div class="badge locked">
+⚙
+<p>DOM Hero</p>
+</div>
+<div class="badge locked">
+🔥
+<p>Async Wizard</p>
+</div>
+<div class="badge locked">
+👑
+<p>JavaScript Master</p>
+</div>
+</div>
+</section>
+<section class="recent">
+<h2>Ultime Challenge</h2>
+<div class="recent-list">
+<div class="recent-card">
+<h3>Variabili</h3>
+<p>Introduzione alle variabili.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="recent-card">
+<h3>Array</h3>
+<p>Manipolazione degli array.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+<div class="recent-card">
+<h3>Funzioni</h3>
+<p>Crea la tua prima funzione.</p>
+<button onclick="location.href='challenge.html'">
+Apri
+</button>
+</div>
+</div>
+</section>
+<footer>
+<p>
+© 2026 JavaScript Challenge
+</p>
+<p>
+Built with HTML • CSS • JavaScript
+</p>
+<p>
+<a href="about.html">About</a> •
+<a href="leaderboard.html">Leaderboard</a> •
+<a href="profile.html">Profile</a> •
+<a href="challenge.html">Challenges</a>
+</p>
+</footer>
+</body>
+</html>

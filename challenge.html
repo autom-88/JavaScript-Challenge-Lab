@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Challenge | Editor</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/challenge2.css">
+<link rel="stylesheet" href="css/editor.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script defer src="js/editor.js"></script>
+<script defer src="js/validator.js"></script>
+<script defer src="js/progress.js"></script>
+<script defer src="js/storage.js"></script>
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>⚡ JavaScript Challenge ⚡</h1>
+<p>Challenge Workspace</p>
+</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="challenge.html">Challenges</a>
+<a href="leaderboard.html">Leaderboard</a>
+<a href="profile.html">Profile</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main class="challenge-layout">
+<aside class="sidebar">
+<h2>Livelli</h2>
+<ul>
+<li class="active">🟢 Beginner</li>
+<li>🟡 Intermediate</li>
+<li>🟠 Advanced</li>
+<li>🔴 Expert</li>
+</ul>
+<hr>
+<h2>Progresso</h2>
+<div class="progress">
+<div class="progress-fill" id="globalProgress"></div>
+</div>
+<p id="progressText">0%</p>
+<hr>
+<h2>Punti</h2>
+<h3 id="points">0 XP</h3>
+<hr>
+<h2>Tempo</h2>
+<p id="timer">00:00</p>
+</aside>
+<section class="workspace">
+<div class="challenge-card">
+<h2 id="challengeTitle">
+Challenge #1
+</h2>
+<p id="difficulty">
+Difficoltà:
+<strong>Beginner</strong>
+</p>
+<p id="challengeDescription">
+Dichiara una variabile chiamata
+<code>name</code>
+contenente il tuo nome
+e stampala nella console.
+</p>
+</div>
+<div class="objective">
+<h3>Obiettivo</h3>
+<ul>
+<li>Usare <code>let</code></li>
+<li>Assegnare un valore</li>
+<li>Usare <code>console.log()</code></li>
+</ul>
+</div>
+<div class="editor-container">
+<div class="editor-toolbar">
+<button id="runBtn">
+▶ Esegui
+</button>
+<button id="resetBtn">
+↺ Reset
+</button>
+<button id="solutionBtn">
+💡 Soluzione
+</button>
+<button id="hintBtn">
+❔ Suggerimento
+</button>
+<button id="nextBtn">
+➡ Successiva
+</button>
+</div>
+<textarea id="editor" spellcheck="false">
+// Scrivi qui il tuo codice
+</textarea>
+</div>
+<div class="console-panel">
+<h3>Console</h3>
+<pre id="consoleOutput">
+Pronto.
+</pre>
+</div>
+<div class="result-panel">
+<h3>Verifica automatica</h3>
+<div id="validationResult">
+In attesa dell'esecuzione...
+</div>
+</div>
+<div class="statistics">
+<div class="stat-card">
+<h3>Challenge</h3>
+<p id="challengeNumber">1 / 200</p>
+</div>
+<div class="stat-card">
+<h3>Punteggio</h3>
+<p id="score">0</p>
+</div>
+<div class="stat-card">
+<h3>Livello</h3>
+<p id="playerLevel">1</p>
+</div>
+<div class="stat-card">
+<h3>Badge</h3>
+<p id="badgeCounter">0</p>
+</div>
+</div>
+</section>
+<aside class="info-panel">
+<div class="tips">
+<h2>Suggerimento</h2>
+<p id="hint">
+Ricorda che una variabile
+si crea con
+<code>let</code>,
+<code>const</code>
+oppure
+<code>var</code>.
+</p>
+</div>
+<div class="expected">
+<h2>Output atteso</h2>
+<pre>
+Mario
+</pre>
+</div>
+<div class="history">
+<h2>Ultime Challenge</h2>
+<ul>
+<li>✔ Introduzione</li>
+<li>○ Variabili</li>
+<li>○ Stringhe</li>
+<li>○ Number</li>
+<li>○ Boolean</li>
+</ul>
+</div>
+</aside>
+</main>
+<footer>
+<p>
+© 2026 JavaScript Challenge
+</p>
+</footer>
+</body>
+</html>
