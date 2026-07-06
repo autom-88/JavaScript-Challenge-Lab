@@ -185,4 +185,4 @@ Progetto realizzato esclusivamente per scopi didattici e di apprendimento.
 
 👨‍💻 Autore
 
-Sviluppato da autom-88
+Sviluppato da Rudy Quaranta
